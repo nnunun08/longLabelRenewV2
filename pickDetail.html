@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li class="ac">Pick</li>
+                    <li>Archive</li>
+                    <li>Talks</li>
+                    <li>Stories</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+            <script src="./js/mobileToggle.js"></script>
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    <div class="pageNav">
+        <a href="#" class="arr"></a>
+        <div class="tit">Pick</div>
+    </div>
+    <div class="inner">
+        <div class="h2-pc">Pick</div>
+    </div>
+
+
+    <div class="pageDetail">
+        <div class="inner">
+            <div class="backPage mobileNone">목록으로 돌아가기</div>
+
+            <div class="topCon col-2">
+                <div class="item">
+                    <div class="imgSlide">
+                        <div>
+                            <div class="imgWrap">
+                                <img src="./img/resource/pickDetail.png" alt="img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imgWrap">
+                                <img src="./img/resource/pickDetail.png" alt="img">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imgWrap">
+                                <img src="./img/resource/pickDetail.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="item accodion">
+                    <h2>Women’s Woolyester Pile Bomber Jacket</h2>
+                    <ul>
+                        <li class="ac">
+                            <div class="list">브랜드</div>
+                            <div class="flexBx">
+                                <div class="left">
+                                    <div class="imgWrap">
+                                        <img src="./img/resource/brand04.png" alt="brand">
+                                    </div>
+                                    <span class="tit">
+                                        <div class="kr">파타고니아</div>
+                                        <div class="en">PATAGONIA</div>
+                                    </span>
+                                </div>
+                                <div class="btn">자세히보기</div>
+                                <span class="follow"></span>
+                                <script>
+                                    // follow 토글
+                                    const follow = document.querySelectorAll('.follow')
+                                    follow.forEach(e => {
+                                        e.addEventListener('click', () => {
+                                            e.classList.toggle('ac')
+                                        })
+                                    })
+                                </script>
+                            </div>
+
+                        </li>
+                        <li class="ac">
+                            <div class="list">제품 특징</div>
+                            <p>
+                                파타고니아의 특징이 잘 보이는 보머 재킷이에요.<br>
+                                전면을 스냅 단추로 여미는 항공 재킷 스타일입니다.<br>
+                                리사이클울, 리사이클폴리에스터 혼방 원단인 하이 파일 플리스
+                                소재를&nbsp;사용했다고 해요.
+                                업사이클링 소재를 활용한 친환경 소재를 사용하고, 환경에 나쁜 영향을 주지 않기 위해  수작업을 고수하고 있는 100% 수제 가방이에요
+                            </p>
+                        </li>
+
+                        <li class="ac">
+                            <div class="list">브랜드가 소개하는 환경임팩트</div>
+                            <p>
+                                - 오가닉 코튼과 헴프, 리사이클 소재 사용<br>
+                                - 공정무역 봉제 이용<br>
+                                - 환경 오염을 줄이는 PFC-free 내구성 발수 처리 방식 활용
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <span class="materialsSlideMesg">하지만 위 정보 외에도 제품이 만들어지는 과정에서는 다양한 정보가 있어요</span>
+            <div class="materialsSlide">
+                <ul>
+                    <li class="meteItem green">
+                        <h3>원자재생산</h3>
+                        <p>친환경 소재를 사용했는지?<br>
+                            각 소재는 어디에서 오는 건지?<br>
+                            염색과 물 사용 방식은 어떤지?</p>
+                    </li>
+                    <li class="meteItem orange">
+                        <h3>제조</h3>
+                        <p>제품은 어디서 만들어지는지?<br>
+                            작업 과정 중<br>
+                            친환경 방식이 있는지?</p>
+                    </li>
+                    <li class="meteItem blue">
+                        <h3>운송</h3>
+                        <p>제품을 받기까지<br>
+                            얼마나 이동하는 건지?<br>
+                            그 방법은?</p>
+                    </li>
+                    <li class="meteItem yellow">
+                        <h3>포장</h3>
+                        <p>포장 방식도<br>
+                            친환경적인지?</p>
+                    </li>
+                    <li class="meteItem beige">
+                        <h3>폐기</h3>
+                        <p>쓰임이 다한 제품은<br>
+                            어떻게 할 수 있는지?</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="control">
+                <div class="wonder">
+                    <h2><span class="orange">356</span>명이 정보를 요청했어요</h2>
+                    <p>궁금하지 않았나요? 메이커에게 정보를 요청하는 과정에 함께해 주세요</p>
+                    <!-- <h2>궁금하지 않았나요?<br>
+                        메이커에게 정보를 요청하는 과정에 함께해 주세요</h2>                 -->
+                    <div class="btn">더 궁금해요</div>
+                </div>
+
+                <script>
+                    // follow 토글
+                    const wonder = document.querySelectorAll('.control .btn')
+                    wonder.forEach(e => {
+                        e.addEventListener('click', () => {
+                            e.classList.toggle('ac')
+                        })
+                    })
+                </script>
+            </div>
+
+            <div class="chart">
+                <span class="pickPerson">
+                    함께하고 있는 사람들 <span>356</span>명
+                </span>
+                <div class="flexWrap">
+                    <div class="ctr">
+                        <div class="tit">유형별 현황</div>
+                        <div class="rowBarGraph">
+                            <div class="item">
+                                <div class="profileCh chGreen"><img src="./img/ch_green.png" alt=""></div>
+                                <div class="progressBar">
+                                    <h5>탐험가</h5>
+                                    <div class="progress">
+                                        <!-- width 퍼센트로 넣어주세요 -->
+                                        <!-- 
+                                            transition 적용되어 있어서 width 값이 들어가면 1초에 걸쳐 채워지는 인터렉션이 적용됩니다. 
+                                            컨텐츠가 하단에 배치되어 있어서 해당 컨텐츠가 화면에 노출될 시점에 값 부탁드립니다.
+                                        -->
+                                        <div class="bar" style="width: 52%;"></div>
+                                    </div>
+                                </div>
+                                <div class="valueWrap">
+                                    <span class="value">46</span>명
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="profileCh chOran"><img src="./img/ch_oran.png" alt=""></div>
+                                <div class="progressBar">
+                                    <h5>창작자</h5>
+                                    <div class="progress">
+                                        <!-- width 퍼센트로 넣어주세요 -->
+                                        <div class="bar" style="width: 44%;"></div>
+                                    </div>
+                                </div>
+                                <div class="valueWrap">
+                                    <span class="value">20</span>명
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="profileCh chYellow"><img src="./img/ch_yellow.png" alt=""></div>
+                                <div class="progressBar">
+                                    <h5>탐정</h5>
+                                    <div class="progress">
+                                        <!-- width 퍼센트로 넣어주세요 -->
+                                        <div class="bar" style="width: 32%;"></div>
+                                    </div>
+                                </div>
+                                <div class="valueWrap">
+                                    <span class="value">27</span>명
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="profileCh chBlue"><img src="./img/ch_blue.png" alt=""></div>
+                                <div class="progressBar">
+                                    <h5>힙스터</h5>
+                                    <div class="progress">
+                                        <!-- width 퍼센트로 넣어주세요 -->
+                                        <div class="bar" style="width: 10%;"></div>
+                                    </div>
+                                </div>
+                                <div class="valueWrap">
+                                    <span class="value">7</span>명
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="ctr">
+                        <div class="tit">연령별 현황</div>
+                        <div class="canvasContainer">
+                            <canvas id="pickBar"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                const ctx = document.getElementById('pickBar');
+                const ctx2 = document.getElementById('pickDoughnut');
+
+                Chart.defaults.font.size = 16;
+                Chart.defaults.borderColor = 'transparent';
+                Chart.defaults.color = '#151515'
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                    labels: ['10대', '20대', '30대', '40대', '50대', '60대', '70대 이상'],
+                    datasets: [{
+                        // label: '# of Votes',
+                        barThickness: 22,
+                        data: [20, 19, 3, 5, 2, 3, 10],
+                        borderWidth: 1,
+                        borderColor: '#151515',
+                        backgroundColor : '#FF6633',
+                    }]
+                    },
+                    options: {
+                        // maintainAspectRatio:true,
+                        // responsive: false,
+                        scales: {
+                            y: {
+                                border : {color: '#151515'},
+                                suggestedMin: 0,
+                                suggestedMax: 100,
+                                ticks: {
+                                    // Include a dollar sign in the ticks
+                                    callback: function(value, index, ticks) {
+                                        return value + '%';
+                                    },
+                                    color: '#151515'
+                                }
+                            },
+                            x: {
+                                border: {color: '#151515'},
+                                ticks: {color: '#151515'}
+                            }
+                        },
+                        plugins : {
+                            legend : {
+                                display: false,
+                            },
+                            tooltip : {
+                                enabled: false,
+                            }
+                        }
+                    },
+                    
+                });
+
+                new Chart(ctx2, {
+                    type: 'doughnut',
+                    data: {
+                    labels: ['남성', '여성'],
+                    datasets: [{
+                        // barThickness: 1,
+
+                        data: [12, 19],
+                        borderWidth: 1,
+                        backgroundColor : [
+                            '#151515',
+                            '#FF6633',
+                        ],
+                        borderColor: '#151515',
+                        cutout: '70%',
+                        radius: '100%',
+                    }]
+                    },
+                    options: {
+                        responsive: false,
+                        layout: {
+                            padding: {
+                                top: 15
+                            },
+                        },
+                        scales: {
+                            y: {
+                                display:false,
+                                },
+                            x: {
+                                display:false,
+                            }
+                        },
+                        plugins: {
+                            legend : {
+                                color: '#151515',
+                                position : 'bottom',
+                                rtl : true,
+                                labels : {
+                                    boxWidth : 40,
+                                    boxHeight : 18,
+                                    padding: 24
+                                }
+                            },
+                            tooltip : {
+                                // enabled: false,
+                                external: 'average'
+                            }
+                        }
+                    }
+                });
+                
+            </script>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $('.imgSlide').slick(
+            {
+                dots: true,
+                infinite: true,
+            }
+        );
+    </script>
+</body>
+</html>

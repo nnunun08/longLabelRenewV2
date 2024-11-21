@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="">
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Pick</li>
+                    <li>Archive</li>
+                    <li>Talks</li>
+                    <li>Stories</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    <div class="pageNav">
+        <a href="#" class="arr"></a>
+        <div class="tit">Initiative Directory</div>
+    </div>
+
+    <div class="InitiativeDirectory">
+        <div class="inner">
+            <div class="h2-pc">Initiative Directory</div>
+        </div>
+        <div>
+            <div class="tagGruop">
+                <div class="inner">
+                    <div class="tagWrap tagWrapWrap">
+                        <span class="ac">리사이클</span>
+                        <span>탄소 저감</span>
+                        <span>오염물질 저감</span>
+                        <span>새로운 기술</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                        <span>새로운 키워드</span>
+                    </div>
+                </div>
+            </div>
+            <div class="countSearch" style="margin-top:10px;">
+                <div class="inner" style="margin-bottom: 28px;">
+                    <span class="count">총 50개</span>
+                    <div class="right">
+                        <div class="searchWrap">
+                            <input class="search" type="text" placeholder="Search">
+                            <button class="button anchor"></button>
+                        </div>
+                        <!-- <span class="recent">최신순</span>
+                        <span class="divider"></span>
+                        <span class="popular">인기순</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="tableWrap">
+                    <table class="listGrid">
+                        <tr>
+                            <th style="width: 100px;"></th>
+                            <th style="width: 256px;" class="sort"><div>이니셔티브</div></th>
+                            <th style="width: 107px;"><div>국가</div></th>
+                            <th style="width: 176px;"><div>멤버수</div></th>
+                            <th style="width: 389px;"><div>Keyword</div></th>
+                            <th style="width: 67px;"></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="underRow">
+                            <td colspan="6">
+                                <a class="home" href="#">
+                                    홈페이지 바로가기
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                          <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"/>
+                                          <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <div class="contents">
+                                    EU의 펀딩을 받고 설립된 단체로 12개의 이해관계자들이 함께하며 가면트 리사이클링을 하는 회사. 분업화되어있는 A는 의류를 수거하고 B는 원사를 뽑아내는 식이 있습니다. 대표적인 브랜드 아디다스는 위에서 리사이클된 원사로 제품을 만듭니다.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="imgWrap">
+                                    <img src="./img/grid/img01.png" alt="img01">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text">New cotton project</div>
+                                <div class="sub">소재</div>
+                            </td>
+                            <td>
+                                미국
+                            </td>
+                            <td>
+                                <div class="person">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div>With +400 Brand</div>
+                            </td>
+                            <td>
+                                <div class="tag">
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    <span>폐기물 절감</span>
+                                    +2
+                                </div>
+                            </td>
+                            <td>
+                                <button class="more">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="17.5" viewBox="0 0 17.5 17.5">
+                                        <path id="패스_21702" data-name="패스 21702" d="M8,11a.333.333,0,1,1-.333-.333A.333.333,0,0,1,8,11Zm0,0H7.667m3.667,0A.333.333,0,1,1,11,10.667.333.333,0,0,1,11.333,11Zm0,0H11m3.667,0a.333.333,0,1,1-.333-.333A.333.333,0,0,1,14.667,11Zm0,0h-.333M19,11a8,8,0,1,1-8-8,8,8,0,0,1,8,8Z" transform="translate(-2.25 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <ul>
+            <li class="ac">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="circleModal modal fade" id="circleModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="circleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h1 class="modal-title fs-5" id="circleModalLabel">Modal title</h1> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18.121" height="18.121" viewBox="0 0 18.121 18.121">
+                        <path id="패스_21635" data-name="패스 21635" d="M6,22,22,6M6,6,22,22" transform="translate(-4.939 -4.939)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </svg>                      
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="imgWrap">
+                    <img src="./img/dir/img01.png" alt="img01">
+                </div>
+                <div class="conWrap">
+                    <dl>
+                        <dt>
+                            정식 명칭
+                        </dt>
+                        <dd>
+                            Responsible Wool Standard
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            약어
+                        </dt>
+                        <dd>
+                            RWS
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            인증 기관
+                        </dt>
+                        <dd class="link">
+                            <a href="#" target="_blank">Textile Exchange</a>
+                        </dd>
+                    </dl>
+                    <p>
+                        동물 복지, 땅 보호, 노동 조건 충족, 소재부터 제품까지 과정 확인, 제 3자 확인, 다양한 이해관계자와 함께하며 산업군에 가장 좋은 방식의 농업 가이드라인 제공하고 있다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

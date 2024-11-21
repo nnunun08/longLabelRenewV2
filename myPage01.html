@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Pick</li>
+                    <li>Archive</li>
+                    <li>Talks</li>
+                    <li>Stories</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    
+                    <div class="user ac">
+                        <span>닉네임</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+            <script src="./js/mobileToggle.js"></script>
+
+            
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+
+    <div class="section-detail">
+        <div class="pageNav">
+            <a href="#" class="arr"></a>
+            <div class="tit">나의 Value</div>
+        </div>
+        <div class="inner">
+            <div class="leftNav">
+                <div class="breadcrumb">
+                    홈 > 마이페이지
+                </div>
+                
+                <div class="top">
+                    <div class="profileCh chYellow">
+                        <img src="./img/ic_profileCh_df.svg" alt="">
+                    </div>
+                    <h1>
+                        지속가능 패션 유형과<br>
+                        닉네임을 설정해주세요
+                    </h1>
+                    
+                    
+                    <span class="modify">내 정보 수정하기</span>
+                </div>
+
+
+                <div class="ulWrap">
+                    <ul>
+                        <li class="ac"><span>나의 Value</span></li>
+                        <li><span>나의 Pick</span><span class="count">2</span></li>
+                        <li><span>나의 Archive</span><span class="count">4</span></li>
+                        <li><span>내가 작성한 글</span><span class="count">17</span></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="myValue">
+                    <h2 class="h2">나의 Value</h2>
+                    <h3>관심사 설정하기</h3>
+                    <p>
+                        친환경 패션과 관련해서 관심 있는 것을 모두 골라 주세요 (최대 3개)<br>
+                        OOO님이 더 관심있는 분야를 추천해 드려요
+                    </p>
+
+                    <div class="col-2">
+                        <ul class="checkList">
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    업사이클링
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    리사이클링
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    비건
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    탄소 절감
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    오염물질 관리
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    물 사용 절감
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="checkList">
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    폐기물 제로
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    공정무역
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    친환경 패키징
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    수선/재사용
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    리세일(중고판매)
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkbox"></span>
+                                    새로운 기술
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn">저장하기</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+</body>
+</html>
