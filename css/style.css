@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./reset.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
@@ -10687,11 +10688,6 @@ h4 {
 .labelDirectory .tableWrap {
   overflow: auto;
 }
-.InitiativeDirectory .listGrid,
-.labelDirectory .listGrid {
-  min-width: 1096px;
-}
-
 .circleThumb {
   display: flex;
   flex-wrap: wrap;
@@ -10780,6 +10776,12 @@ h4 {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  body:has(.listGrid) .searchWrap {
+    margin-right: 0 !important;
+  }
+}
+
 .listGrid {
   width: 100%;
   border-bottom: 1px solid #151515;
@@ -10809,6 +10811,9 @@ h4 {
   gap: 8px;
   flex-wrap: nowrap;
   white-space: nowrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 25px;
 }
 .listGrid .tag span {
   cursor: default;
@@ -10817,8 +10822,10 @@ h4 {
   background-color: transparent;
   color: inherit;
 }
-.listGrid tr:nth-of-type(2) td {
-  border-top: 0;
+@media screen and (min-width: 769px) {
+  .listGrid tr:nth-of-type(2) td {
+    border-top: 0;
+  }
 }
 .listGrid th {
   text-align: center;
@@ -10912,4 +10919,91 @@ h4 {
 .listGrid .underRow .contents {
   margin-top: 16px;
   line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .listGrid {
+    min-width: unset !important;
+    display: block;
+  }
+  .listGrid tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .listGrid tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .listGrid tr:first-child {
+    display: none;
+  }
+  .listGrid td {
+    display: block;
+    padding: 13px 0;
+    position: relative;
+    padding-left: 33%;
+    padding-right: 2%;
+  }
+  .listGrid td:first-child {
+    border-top: 2px solid #151515 !important;
+    border-bottom: 1px solid #151515;
+  }
+  .listGrid td:last-child {
+    border-bottom: 1px solid #151515;
+  }
+  .listGrid td .brand {
+    text-align: center;
+  }
+  .listGrid td:nth-child(2)::before {
+    content: "브랜드명";
+  }
+  .listGrid td:nth-child(3)::before {
+    content: "국가";
+  }
+  .listGrid td:nth-child(4)::before {
+    content: "Keyword";
+  }
+  .listGrid td:nth-child(5)::before {
+    content: "브랜드의 투명성";
+  }
+  .listGrid td:nth-child(6)::before {
+    content: "아카이브 기준";
+  }
+  .listGrid td:nth-child(7)::before {
+    content: "링크";
+  }
+  .listGrid td:first-child {
+    padding-left: 2%;
+  }
+  .listGrid td::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30%;
+    text-align: center;
+    background-color: #e6e6e6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    padding: 0 2%;
+    word-break: keep-all;
+  }
+  .listGrid .tag {
+    justify-content: center;
+    height: auto;
+    gap: 6px;
+  }
+  .listGrid .hide {
+    display: none;
+  }
+  .listGrid .star {
+    gap: 4px;
+  }
+  .listGrid .star svg {
+    width: 16px;
+    height: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

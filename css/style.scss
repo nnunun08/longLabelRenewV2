@@ -8346,7 +8346,10 @@ h4 {
 		overflow: auto;
 	}
 	.listGrid {
-		min-width: 1096px;
+		// min-width: 1096px;
+	}
+	@media screen and (max-width:768px) {
+		$gap: 40px;
 	}
 }
 
@@ -8444,6 +8447,11 @@ h4 {
 	}
 }
 
+body:has(.listGrid) .searchWrap {
+	@media screen and (max-width:768px) {
+		margin-right: 0 !important;
+	}
+}
 .listGrid {
 	// table-layout: fixed;
 	width: 100%;
@@ -8461,12 +8469,18 @@ h4 {
 					color: inherit;
 				}
 			}
+			// width: 285px;
+			flex-wrap: wrap;
+			overflow: hidden;
+			height: 25px;
 		}
-	};
-	tr {
-		&:nth-of-type(2) {
-			td {
-				border-top: 0;
+	}
+	@media screen and (min-width:769px) {
+		tr {
+			&:nth-of-type(2) {
+				td {
+					border-top: 0;
+				}
 			}
 		}
 	}
@@ -8566,6 +8580,81 @@ h4 {
 		.contents {
 			margin-top: 16px;
 			line-height: 1.5;
+		}
+	}
+	@media screen and (max-width:768px) {
+		min-width: unset !important;
+		display: block;
+		tbody {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+		}
+		tr {
+			display: flex;
+			flex-direction: column;
+			&:first-child {
+				display: none;
+			}
+		}		
+		td {
+			display: block;
+			padding: 13px 0;
+			&:first-child {
+				border-top: 2px solid #151515 !important;
+				border-bottom: 1px solid #151515;
+			}
+			&:last-child {
+				border-bottom: 1px solid #151515;
+			}
+			.brand {
+				text-align: center;
+			}
+
+			&:nth-child(2)::before {content: '브랜드명';}
+			&:nth-child(3)::before {content: '국가';}
+			&:nth-child(4)::before {content: 'Keyword';}
+			&:nth-child(5)::before {content: '브랜드의 투명성';}
+			&:nth-child(6)::before {content: '아카이브 기준';}
+			&:nth-child(7)::before {content: '링크';}
+
+			position: relative;
+			padding-left: 33%;
+			padding-right: 2%;
+			&:first-child {
+				padding-left: 2%;
+			}
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 30%;
+				text-align: center;
+				background-color: #e6e6e6;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 13px;
+				padding: 0 2%;
+				word-break: keep-all;
+			}
+		}
+		.tag {
+			justify-content: center;
+			height: auto;
+			gap: 6px;
+		}
+		.hide {
+			display: none;
+		}
+		.star {
+			gap: 4px;
+			svg {
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 }
