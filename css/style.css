@@ -10688,6 +10688,53 @@ h4 {
 .labelDirectory .tableWrap {
   overflow: auto;
 }
+@media screen and (max-width: 768px) {
+  .InitiativeDirectory .listGrid td:nth-child(2)::before {
+    content: attr(data-title);
+  }
+  .InitiativeDirectory .listGrid td:nth-child(3)::before {
+    content: attr(data-title);
+  }
+  .InitiativeDirectory .listGrid td:nth-child(4)::before {
+    content: attr(data-title);
+  }
+  .InitiativeDirectory .listGrid td:nth-child(5)::before {
+    content: attr(data-title);
+  }
+  .InitiativeDirectory .listGrid td:nth-child(6)::before {
+    content: attr(data-title);
+  }
+  .InitiativeDirectory.brandDirectory .listGrid td:nth-child(2)::before {
+    content: "국가";
+  }
+  .InitiativeDirectory.brandDirectory .listGrid td:nth-child(3)::before {
+    content: "Keyword";
+  }
+  .InitiativeDirectory.brandDirectory .listGrid td:nth-child(4)::before {
+    content: "브랜드의 투명성";
+  }
+  .InitiativeDirectory.brandDirectory .listGrid td:nth-child(5)::before {
+    content: "아카이브 기준";
+  }
+  .InitiativeDirectory.brandDirectory .listGrid td:nth-child(6)::before {
+    content: "링크";
+  }
+  .labelDirectory .listGrid td:nth-child(2)::before {
+    content: "국가";
+  }
+  .labelDirectory .listGrid td:nth-child(3)::before {
+    content: "Keyword";
+  }
+  .labelDirectory .listGrid td:nth-child(4)::before {
+    content: "브랜드의 투명성";
+  }
+  .labelDirectory .listGrid td:nth-child(5)::before {
+    content: "아카이브 기준";
+  }
+  .labelDirectory .listGrid td:nth-child(6)::before {
+    content: "링크";
+  }
+}
 .circleThumb {
   display: flex;
   flex-wrap: wrap;
@@ -10699,6 +10746,26 @@ h4 {
   aspect-ratio: 1/1;
   border-radius: 999px;
   background-color: #D3D3D3;
+  background-color: #fff;
+  overflow: hidden;
+}
+.circleThumb .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .circleThumb {
+    gap: 20px;
+  }
+  .circleThumb .item {
+    width: calc((100% - 20px - 20px - 20px) / 4);
+  }
+}
+@media screen and (max-width: 520px) {
+  .circleThumb .item {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .circleModal {
@@ -10743,6 +10810,7 @@ h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-fit: contain;
 }
 .circleModal dl {
   display: flex;
@@ -10774,6 +10842,18 @@ h4 {
 .circleModal .conWrap p {
   margin-top: 16px;
   margin-bottom: 16px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .circleModal .modal-dialog {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .circleModal .modal-content {
+    max-width: 380px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -10827,6 +10907,11 @@ h4 {
     border-top: 0;
   }
 }
+.listGrid .initiative {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
 .listGrid th {
   text-align: center;
   padding: 16px 0;
@@ -10862,11 +10947,14 @@ h4 {
   border-radius: 999px;
   overflow: hidden;
   box-sizing: border-box;
+  flex: 0 0 auto;
+  background-color: #fff;
 }
 .listGrid .imgWrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-fit: contain;
 }
 .listGrid .person {
   margin-bottom: 8.2px;
@@ -10938,7 +11026,10 @@ h4 {
     display: none;
   }
   .listGrid td {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 13px 0;
     position: relative;
     padding-left: 33%;
@@ -10953,24 +11044,6 @@ h4 {
   }
   .listGrid td .brand {
     text-align: center;
-  }
-  .listGrid td:nth-child(2)::before {
-    content: "브랜드명";
-  }
-  .listGrid td:nth-child(3)::before {
-    content: "국가";
-  }
-  .listGrid td:nth-child(4)::before {
-    content: "Keyword";
-  }
-  .listGrid td:nth-child(5)::before {
-    content: "브랜드의 투명성";
-  }
-  .listGrid td:nth-child(6)::before {
-    content: "아카이브 기준";
-  }
-  .listGrid td:nth-child(7)::before {
-    content: "링크";
   }
   .listGrid td:first-child {
     padding-left: 2%;
@@ -11005,5 +11078,12 @@ h4 {
   .listGrid .star svg {
     width: 16px;
     height: 16px;
+  }
+  .listGrid .underRow {
+    margin-top: -41px;
+  }
+  .listGrid .underRow td {
+    border-top: 1px solid #C1C1C1 !important;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
