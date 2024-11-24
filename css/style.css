@@ -10666,15 +10666,21 @@ h4 {
   border-radius: 12px;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.16);
 }
+.tipContentsWrap .cardWrap .card:hover .imgWrap img {
+  transform: scale(1.1);
+}
 .tipContentsWrap .cardWrap .imgWrap {
   aspect-ratio: 312/252;
   width: 100%;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .tipContentsWrap .cardWrap .imgWrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s cubic-bezier(0.32, 0.94, 0.6, 1);
+  transition-delay: 0.05s;
 }
 .tipContentsWrap .cardWrap .cate {
   font-size: 12px;
@@ -10785,6 +10791,7 @@ h4 {
   background-color: #D3D3D3;
   background-color: #fff;
   overflow: hidden;
+  cursor: pointer;
 }
 .circleThumb .item img {
   width: 100%;
@@ -11028,6 +11035,12 @@ h4 {
   padding: 4px;
   border: 0;
   background: transparent;
+}
+.listGrid .item:has(.more.ac) + .underRow {
+  display: block;
+}
+.listGrid .underRow {
+  display: none;
 }
 .listGrid .underRow td {
   border-top: 1px solid #C1C1C1;

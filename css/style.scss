@@ -8315,15 +8315,21 @@ h4 {
 			background-color: #fff;
 			border-radius: 12px;
 			box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.16);
+			&:hover .imgWrap img {
+				transform: scale(1.1);
+			}
 		}
 		.imgWrap {
 			aspect-ratio: 312/252;
 			width: 100%;
 			margin-bottom: 20px;
+			overflow: hidden;
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				transition: 0.5s cubic-bezier(.32,.94,.6,1);
+				transition-delay: 0.05s;
 			}
 		}
 		.cate {
@@ -8422,6 +8428,7 @@ h4 {
 		background-color: #D3D3D3;
 		background-color: #fff;
 		overflow: hidden;
+		cursor: pointer;
 		img {
 			width: 100%;
 			height: 100%;
@@ -8661,7 +8668,11 @@ body:has(.listGrid) .searchWrap {
 		background: transparent;
 	}
 
+	.item:has(.more.ac) + .underRow {
+		display: block;
+	}
 	.underRow {
+		display: none;
 		td {
 			border-top: 1px solid #C1C1C1;
 			text-align: left;
