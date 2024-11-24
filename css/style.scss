@@ -43,6 +43,23 @@ body {
 	// }
 }
 
+.d-pc {
+	display: block !important;
+	@media screen and (max-width:768px) {
+		display: none !important;
+	}
+}
+.d-mo {
+	display: none !important;
+	@media screen and (max-width:768px) {
+		display: block !important;
+	}
+}
+.innerOver {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
 @mixin scrollHidden {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
@@ -8328,7 +8345,18 @@ h4 {
 			font-size: 16px;
 			line-height: 1.5;
 		}
-
+	}
+	@media screen and (max-width:768px) {
+		padding-top: 52px;
+		.cardWrap {
+			flex-direction: column;
+			.tit {
+				font-size: 18px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
 	}
 }
 
@@ -8726,6 +8754,7 @@ body:has(.listGrid) .searchWrap {
 			td {
 				border-top: 1px solid #C1C1C1 !important;
 				font-size: 14px;
+				align-items: flex-start;
 			}
 		}
 	}
