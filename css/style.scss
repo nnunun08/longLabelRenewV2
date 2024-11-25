@@ -8669,7 +8669,7 @@ body:has(.listGrid) .searchWrap {
 	}
 
 	.item:has(.more.ac) + .underRow {
-		display: block;
+		display: table-row;
 	}
 	.underRow {
 		display: none;

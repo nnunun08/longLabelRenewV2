@@ -11037,7 +11037,7 @@ h4 {
   background: transparent;
 }
 .listGrid .item:has(.more.ac) + .underRow {
-  display: block;
+  display: table-row;
 }
 .listGrid .underRow {
   display: none;
