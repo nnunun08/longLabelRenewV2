@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="">
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Pick</li>
+                    <li>Archive</li>
+                    <li>Talks</li>
+                    <li>Stories</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <div class="ac">
+                        Digital Label
+                    </div>
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    <div class="digitalLabel-hero">
+        <div class="inner">
+            <p>
+                지금 구매하는 제품 얼마나 친환경적인지 알고 있나요?<br/>
+                제품의 환경 정보를 이제 더 제대로 확인해 보세요.
+            </p>
+
+            <h2>롱레이블이 만든 디지털 라벨</h2>
+            <h4>
+                우리는 기존의 작은 Label에서 벗어나 긴 Label을 만듭니다.<br/>
+                소비자가 알아야 할 것은 훨씬 더 많았으니까요.
+            </h4>
+            <div class="imgPosition">
+                <img class="img1" src="./img/digitalLabel-hero-01.png" alt="img">
+                <img class="img2" src="./img/digitalLabel-hero-02.png" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="digitalLabel-step">
+        <!-- 가로스크롤 이벤트 => style="transform: translateY({스크롤 값})" 으로 .inner를 제어해주세요-->
+        <div class="inner">
+            <h3>
+                제품을 만드는 소재부터<br/>
+                폐기까지의 전 과정 </h3>
+            <p>
+                롱레이블의 디지털 라벨은<br/>
+                제품의 전 과정 단계마다의 정보를<br/>
+                하나의 QR 페이지에 담습니다.
+            </p>
+
+            <ul class="listWrap">
+                <li class="item">
+                    <h5 style="color: #81B29A;">소재</h5>
+                    <p>
+                        친환경 소재를 사용했는지?<br/>
+                        각 소재는 어디에서 오는 건지?<br/>
+                        염색과 물 사용 방식은 어떤지?
+                    </p>
+                    <img src="./img/img_digitalLabel_matter.png" alt="bg">
+                </li>
+                <li class="item">
+                    <h5 style="color: #E07A5F;">제조</h5>
+                    <p>
+                        제품은 어디서 만들어지는지?<br/>
+                        작업 과정 중<br/>
+                        친환경 방식이 있는지? 
+                    </p>
+                    <img src="./img/img_digitalLabel_manuf.png" alt="bg">
+                </li>
+                <li class="item">
+                    <h5 style="color: #6464A0;">운송</h5>
+                    <p>
+                        제품을 받기까지<br/>
+                        얼마나 이동하는 건지?<br/>
+                        그 방법은?
+                    </p>
+                    <img src="./img/img_digitalLabel_delivery.png" alt="bg">
+                </li>
+                <li class="item">
+                    <h5 style="color: #EDC077;">포장</h5>
+                    <p>
+                        포장 방식도<br/>
+                        친환경적인지?
+                    </p>
+                    <img src="./img/img_digitalLabel_matter.png" alt="bg">
+                </li>
+                <li class="item">
+                    <h5 style="color: #CFC1B4;">폐기</h5>
+                    <p>
+                        쓰임이 다한 제품은<br/>
+                        어떻게 할 수 있는지?
+                    </p>
+                    <img src="./img/img_digitalLabel_matter.png" alt="bg">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="digitalLabel-feature">
+        <div class="inner">
+            <h3>
+                제품을 만드는 과정 중의 <span>지속가능성</span>은<br/>
+                어떻게 확인하고 관리해야 할까요? 
+            </h3>
+            <div class="point">
+                새로운 방식으로 전달하는 브랜드의 지속가능성
+            </div>
+            <ul class="feature">
+                <li class="item">
+                    <img src="./img/ic_digitalLabel_certif.svg" alt="icon">
+                    <h4>인증마크</h4>
+                    <p>
+                        브랜드에서 직/간접적으로 획득된<br/>
+                        인증마크를 확인해 보세요
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="./img/ic_digitalLabel_keyword.svg" alt="icon">
+                    <h4>키워드</h4>
+                    <p>
+                        롱레이블 팀이 해석한 특징을<br/>
+                        한눈에 살펴보세요
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="./img/ic_digitalLabel_truth.svg" alt="icon">
+                    <h4>투명성</h4>
+                    <p>
+                        브랜드가 정보 공개에 얼마나 적극적인지<br/>
+                        확인하세요
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="digitalLabel-journey">
+        <div class="inner">
+            <img class="bgImg" src="./img/img_digitalLabel_journey.svg" alt="journeyMap">
+            <div class="textBx">
+                <h3>
+                    제품이 소비자에게<br/>
+                    가기까지의 여정
+                </h3>
+                <p>
+                    제품을 만들기 위해 이동하는 경로를 모두 담았습니다.<br/>
+                    소비자들을 이 모든 것을 알 권리가 있으니까요.<br/>
+                    EU 디지털제품여권(제품의 탄소 배출량, 지속가능성 정보,<br/>
+                    공급망 정보 등 주요 데이터를 사람의 여권처럼<br/>
+                    확인할 수 있도록 하는 것) 정책을 준비하세요
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="digitalLabel-sample">
+        <div class="inner">
+            <div class="textBx">
+                <h3>
+                    브랜드는 이 많은 정보를 쉽게<br/>
+                    입력하고 관리할 수 있도록 했어요
+                </h3>
+                <p>
+                    제품의 소재부터 폐기까지 다양한 정보를<br/>
+                    롱레이블 메이커를 통해 관리할 수 있어요.<br/>
+                    어렵지 않도록 친절한 가이드가 함께합니다. 
+                </p>
+            </div>
+            <img class="bgImg" src="./img/img_digitalLabel_mockup1.png" alt="mockup">
+        </div>
+    </div>
+
+    <div class="digitalLabel-sample reverse">
+        <div class="inner">
+            <img class="bgImg" src="./img/img_digitalLabel_mockup1.png" alt="mockup">
+            <div class="textBx">
+                <h3>
+                    데이터로 관리하는<br/>
+                    지속가능성
+                </h3>
+                <p>
+                    지속가능성을 지향하는 브랜드라면<br/>
+                    롱레이블의 디지털 라벨 대시보드를 통해<br/>
+                    소비자들과의 소통을 더 새롭게 해보세요<br/><br/>
+                    
+                    디지털라벨을 제품을 구매한 소비자와의<br/>
+                    커뮤니케이션 채널로도 사용할 수 있어요.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="digitalLabel-patent">
+        <div class="inner">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="사각형_1089" data-name="사각형 1089" width="74.61" height="93.983" fill="none"/>
+                  </clipPath>
+                </defs>
+                <g id="그룹_4688" data-name="그룹 4688" transform="translate(-570.393 -3480)">
+                  <rect id="사각형_1090" data-name="사각형 1090" width="96" height="96" transform="translate(570.393 3480)" fill="none"/>
+                  <g id="그룹_4685" data-name="그룹 4685" transform="translate(579.639 3481.205)">
+                    <path id="패스_21870" data-name="패스 21870" d="M2.868,75.307l12.111.56L21.8,85.894l21.761-38.91L24.628,36.4Z" transform="translate(0.588 8.09)" fill="#f63"/>
+                    <path id="패스_21871" data-name="패스 21871" d="M24.868,46.983l21.761,38.91,6.819-10.026,12.111-.56L43.8,36.4Z" transform="translate(5.597 8.09)" fill="#f63"/>
+                    <g id="그룹_4684" data-name="그룹 4684" transform="translate(0 0)">
+                      <g id="그룹_4683" data-name="그룹 4683" clip-path="url(#clip-path)">
+                        <path id="패스_21872" data-name="패스 21872" d="M37.2,73.235a4.534,4.534,0,0,1-2.7-.883l-5.442-3.989a3.649,3.649,0,0,0-2.169-.71c-.074,0-.148,0-.223.007l-6.732.414c-.095.006-.188.008-.281.008a4.594,4.594,0,0,1-4.263-2.928l-2.422-6.3a3.67,3.67,0,0,0-1.632-1.884L5.446,53.682A4.555,4.555,0,0,1,3.2,48.767l1.367-6.606a3.663,3.663,0,0,0-.354-2.466L1.041,33.74a4.551,4.551,0,0,1,.769-5.346l4.722-4.818a3.677,3.677,0,0,0,1.035-2.268l.548-6.724A4.55,4.55,0,0,1,11.654,10.5L18.231,9a3.673,3.673,0,0,0,2.1-1.349l4.1-5.358A4.6,4.6,0,0,1,28.056.5a4.547,4.547,0,0,1,1.552.272l6.346,2.293a3.637,3.637,0,0,0,1.246.22,3.637,3.637,0,0,0,1.246-.22L44.79.773A4.547,4.547,0,0,1,46.341.5,4.6,4.6,0,0,1,49.972,2.3l4.1,5.358A3.673,3.673,0,0,0,56.166,9l6.578,1.5a4.55,4.55,0,0,1,3.537,4.081l.548,6.724a3.672,3.672,0,0,0,1.036,2.268l4.721,4.818a4.551,4.551,0,0,1,.769,5.346l-3.173,5.955a3.663,3.663,0,0,0-.354,2.466L71.2,48.767a4.555,4.555,0,0,1-2.244,4.914l-5.888,3.292a3.67,3.67,0,0,0-1.632,1.884l-2.422,6.3a4.594,4.594,0,0,1-4.263,2.928c-.093,0-.187,0-.28-.008l-6.735-.414c-.073,0-.148-.007-.222-.007a3.649,3.649,0,0,0-2.169.71L39.9,72.352a4.534,4.534,0,0,1-2.7.883" transform="translate(0.107 0.107)" fill="#f63"/>
+                        <path id="패스_21873" data-name="패스 21873" d="M46.449,1.213A3.96,3.96,0,0,1,49.6,2.769l4.1,5.359A4.271,4.271,0,0,0,56.138,9.7l6.578,1.5a3.961,3.961,0,0,1,3.067,3.54l.55,6.724a4.267,4.267,0,0,0,1.206,2.642l4.722,4.818a3.961,3.961,0,0,1,.666,4.638l-3.172,5.954a4.276,4.276,0,0,0-.414,2.875L70.709,49a3.963,3.963,0,0,1-1.946,4.261L62.875,56.55a4.262,4.262,0,0,0-1.9,2.2l-2.422,6.3a3.964,3.964,0,0,1-3.7,2.54c-.08,0-.163,0-.244-.007l-6.734-.414c-.086,0-.176-.007-.262-.007a4.268,4.268,0,0,0-2.526.826l-5.441,3.987a3.96,3.96,0,0,1-4.684,0l-5.442-3.987A4.265,4.265,0,0,0,27,67.155c-.087,0-.176,0-.262.007L20,67.576c-.084,0-.164.007-.245.007a3.961,3.961,0,0,1-3.7-2.54l-2.422-6.3a4.265,4.265,0,0,0-1.9-2.2L5.848,53.258A3.966,3.966,0,0,1,3.9,49l1.37-6.606a4.283,4.283,0,0,0-.414-2.875L1.684,33.562a3.959,3.959,0,0,1,.667-4.638l4.721-4.818a4.275,4.275,0,0,0,1.207-2.642l.55-6.724A3.961,3.961,0,0,1,11.9,11.2l6.577-1.5a4.271,4.271,0,0,0,2.443-1.571l4.1-5.359a3.959,3.959,0,0,1,4.494-1.32l6.344,2.294A4.3,4.3,0,0,0,37.305,4a4.3,4.3,0,0,0,1.453-.254L45.1,1.45a3.933,3.933,0,0,1,1.347-.237m0-1.213a5.185,5.185,0,0,0-1.76.308L38.346,2.6a3.053,3.053,0,0,1-1.041.182,3.041,3.041,0,0,1-1.04-.182L29.921.308A5.177,5.177,0,0,0,24.05,2.032l-4.1,5.361A3.066,3.066,0,0,1,18.2,8.517l-6.58,1.5a5.154,5.154,0,0,0-4.006,4.624l-.551,6.724a3.055,3.055,0,0,1-.862,1.891L1.482,28.076a5.153,5.153,0,0,0-.869,6.056l3.172,5.954a3.063,3.063,0,0,1,.3,2.059L2.714,48.75a5.159,5.159,0,0,0,2.543,5.567l5.889,3.292a3.05,3.05,0,0,1,1.36,1.572l2.424,6.3A5.2,5.2,0,0,0,19.757,68.8c.106,0,.212,0,.319-.01l6.734-.414c.063,0,.125,0,.188,0a3.038,3.038,0,0,1,1.807.591l5.442,3.989a5.175,5.175,0,0,0,6.117,0l5.441-3.989a3.041,3.041,0,0,1,1.809-.591c.062,0,.125,0,.187,0l6.736.414c.1.006.211.01.317.01a5.207,5.207,0,0,0,4.83-3.318l2.42-6.3a3.065,3.065,0,0,1,1.362-1.572l5.889-3.292A5.159,5.159,0,0,0,71.9,48.75l-1.368-6.606a3.077,3.077,0,0,1,.3-2.059L74,34.132a5.153,5.153,0,0,0-.87-6.056L68.4,23.257a3.062,3.062,0,0,1-.862-1.891l-.551-6.724a5.153,5.153,0,0,0-4.006-4.624l-6.578-1.5a3.07,3.07,0,0,1-1.749-1.125l-4.1-5.361A5.209,5.209,0,0,0,46.449,0" transform="translate(0 0)" fill="#f4f4f4"/>
+                        <path id="패스_21874" data-name="패스 21874" d="M59.78,34.817A24.69,24.69,0,1,1,35.089,10.126,24.691,24.691,0,0,1,59.78,34.817Z" transform="translate(2.216 2.158)" fill="none" stroke="#f4f4f4" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="패스_21875" data-name="패스 21875" d="M19.2,30.863l9.586,9.586L47.223,23.49" transform="translate(4.092 5.005)" fill="none" stroke="#f4f4f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+            </svg>
+            <p>
+                롱레이블만의 디지털라벨링 방식은 특허로 등록되어 있습니다.
+            </p>
+            <bold>특허 등록 번호 10-2711523 <span>출원일자: 2023년 9월 20일</span></bold><br/>
+            <bold>< 제품의 친환경 정보를 제공하는 디지털 라벨링 시스템 및 방법 ></bold>
+        </div>
+    </div>
+
+    <div class="digitalLabel-contact">
+        <div class="inner">
+            <div>
+                <h3>
+                    환경을 생각하는 브랜드라면,<br/>
+                    이제는 더 긴 Label을 만들 수 있습니다.
+                </h3>
+                <h2>
+                    지금 시작해 보세요
+                </h2>
+                <a class="contactBtn" href="#">
+                    문의 남기기
+                </a>
+            </div>
+            <img src="./img/ic_digitalLabel_mesg.png" alt="img">
+        </div>
+    </div>
+
+
+    <div class="footer" style="margin-top: 0;">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+
+      
+
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -2082,7 +2082,9 @@ $headerHeight:75px;
 
 		}
 	}
-
+	.ac {
+		color: #f63
+	}
 	.rightBtn {
 		font-size: 18px;
 		font-weight: bold;
@@ -2097,12 +2099,12 @@ $headerHeight:75px;
 			font-size: 16px;
 			display: inline-block;
 			box-sizing: border-box;
-			padding-left: 20px;
+			padding-left: 26px;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
 			font-weight: normal;
-			width: 74px;
+			// width: 74px;
 			text-align: right;
 
 			&.ac {
@@ -8768,5 +8770,265 @@ body:has(.listGrid) .searchWrap {
 				align-items: flex-start;
 			}
 		}
+	}
+}
+
+[class^="digitalLabel-"] {
+	line-height: 1.4;
+	h3 {
+		font-size: 32px;
+		font-weight: bold;
+		margin-bottom: 24px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+
+.digitalLabel-hero {
+	width: 100%;
+	min-height: 458px;
+	background-color: #ff6633;
+	color: #151515;
+	padding-top: 75px;
+	padding-bottom: 65px;
+	margin-top: -75px;
+	.inner {
+		position: relative;
+		padding-top: 64px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.4;
+	}
+	h2 {
+		margin-top: 136px;
+		font-size: 48px;
+		font-weight: bold;
+	}
+	h4 {
+		margin-top: 20px;
+		font-size: 28px;
+		line-height: 1.4;
+		font-weight: 500;
+	}
+	.imgPosition {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		img {
+			width: 58%;
+		}
+		.img1 {
+			position: absolute;
+			right: 38%;
+			top: -28px;
+		}
+		.img2 {
+			position: absolute;
+			top: 70px;
+			right: 0;
+		}
+	}
+}
+
+.digitalLabel-step {
+	padding: 120px 0;
+	color: #151515;
+	line-height: 1.4;
+	overflow: hidden;
+	.inner {
+		position: relative;
+		min-height: 380px;
+	}
+	.listWrap {
+		position: absolute;
+		top: 0;
+		left: 345px;
+		display: flex;
+		gap: 24px;
+		.item {
+			width: 294px;
+			height: 380px;
+			// aspect-ratio: 294 / 380;
+			padding: 25px 20px;
+			background-color: #fff;
+			border-radius: 12px;
+			box-shadow: 
+			4px 4px 4px rgba(0,0,0,0.16),
+			inset -5px -6px 7px rgba(0, 0, 0, 0.16);
+			position: relative;
+			h5 {
+				font-size: 24px;
+				font-weight: bold;
+				margin-bottom: 4px;
+			}
+			p {
+				font-size: 14px;
+				font-weight: 500;
+				color: #707070;
+			}
+			img {
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+.digitalLabel-feature {
+	line-height: 1.4;
+	color: #151515;
+	text-align: center;
+	margin-bottom: 120px;
+	.inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 48px;
+	}
+	h3 {
+		font-size: 32px;
+		font-weight: bold;
+		span {
+			color: #ff6633;
+		}
+	}
+	.point {
+		flex: 0 0 auto;
+		display: inline-block;
+		font-size: 28px;
+		font-weight: bold;
+		padding: 12px 20px;
+		background-color: #FF6633;
+		color: #fff;
+	}
+
+	.feature {
+		display: flex;
+		gap: 20px;
+		width: 100%;
+		.item {
+			flex: 1 0 0;
+			img {
+				margin-bottom: 42px;
+			}
+			h4 {
+				font-size: 24px;
+				font-weight: bold;
+				margin-bottom: 16px;
+			}
+			p {
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.digitalLabel-journey {
+	overflow: hidden;
+	.inner {
+		position: relative;
+		min-height: 450px;
+		// max-width: 1310px;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+	}
+	.bgImg {
+		position: absolute;
+		left: -152px;
+	}
+	.textBx {
+		// padding-left: 670px;
+		max-width: 448px;
+	}
+}
+
+.digitalLabel-sample {
+	overflow: hidden;
+	.inner {
+		position: relative;
+		min-height: 928px;
+		display: flex;
+		align-items: center;
+	}
+	.bgImg {
+		position: absolute;
+		right: -392px;
+		width: 1240px;
+	}
+	.textBx {
+		// padding-left: 670px;
+		max-width: 448px;
+	}
+	&.reverse {
+		margin-top: -200px;
+		.inner {
+			flex-direction: row-reverse;
+		}
+		.bgImg {
+			right: unset;
+			left: -392px;
+		}
+	}
+}
+
+.digitalLabel-patent {
+	text-align: center;
+	padding-bottom: 74px;
+	p {
+		font-weight: bold;
+		margin-bottom: 28px;
+		margin-top: 28px;
+	}
+	bold {
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 6px;
+		display: inline-block;
+		span {
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+}
+
+.digitalLabel-contact {
+	background-color: #FF6633;
+	padding: 55px 0;
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	h3 {
+		font-size: 28px;
+		font-weight: bold;
+		margin-bottom: 24px;
+	}
+	h2 {
+		font-size: 48px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.contactBtn {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: bold;
+		padding: 16px 24px;
+		background-color: #fff;
+		border-radius: 999px;
+		color: #151515;
+		text-decoration: none;
+	}
+	img {
+		width: 224px;
 	}
 }

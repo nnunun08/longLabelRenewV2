@@ -432,6 +432,9 @@ body {
 .header ul li:hover {
   color: #f63;
 }
+.header .ac {
+  color: #f63;
+}
 .header .rightBtn {
   font-size: 18px;
   font-weight: bold;
@@ -448,12 +451,11 @@ body {
   font-size: 16px;
   display: inline-block;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 26px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-weight: normal;
-  width: 74px;
   text-align: right;
 }
 .header .rightBtn .user.ac {
@@ -11137,4 +11139,257 @@ h4 {
     font-size: 14px;
     align-items: flex-start;
   }
+}
+
+[class^=digitalLabel-] {
+  line-height: 1.4;
+}
+[class^=digitalLabel-] h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+[class^=digitalLabel-] p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.digitalLabel-hero {
+  width: 100%;
+  min-height: 458px;
+  background-color: #ff6633;
+  color: #151515;
+  padding-top: 75px;
+  padding-bottom: 65px;
+  margin-top: -75px;
+}
+.digitalLabel-hero .inner {
+  position: relative;
+  padding-top: 64px;
+}
+.digitalLabel-hero p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.digitalLabel-hero h2 {
+  margin-top: 136px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.digitalLabel-hero h4 {
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.digitalLabel-hero .imgPosition {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.digitalLabel-hero .imgPosition img {
+  width: 58%;
+}
+.digitalLabel-hero .imgPosition .img1 {
+  position: absolute;
+  right: 38%;
+  top: -28px;
+}
+.digitalLabel-hero .imgPosition .img2 {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.digitalLabel-step {
+  padding: 120px 0;
+  color: #151515;
+  line-height: 1.4;
+  overflow: hidden;
+}
+.digitalLabel-step .inner {
+  position: relative;
+  min-height: 380px;
+}
+.digitalLabel-step .listWrap {
+  position: absolute;
+  top: 0;
+  left: 345px;
+  display: flex;
+  gap: 24px;
+}
+.digitalLabel-step .listWrap .item {
+  width: 294px;
+  height: 380px;
+  padding: 25px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16), inset -5px -6px 7px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.digitalLabel-step .listWrap .item h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.digitalLabel-step .listWrap .item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+}
+.digitalLabel-step .listWrap .item img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.digitalLabel-feature {
+  line-height: 1.4;
+  color: #151515;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.digitalLabel-feature .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.digitalLabel-feature h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.digitalLabel-feature h3 span {
+  color: #ff6633;
+}
+.digitalLabel-feature .point {
+  flex: 0 0 auto;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #FF6633;
+  color: #fff;
+}
+.digitalLabel-feature .feature {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.digitalLabel-feature .feature .item {
+  flex: 1 0 0;
+}
+.digitalLabel-feature .feature .item img {
+  margin-bottom: 42px;
+}
+.digitalLabel-feature .feature .item h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.digitalLabel-feature .feature .item p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.digitalLabel-journey {
+  overflow: hidden;
+}
+.digitalLabel-journey .inner {
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.digitalLabel-journey .bgImg {
+  position: absolute;
+  left: -152px;
+}
+.digitalLabel-journey .textBx {
+  max-width: 448px;
+}
+
+.digitalLabel-sample {
+  overflow: hidden;
+}
+.digitalLabel-sample .inner {
+  position: relative;
+  min-height: 928px;
+  display: flex;
+  align-items: center;
+}
+.digitalLabel-sample .bgImg {
+  position: absolute;
+  right: -392px;
+  width: 1240px;
+}
+.digitalLabel-sample .textBx {
+  max-width: 448px;
+}
+.digitalLabel-sample.reverse {
+  margin-top: -200px;
+}
+.digitalLabel-sample.reverse .inner {
+  flex-direction: row-reverse;
+}
+.digitalLabel-sample.reverse .bgImg {
+  right: unset;
+  left: -392px;
+}
+
+.digitalLabel-patent {
+  text-align: center;
+  padding-bottom: 74px;
+}
+.digitalLabel-patent p {
+  font-weight: bold;
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+.digitalLabel-patent bold {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.digitalLabel-patent bold span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.digitalLabel-contact {
+  background-color: #FF6633;
+  padding: 55px 0;
+}
+.digitalLabel-contact .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.digitalLabel-contact h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.digitalLabel-contact h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.digitalLabel-contact .contactBtn {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 24px;
+  background-color: #fff;
+  border-radius: 999px;
+  color: #151515;
+  text-decoration: none;
+}
+.digitalLabel-contact img {
+  width: 224px;
 }/*# sourceMappingURL=style.css.map */

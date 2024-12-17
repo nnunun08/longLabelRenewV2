@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_1104" data-name="사각형 1104" width="120" height="120" transform="translate(1567 1391)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="ic_degitalLabel_certif" transform="translate(-1567 -1391)" clip-path="url(#clip-path)">
+    <path id="패스_21955" data-name="패스 21955" d="M40.333,63.667l14,14L77.667,45M115,59a23.31,23.31,0,0,1-9.912,19.09,23.339,23.339,0,0,1-27,27,23.339,23.339,0,0,1-38.18,0,23.339,23.339,0,0,1-27-27,23.339,23.339,0,0,1,0-38.18,23.339,23.339,0,0,1,27-27,23.339,23.339,0,0,1,38.18,0,23.339,23.339,0,0,1,27,27A23.3,23.3,0,0,1,115,59Z" transform="translate(1568 1392)" fill="none" stroke="#f63" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+</svg>
