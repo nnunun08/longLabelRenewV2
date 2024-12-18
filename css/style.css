@@ -11153,6 +11153,15 @@ h4 {
   font-size: 20px;
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  [class^=digitalLabel-] h3 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
+  [class^=digitalLabel-] p {
+    font-size: 16px;
+  }
+}
 
 .digitalLabel-hero {
   width: 100%;
@@ -11202,6 +11211,32 @@ h4 {
   top: 70px;
   right: 0;
 }
+@media screen and (max-width: 768px) {
+  .digitalLabel-hero {
+    padding-bottom: 90vw;
+  }
+  .digitalLabel-hero .inner {
+    padding-top: 34px;
+  }
+  .digitalLabel-hero p {
+    font-size: 16px;
+  }
+  .digitalLabel-hero h2 {
+    margin-top: 70px;
+    font-size: 32px;
+  }
+  .digitalLabel-hero h4 {
+    margin-top: 14px;
+    font-size: 19px;
+  }
+  .digitalLabel-hero .imgPosition {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    margin-left: -10%;
+    transform: scale(1.2);
+  }
+}
 
 .digitalLabel-step {
   padding: 120px 0;
@@ -11245,6 +11280,11 @@ h4 {
   left: 0;
   bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .digitalLabel-step {
+    padding: 50vw 0;
+  }
+}
 
 .digitalLabel-feature {
   line-height: 1.4;
@@ -11257,10 +11297,6 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-}
-.digitalLabel-feature h3 {
-  font-size: 32px;
-  font-weight: bold;
 }
 .digitalLabel-feature h3 span {
   color: #ff6633;
@@ -11293,6 +11329,32 @@ h4 {
 .digitalLabel-feature .feature .item p {
   font-size: 20px;
   font-weight: 500;
+  word-break: keep-all;
+}
+@media screen and (max-width: 768px) {
+  .digitalLabel-feature .inner {
+    gap: 32px;
+  }
+  .digitalLabel-feature .point {
+    font-size: 18px;
+    word-break: keep-all;
+  }
+  .digitalLabel-feature .feature {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .digitalLabel-feature .feature .item img {
+    min-width: 60px;
+    width: 13%;
+    margin-bottom: 20px;
+  }
+  .digitalLabel-feature .feature .item h4 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+  .digitalLabel-feature .feature .item p {
+    font-size: 14px;
+  }
 }
 
 .digitalLabel-journey {
@@ -11311,6 +11373,22 @@ h4 {
 }
 .digitalLabel-journey .textBx {
   max-width: 448px;
+}
+@media screen and (max-width: 768px) {
+  .digitalLabel-journey .inner {
+    display: block;
+    text-align: center;
+  }
+  .digitalLabel-journey .bgImg {
+    position: static;
+    max-width: 368px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .digitalLabel-journey .textBx {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }
 
 .digitalLabel-sample {
@@ -11340,10 +11418,36 @@ h4 {
   right: unset;
   left: -392px;
 }
+@media screen and (max-width: 768px) {
+  .digitalLabel-sample.reverse {
+    margin-top: -20vw;
+  }
+  .digitalLabel-sample.reverse .inner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 768px) {
+  .digitalLabel-sample {
+    padding: 20vw 0;
+  }
+  .digitalLabel-sample .inner {
+    display: block;
+    min-height: unset;
+  }
+  .digitalLabel-sample .bgImg {
+    position: static;
+    width: 140%;
+    margin-top: -7%;
+    transform: translateX(-14%);
+  }
+}
 
 .digitalLabel-patent {
   text-align: center;
   padding-bottom: 74px;
+  word-break: keep-all;
 }
 .digitalLabel-patent p {
   font-weight: bold;
@@ -11392,4 +11496,21 @@ h4 {
 }
 .digitalLabel-contact img {
   width: 224px;
+}
+@media screen and (max-width: 768px) {
+  .digitalLabel-contact h3 {
+    font-size: 14px;
+  }
+  .digitalLabel-contact h2 {
+    font-size: 21px;
+  }
+  .digitalLabel-contact .contactBtn {
+    font-size: 16px;
+    padding: 13px 20px;
+  }
+  .digitalLabel-contact img {
+    max-width: 25vw;
+    width: 154px;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

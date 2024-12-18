@@ -8784,6 +8784,15 @@ body:has(.listGrid) .searchWrap {
 		font-size: 20px;
 		font-weight: 500;
 	}
+	@media screen and (max-width: 768px) {
+		h3 {
+			font-size: 19px;
+			margin-bottom: 14px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
 }
 
 .digitalLabel-hero {
@@ -8833,6 +8842,30 @@ body:has(.listGrid) .searchWrap {
 			right: 0;
 		}
 	}
+	@media screen and (max-width: 768px) {
+		padding-bottom: 90vw;
+		.inner {
+			padding-top: 34px;
+		}
+		p {
+			font-size: 16px;
+		}
+		h2 {
+			margin-top: 70px;
+			font-size: 32px;
+		}
+		h4 {
+			margin-top: 14px;
+			font-size: 19px;
+		}
+		.imgPosition {
+			margin-top: 20px;
+			position: relative;
+			width: 100%;
+			margin-left: -10%;
+			transform: scale(1.2);
+		}
+	}
 }
 
 .digitalLabel-step {
@@ -8879,6 +8912,9 @@ body:has(.listGrid) .searchWrap {
 			}
 		}
 	}
+	@media screen and (max-width: 768px) {
+		padding: 50vw 0;
+	}
 }
 
 .digitalLabel-feature {
@@ -8893,8 +8929,6 @@ body:has(.listGrid) .searchWrap {
 		gap: 48px;
 	}
 	h3 {
-		font-size: 32px;
-		font-weight: bold;
 		span {
 			color: #ff6633;
 		}
@@ -8926,6 +8960,34 @@ body:has(.listGrid) .searchWrap {
 			p {
 				font-size: 20px;
 				font-weight: 500;
+				word-break: keep-all;
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.inner {
+			gap: 32px;
+		}
+		.point {
+			font-size: 18px;
+			word-break: keep-all;
+		}
+		.feature {
+			gap: 40px;
+			flex-direction: column;
+			.item {
+				img {
+					min-width: 60px;
+					width: 13%;
+					margin-bottom: 20px;
+				}
+				h4 {
+					font-size: 19px;
+					margin-bottom: 12px;
+				}
+				p {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -8948,6 +9010,22 @@ body:has(.listGrid) .searchWrap {
 	.textBx {
 		// padding-left: 670px;
 		max-width: 448px;
+	}
+	@media screen and (max-width: 768px) {
+		.inner {
+			display: block;
+			text-align: center;
+		}
+		.bgImg {
+			position: static;
+			max-width: 368px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.textBx {
+			margin: 0 auto;
+			margin-top: 40px;
+		}
 	}
 }
 
@@ -8977,12 +9055,35 @@ body:has(.listGrid) .searchWrap {
 			right: unset;
 			left: -392px;
 		}
+		@media screen and (max-width: 768px) {
+			margin-top: -20vw;
+			.inner {
+				display: flex;
+				align-items: flex-start;
+				flex-direction: column-reverse;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 20vw 0;
+		.inner {
+			display: block;
+			min-height: unset;
+		}
+		.bgImg {
+			position: static;
+			width: 140%;
+			margin-top: -7%;
+			transform: translateX(-14%);
+		}
 	}
 }
 
 .digitalLabel-patent {
 	text-align: center;
 	padding-bottom: 74px;
+	word-break: keep-all;
 	p {
 		font-weight: bold;
 		margin-bottom: 28px;
@@ -9031,4 +9132,25 @@ body:has(.listGrid) .searchWrap {
 	img {
 		width: 224px;
 	}
+	@media screen and (max-width: 768px) {
+		.inner {
+
+		}
+		h3 {
+			font-size: 14px;
+		}
+		h2 {
+			font-size: 21px;
+		}
+		.contactBtn {
+			font-size: 16px;
+			padding: 13px 20px;
+		}
+		img {
+			max-width: 25vw;
+			width: 154px;
+			margin-left: auto;
+		}
+	}
 }
+
