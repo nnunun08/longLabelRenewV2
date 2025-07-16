@@ -11513,4 +11513,195 @@ h4 {
     width: 154px;
     margin-left: auto;
   }
+}
+
+.ultrafasion-hero {
+  background: url(../img/bg_ultrafasion_hero.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  height: calc(100vh + 75px);
+  background-color: red;
+  margin-top: -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ultrafasion-hero h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.ultrafasion-hero p {
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ultrafasion-01,
+.ultrafasion-02 {
+  padding-top: 100px;
+}
+.ultrafasion-01 h3,
+.ultrafasion-02 h3 {
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-block: 10px;
+}
+.ultrafasion-01 p,
+.ultrafasion-02 p {
+  margin-top: 30px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 176.471% */
+}
+.ultrafasion-01 ul,
+.ultrafasion-02 ul {
+  padding-left: 24px;
+  margin-top: 30px;
+}
+.ultrafasion-01 ul li,
+.ultrafasion-02 ul li {
+  position: relative;
+}
+.ultrafasion-01 ul li::before,
+.ultrafasion-02 ul li::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 13px;
+  width: 3px;
+  height: 3px;
+  border-radius: 99px;
+  background-color: #000;
+}
+.ultrafasion-01 ul p,
+.ultrafasion-02 ul p {
+  margin: 0;
+}
+.ultrafasion-01 .d-center,
+.ultrafasion-02 .d-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px auto;
+}
+.ultrafasion-01 .badgeBlack,
+.ultrafasion-02 .badgeBlack {
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 176.471% */
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background: #000;
+  margin: 0 auto;
+}
+.ultrafasion-01 .infinite-shirt,
+.ultrafasion-02 .infinite-shirt {
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+.ultrafasion-01 .infinite-shirt .track,
+.ultrafasion-02 .infinite-shirt .track {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 150px;
+  overflow: hidden;
+}
+.ultrafasion-01 .infinite-shirt .train,
+.ultrafasion-02 .infinite-shirt .train {
+  display: flex;
+}
+.ultrafasion-01 .infinite-shirt.move-slow .train,
+.ultrafasion-02 .infinite-shirt.move-slow .train {
+  animation: ultrafasionShirtMove 100s linear infinite;
+}
+.ultrafasion-01 .infinite-shirt.move-fast .train,
+.ultrafasion-02 .infinite-shirt.move-fast .train {
+  animation: ultrafasionShirtMove 30s linear infinite;
+}
+@keyframes ultrafasionShirtMove {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.ultrafasion-01 .stickySection,
+.ultrafasion-02 .stickySection {
+  width: 100%;
+  height: auto;
+  background: #D9D9D9;
+  margin-top: 23px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 63px;
+}
+.ultrafasion-01 .stickySection .inner,
+.ultrafasion-02 .stickySection .inner {
+  position: relative;
+}
+.ultrafasion-01 .stickySection .deviceImg,
+.ultrafasion-02 .stickySection .deviceImg {
+  position: sticky;
+  top: 50%;
+  margin-left: 50%;
+  transform: translateY(-50%);
+  margin-top: 20%;
+}
+.ultrafasion-01 .stickySection .msgWrap,
+.ultrafasion-02 .stickySection .msgWrap {
+  padding-top: 60px;
+  padding-bottom: 30vh;
+  margin-top: -150px;
+}
+.ultrafasion-01 .stickySection .msgWrap .msgItem,
+.ultrafasion-02 .stickySection .msgWrap .msgItem {
+  display: flex;
+  max-width: 375px;
+  width: 50vw;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 176.471% */
+}
+.ultrafasion-01 .stickySection .msgWrap .msgItem + .msgItem,
+.ultrafasion-02 .stickySection .msgWrap .msgItem + .msgItem {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */
