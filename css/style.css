@@ -11546,11 +11546,13 @@ h4 {
 }
 
 .ultrafasion-01,
-.ultrafasion-02 {
+.ultrafasion-02,
+.ultrafasion-03 {
   padding-top: 100px;
 }
 .ultrafasion-01 h3,
-.ultrafasion-02 h3 {
+.ultrafasion-02 h3,
+.ultrafasion-03 h3 {
   color: #000;
   text-align: center;
   font-family: Pretendard;
@@ -11561,7 +11563,8 @@ h4 {
   padding-block: 10px;
 }
 .ultrafasion-01 p,
-.ultrafasion-02 p {
+.ultrafasion-02 p,
+.ultrafasion-03 p {
   margin-top: 30px;
   color: #000;
   font-family: Pretendard;
@@ -11571,16 +11574,19 @@ h4 {
   line-height: 30px; /* 176.471% */
 }
 .ultrafasion-01 ul,
-.ultrafasion-02 ul {
+.ultrafasion-02 ul,
+.ultrafasion-03 ul {
   padding-left: 24px;
   margin-top: 30px;
 }
 .ultrafasion-01 ul li,
-.ultrafasion-02 ul li {
+.ultrafasion-02 ul li,
+.ultrafasion-03 ul li {
   position: relative;
 }
 .ultrafasion-01 ul li::before,
-.ultrafasion-02 ul li::before {
+.ultrafasion-02 ul li::before,
+.ultrafasion-03 ul li::before {
   content: "";
   position: absolute;
   left: -14px;
@@ -11591,18 +11597,21 @@ h4 {
   background-color: #000;
 }
 .ultrafasion-01 ul p,
-.ultrafasion-02 ul p {
+.ultrafasion-02 ul p,
+.ultrafasion-03 ul p {
   margin: 0;
 }
 .ultrafasion-01 .d-center,
-.ultrafasion-02 .d-center {
+.ultrafasion-02 .d-center,
+.ultrafasion-03 .d-center {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 30px auto;
 }
 .ultrafasion-01 .badgeBlack,
-.ultrafasion-02 .badgeBlack {
+.ultrafasion-02 .badgeBlack,
+.ultrafasion-03 .badgeBlack {
   color: #FFF;
   font-family: Pretendard;
   font-size: 17px;
@@ -11619,13 +11628,15 @@ h4 {
   margin: 0 auto;
 }
 .ultrafasion-01 .infinite-shirt,
-.ultrafasion-02 .infinite-shirt {
+.ultrafasion-02 .infinite-shirt,
+.ultrafasion-03 .infinite-shirt {
   position: relative;
   height: 150px;
   width: 100%;
 }
 .ultrafasion-01 .infinite-shirt .track,
-.ultrafasion-02 .infinite-shirt .track {
+.ultrafasion-02 .infinite-shirt .track,
+.ultrafasion-03 .infinite-shirt .track {
   position: absolute;
   top: 0;
   left: 50%;
@@ -11635,15 +11646,18 @@ h4 {
   overflow: hidden;
 }
 .ultrafasion-01 .infinite-shirt .train,
-.ultrafasion-02 .infinite-shirt .train {
+.ultrafasion-02 .infinite-shirt .train,
+.ultrafasion-03 .infinite-shirt .train {
   display: flex;
 }
 .ultrafasion-01 .infinite-shirt.move-slow .train,
-.ultrafasion-02 .infinite-shirt.move-slow .train {
+.ultrafasion-02 .infinite-shirt.move-slow .train,
+.ultrafasion-03 .infinite-shirt.move-slow .train {
   animation: ultrafasionShirtMove 100s linear infinite;
 }
 .ultrafasion-01 .infinite-shirt.move-fast .train,
-.ultrafasion-02 .infinite-shirt.move-fast .train {
+.ultrafasion-02 .infinite-shirt.move-fast .train,
+.ultrafasion-03 .infinite-shirt.move-fast .train {
   animation: ultrafasionShirtMove 30s linear infinite;
 }
 @keyframes ultrafasionShirtMove {
@@ -11655,7 +11669,8 @@ h4 {
   }
 }
 .ultrafasion-01 .stickySection,
-.ultrafasion-02 .stickySection {
+.ultrafasion-02 .stickySection,
+.ultrafasion-03 .stickySection {
   width: 100%;
   height: auto;
   background: #D9D9D9;
@@ -11666,11 +11681,13 @@ h4 {
   padding-top: 63px;
 }
 .ultrafasion-01 .stickySection .inner,
-.ultrafasion-02 .stickySection .inner {
+.ultrafasion-02 .stickySection .inner,
+.ultrafasion-03 .stickySection .inner {
   position: relative;
 }
 .ultrafasion-01 .stickySection .deviceImg,
-.ultrafasion-02 .stickySection .deviceImg {
+.ultrafasion-02 .stickySection .deviceImg,
+.ultrafasion-03 .stickySection .deviceImg {
   position: sticky;
   top: 50%;
   margin-left: 50%;
@@ -11678,13 +11695,15 @@ h4 {
   margin-top: 20%;
 }
 .ultrafasion-01 .stickySection .msgWrap,
-.ultrafasion-02 .stickySection .msgWrap {
+.ultrafasion-02 .stickySection .msgWrap,
+.ultrafasion-03 .stickySection .msgWrap {
   padding-top: 60px;
-  padding-bottom: 30vh;
+  padding-bottom: 50vh;
   margin-top: -150px;
 }
 .ultrafasion-01 .stickySection .msgWrap .msgItem,
-.ultrafasion-02 .stickySection .msgWrap .msgItem {
+.ultrafasion-02 .stickySection .msgWrap .msgItem,
+.ultrafasion-03 .stickySection .msgWrap .msgItem {
   display: flex;
   max-width: 375px;
   width: 50vw;
@@ -11702,6 +11721,81 @@ h4 {
   line-height: 30px; /* 176.471% */
 }
 .ultrafasion-01 .stickySection .msgWrap .msgItem + .msgItem,
-.ultrafasion-02 .stickySection .msgWrap .msgItem + .msgItem {
-  margin-top: 40px;
+.ultrafasion-02 .stickySection .msgWrap .msgItem + .msgItem,
+.ultrafasion-03 .stickySection .msgWrap .msgItem + .msgItem {
+  margin-top: 70vh;
+}
+.ultrafasion-01 figure,
+.ultrafasion-02 figure,
+.ultrafasion-03 figure {
+  text-align: center;
+  margin-top: 30px;
+}
+.ultrafasion-01 figure img,
+.ultrafasion-02 figure img,
+.ultrafasion-03 figure img {
+  width: 100%;
+  max-width: 720px;
+}
+.ultrafasion-01 figure figcaption,
+.ultrafasion-02 figure figcaption,
+.ultrafasion-03 figure figcaption {
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 214.286% */
+  margin-top: 10px;
+}
+.ultrafasion-01 .subTit,
+.ultrafasion-02 .subTit,
+.ultrafasion-03 .subTit {
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 30px;
+}
+.ultrafasion-01 .subTit img,
+.ultrafasion-02 .subTit img,
+.ultrafasion-03 .subTit img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.ultrafasion-03 .stickySection {
+  padding-top: 0;
+  background-color: transparent;
+}
+.ultrafasion-03 .stickySection .msgWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ultrafasion-03 .stickySection .msgWrap .msgItem {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.95);
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 176.471% */
+  padding: 10px 22.5px;
+  text-align: left;
+}
+.ultrafasion-03 .stickySection .stickySection-bg {
+  position: sticky;
+  top: 25vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
