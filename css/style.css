@@ -376,7 +376,7 @@ body {
 
 .inner {
   width: 100%;
-  max-width: 1136px;
+  max-width: 1400px;
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -1708,7 +1708,7 @@ h4 {
   color: #151515;
 }
 .footer .inner {
-  max-width: 1000px;
+  max-width: 1400px;
 }
 .footer .topCon {
   display: flex;
@@ -11760,7 +11760,7 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .ultrafasion-01 .subTit img,
 .ultrafasion-02 .subTit img,
@@ -11798,4 +11798,44 @@ h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.ref {
+  margin: 100px 0;
+}
+.ref .tit {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 9px;
+  border-bottom: 2px solid #F63;
+}
+.ref h5 {
+  margin-top: 10px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ref li {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 214.286% */
+}
+.ref li a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }/*# sourceMappingURL=style.css.map */
