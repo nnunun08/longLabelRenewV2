@@ -11668,63 +11668,6 @@ h4 {
     transform: translateX(-100%);
   }
 }
-.ultrafasion-01 .stickySection,
-.ultrafasion-02 .stickySection,
-.ultrafasion-03 .stickySection {
-  width: 100%;
-  height: auto;
-  background: #D9D9D9;
-  margin-top: 23px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  padding-top: 63px;
-}
-.ultrafasion-01 .stickySection .inner,
-.ultrafasion-02 .stickySection .inner,
-.ultrafasion-03 .stickySection .inner {
-  position: relative;
-}
-.ultrafasion-01 .stickySection .deviceImg,
-.ultrafasion-02 .stickySection .deviceImg,
-.ultrafasion-03 .stickySection .deviceImg {
-  position: sticky;
-  top: 50%;
-  margin-left: 50%;
-  transform: translateY(-50%);
-  margin-top: 20%;
-}
-.ultrafasion-01 .stickySection .msgWrap,
-.ultrafasion-02 .stickySection .msgWrap,
-.ultrafasion-03 .stickySection .msgWrap {
-  padding-top: 60px;
-  padding-bottom: 50vh;
-  margin-top: -150px;
-}
-.ultrafasion-01 .stickySection .msgWrap .msgItem,
-.ultrafasion-02 .stickySection .msgWrap .msgItem,
-.ultrafasion-03 .stickySection .msgWrap .msgItem {
-  display: flex;
-  max-width: 375px;
-  width: 50vw;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.95);
-  color: #000;
-  font-family: Pretendard;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px; /* 176.471% */
-}
-.ultrafasion-01 .stickySection .msgWrap .msgItem + .msgItem,
-.ultrafasion-02 .stickySection .msgWrap .msgItem + .msgItem,
-.ultrafasion-03 .stickySection .msgWrap .msgItem + .msgItem {
-  margin-top: 70vh;
-}
 .ultrafasion-01 figure,
 .ultrafasion-02 figure,
 .ultrafasion-03 figure {
@@ -11773,13 +11716,20 @@ h4 {
 .ultrafasion-03 .stickySection {
   padding-top: 0;
   background-color: transparent;
+  height: 3000px;
+  margin-top: 65px;
 }
-.ultrafasion-03 .stickySection .msgWrap {
+.ultrafasion-03 .stickySection .stickyMsgWrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
-.ultrafasion-03 .stickySection .msgWrap .msgItem {
+.ultrafasion-03 .stickySection .stickyMsgWrap .msgItem {
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.95);
   color: #FFF;
@@ -11791,12 +11741,15 @@ h4 {
   padding: 10px 22.5px;
   text-align: left;
 }
+.ultrafasion-03 .stickySection .stickyMsgWrap .msgItem + .msgItem {
+  margin-top: 36px;
+}
 .ultrafasion-03 .stickySection .stickySection-bg {
   position: sticky;
-  top: 25vh;
+  top: 75px;
   left: 0;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   object-fit: cover;
 }
 .ultrafasion-03 .stickySection .stickySection-bg img {
@@ -11812,6 +11765,81 @@ h4 {
 .ultrafasion-03 .stickySection .stickySection-bg .after {
   opacity: 0;
   transition: 0.3s linear;
+}
+
+.stickySection {
+  width: 100%;
+  height: auto;
+  margin-top: 23px;
+  margin-top: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 63px;
+  padding-top: 18px;
+}
+.stickySection .inner {
+  position: relative;
+}
+.stickySection .deviceImg {
+  margin-top: 0;
+}
+.stickySection .greyBG {
+  background-color: #D9D9D9;
+  height: 470px;
+}
+
+.stickyMsgWrap .msgItem {
+  display: flex;
+  max-width: 375px;
+  width: 50vw;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  font-family: Pretendard;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 176.471% */
+  position: sticky;
+}
+.stickyMsgWrap .msgItem + .msgItem {
+  margin-top: 20px;
+}
+
+.ultrafasion-02 {
+  height: 3500px;
+  padding-top: 90px;
+}
+.ultrafasion-02 .stickySection {
+  position: sticky;
+  top: 175px;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+.ultrafasion-02 .greyBG {
+  margin-top: 30px;
+  top: 200px;
+  height: 470px;
+  background-color: #D9D9D9;
+  z-index: -1;
+}
+.ultrafasion-02 .greyBG .inner {
+  max-width: 740px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ultrafasion-02 p {
+  margin-top: 0;
+  padding-top: 30px;
+  background-color: #F4F4F4;
+  z-index: 1;
 }
 
 .ref {
