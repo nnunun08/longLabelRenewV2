@@ -11653,12 +11653,12 @@ h4 {
 .ultrafasion-01 .infinite-shirt.move-slow .train,
 .ultrafasion-02 .infinite-shirt.move-slow .train,
 .ultrafasion-03 .infinite-shirt.move-slow .train {
-  animation: ultrafasionShirtMove 100s linear infinite;
+  animation: ultrafasionShirtMove 4s linear infinite;
 }
 .ultrafasion-01 .infinite-shirt.move-fast .train,
 .ultrafasion-02 .infinite-shirt.move-fast .train,
 .ultrafasion-03 .infinite-shirt.move-fast .train {
-  animation: ultrafasionShirtMove 30s linear infinite;
+  animation: ultrafasionShirtMove 1s linear infinite;
 }
 @keyframes ultrafasionShirtMove {
   0% {
@@ -11780,9 +11780,16 @@ h4 {
 }
 .stickySection .inner {
   position: relative;
+  height: 100%;
 }
 .stickySection .deviceImg {
   margin-top: 0;
+  height: 100%;
+}
+.stickySection .deviceImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .stickySection .greyBG {
   background-color: #D9D9D9;
@@ -11812,7 +11819,6 @@ h4 {
 }
 
 .ultrafasion-02 {
-  height: 3500px;
   padding-top: 90px;
 }
 .ultrafasion-02 .stickySection {
@@ -11834,12 +11840,31 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block: 18px;
 }
 .ultrafasion-02 p {
   margin-top: 0;
   padding-top: 30px;
   background-color: #F4F4F4;
   z-index: 1;
+}
+.ultrafasion-02 .msgItem {
+  padding: 10px 22.5px;
+}
+.ultrafasion-02:has(.msgItem:nth-child(2).aos-animate) .deviceImg img:nth-child(1) {
+  display: none;
+}
+.ultrafasion-02:has(.msgItem:nth-child(2).aos-animate) .deviceImg img:nth-child(2) {
+  display: block !important;
+}
+.ultrafasion-02:has(.msgItem:nth-child(3).aos-animate) .deviceImg img:nth-child(1) {
+  display: none;
+}
+.ultrafasion-02:has(.msgItem:nth-child(3).aos-animate) .deviceImg img:nth-child(2) {
+  display: none !important;
+}
+.ultrafasion-02:has(.msgItem:nth-child(3).aos-animate) .deviceImg img:nth-child(3) {
+  display: block !important;
 }
 
 .ref {

@@ -99,7 +99,7 @@
             </p>
             <div class="d-center">
                 <div class="badgeBlack">
-                    패스트패션 (0.0017 제품 / 시간)
+                    패스트패션 (0.0017 제품/시간)
                 </div>
             </div>
             <div class="infinite-shirt move-slow">
@@ -176,7 +176,9 @@
                     </div>
 
                     <div class="deviceImg">
-                        <img src="./img/bg_ultrafasion_device.svg" alt="img">
+                        <img src="./img/bg_ultrafasion_device_01.png" alt="img">
+                        <img src="./img/bg_ultrafasion_device_02.png" alt="img" style="display: none;">
+                        <img src="./img/bg_ultrafasion_device_03.png" alt="img" style="display: none;">
                     </div>
 
                 </div>
@@ -331,7 +333,7 @@
             <h5>1. ‘울트라 패스트 패션’? </h5>
             <ul>
                 <li>
-                    [1] <a target="_blank" href="https://www.theguardian.com/commentisfree/2022/apr/18/ultra-fast-fashion-retail-sites-shein">펭귄뉴스. 틱톡 패션 챌린지, 지속가능성을 해치다.</a> 2022.08.31.
+                    [1] <a target="_blank" href="https://www.newspenguin.com/news/articleView.html?idxno=12300">펭귄뉴스. 틱톡 패션 챌린지, 지속가능성을 해치다.</a> 2022.08.31.
                 </li>
                 <li>
                     [2] <a target="_blank" href="https://www.fi.co.kr/main/view.asp?idx=76544">패션인사이트. 울트라-패스트, 환경 파괴에도 Z-세대에게 인기.</a> 2022.08.02.
@@ -395,13 +397,30 @@
         </div>
     </div>
 
-    <!-- 백그라운드 스크롤 딤 -->
+
     <script type="text/javascript">
 
         const target = document.querySelector('.ultrafasion-03 .stickySection .stickySection-bg')
         const targetImg = document.querySelector('.ultrafasion-03 .stickySection .stickySection-bg .after')
+        let stickySection02 = document.querySelector('.ultrafasion-02')
+        let stickyHeight = stickySection02.clientHeight
+        stickySection02.style.height = `${stickyHeight * 2}px`
+
+        document.addEventListener('DOMContentLoaded', () => {
+            stickySection02.style.height = `${stickyHeight * 2}px`
+            console.log(stickySection02)
+            console.log(stickyHeight)
+        });
+        window.addEventListener('resize', () => {
+            stickySection02.style.height = `${stickyHeight * 2}px`
+            console.log(stickySection02)
+            console.log(stickyHeight)
+        });
 
         window.addEventListener('scroll', () => {
+
+
+
             const rect = target.getBoundingClientRect(); //
             // console.log(rect.top)
             const windowHeight = window.innerHeight; // 뷰포트 height
