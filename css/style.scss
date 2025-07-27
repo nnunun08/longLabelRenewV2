@@ -9423,9 +9423,10 @@ body:has(.listGrid) .searchWrap {
 		margin-top: 0;
 		height: 100%;
 		img {
+			aspect-ratio: 305/435;
 			width: 100%;
 			height: 100%;
-			object-fit: cover;
+			object-fit: contain;
 		}
 	}
 	

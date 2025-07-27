@@ -440,8 +440,6 @@
         </div>
     </div>
 
-
-
     <script src="./js/mobileToggle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -450,38 +448,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript" defer>
-        // let stickySection02;
-    
-        // window.addEventListener('DOMContentLoaded', () => {
-        //     stickySection02 = document.querySelector('.ultrafasion-02');
-    
-        //     if (!stickySection02) return;
-    
-        //     // 최초 AOS 적용
-        //     AOS.init();
-    
-        //     // ResizeObserver 등록
-        //     const resizeObserver = new ResizeObserver(entries => {
-        //         for (let entry of entries) {
-        //             const observedHeight = entry.contentRect.height;
-        //             stickySection02.style.height = `${observedHeight * 2.2}px`;
-        //             AOS.refresh(); // AOS 위치 다시 계산
-        //         }
-        //     });
-    
-        //     // 요소 관찰 시작
-        //     resizeObserver.observe(stickySection02);
-        // });
-
         window.addEventListener('DOMContentLoaded', () => {
             AOS.init();
-
             const observedElements = document.querySelectorAll('[data-aos]');
-
             const resizeObserver = new ResizeObserver(() => {
                 AOS.refresh();
             });
-
             observedElements.forEach(el => resizeObserver.observe(el));
         });
     </script>
