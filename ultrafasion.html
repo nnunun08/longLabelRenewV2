@@ -7,6 +7,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 
 
@@ -97,32 +102,71 @@
             <p>
                 패스트 패션 브랜드 자라(ZARA)가 제품을 디자인하고 생산하고 포장하는 데까지 3-4주가 걸린다면 울트라 패스트 패션으로 구분되는 쉬인(SHEIN)은 단 1주에 그 과정을 마칩니다. H&M의 경우 2022년 상반기 4,414개의 새로운 의류 스타일을 제시했는데, 쉬인은 315,000개의 스타일을 제공했습니다. 그리고 이 많은 제품을 만 원 이하의 저렴한 가격에 판매하고 있어요. 울트라 패스트 패션은 패스트 패션을 뛰어넘는 속도로 가격 경쟁력을 보이는 제품들을 생산하고 있습니다. 대표적인 브랜드가 중국의 쉬인(SHEIN), 테무(Temu), 영국의 부후(Boohoo), 홍콩의 엠미올(Emmiol), 패션노바(Fashion Nova), 프리리틀띵(PrettyLittleThing) 등입니다. 이 브랜드와 플랫폼 모두 온라인만을 기반으로 한 비즈니스 모델을 선보이며 빠른 생산과 리액션을 보이고 있어요.
             </p>
-            <div class="d-center">
-                <div class="badgeBlack">
-                    패스트패션 (0.0017 제품/시간)
-                </div>
+        </div>
+        <div class="d-center">
+            <div class="badgeBlack">
+                패스트패션 (0.0017 제품/시간)
             </div>
-            <div class="infinite-shirt move-slow">
-                <div class="track">
-                    <div class="train">
-                        <img src="./img/bg_ultrafasion_shirts.svg" alt="img">
-                        <img src="./img/bg_ultrafasion_shirts.svg" alt="img">
-                    </div>
-                </div>
+        </div>
+
+        <div class="shirt-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 1"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 2"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 3"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 4"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 5"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 6"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 7"></div>
             </div>
-            <div class="d-center">
-                <div class="badgeBlack">
-                    울트라 패스트패션 (0.006 제품/시간)
-                </div>
+        </div>
+
+        <div class="d-center">
+            <div class="badgeBlack">
+                울트라 패스트패션 (0.006 제품/시간)
             </div>
-            <div class="infinite-shirt move-fast">
-                <div class="track">
-                    <div class="train">
-                        <img src="./img/bg_ultrafasion_shirts.svg" alt="img">
-                        <img src="./img/bg_ultrafasion_shirts.svg" alt="img">
-                    </div>
-                </div>
+        </div>
+        <div class="shirt-swiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 1"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 2"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 3"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 4"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 5"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 6"></div>
+              <div class="swiper-slide"><img src="./img/bg_ultrafasion_shirts.svg" alt="Logo 7"></div>
             </div>
+        </div>
+
+        <script>
+            const swiper = new Swiper('.shirt-swiper', {
+                loop: true,
+                slidesPerView: 'auto',
+                speed: 6000,
+                autoplay: {
+                    delay: 0,  // 딜레이 없이 바로 시작
+                    disableOnInteraction: false
+                },
+                freeMode: true,
+                freeModeMomentum: false, // 더 부드럽게
+                grabCursor: false
+            });
+    
+            const swiper2 = new Swiper('.shirt-swiper2', {
+                loop: true,
+                slidesPerView: 'auto',
+                speed: 1500,
+                autoplay: {
+                    delay: 0,  // 딜레이 없이 바로 시작
+                    disableOnInteraction: false
+                },
+                freeMode: true,
+                freeModeMomentum: false, // 더 부드럽게
+                grabCursor: false
+            });
+        </script>
+
+        <div class="inner">
             <p>
                 쉬인 앱은 아마존 앱의 설치율을 뛰어넘기까지 할 정도로 인기입니다. 특히 이 브랜드 및 플랫폼의 제품들은 Z세대로 불리는 젊은 소비층이 관심을 많이 두고 있다고 해요. 퍼블릭 아이(Public Eye)가 쉬인의 사례를 중심으로 살폈을 때 울트라 패스트 패션을 가능하게 한 요소는 다음과 같아요.
             </p>
@@ -164,13 +208,13 @@
                 <div class="inner">
     
                     <div class="stickyMsgWrap">
-                        <div class="msgItem" data-aos="fade-up" data-aos-offset="300">
+                        <div class="msgItem" data-aos="fade-up" data-aos-offset="800">
                             초반의 하울 비디오는 고가 제품을 중심으로 진행되어 왔습니다.
                         </div>
-                        <div class="msgItem" data-aos="fade-up" data-aos-offset="800">
+                        <div class="msgItem" data-aos="fade-up" data-aos-offset="1300">
                             이후 미국을 중심으로 청소년들이 자신들이 자주 사용하는 패스트 패션 브랜드 옷을 소개하는 것으로 확대되기 시작했어요. 점점 더 많아지는 하울 비디오는 꾸준히 인기를 얻고 있습니다.
                         </div>
-                        <div class="msgItem" data-aos="fade-up" data-aos-offset="1300">
+                        <div class="msgItem" data-aos="fade-up" data-aos-offset="1800">
                             울트라 패션의 등장 이후엔 한 번에 많은 제품을 구매하여 소개하는 방식의 하울이 유행하고 있습니다.
                         </div>
                     </div>
@@ -237,22 +281,25 @@
         <div class="stickySection">
             <div class="stickySection-bg">
                 <img class="before" src="./img/bg_ultrafasion_sec03_light.png" alt="bg">
-                <img class="after" src="./img/bg_ultrafasion_sec03.png" alt="bg">
+                <img class="after" src="./img/bg_ultrafasion_sec03.png" alt="bg" 
+                    data-aos="fade-zoom" 
+                    data-aos-offset="1000" 
+                    data-aos-duration="2000">
             </div>
             <div class="stickyMsgWrap">
-                <div class="msgItem" data-aos="fade-up" data-aos-offset="0">
+                <div class="msgItem" data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="2000">
                     이곳의 노동자들은 적법한 고용 계약서를 쓰지 못한 채 일하고 있었고, 위험 상황에 대한 적절한 보험도 없습니다.
                 </div>
-                <div class="msgItem" data-aos="fade-up" data-aos-offset="0">
+                <div class="msgItem" data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="2000">
                     소비자에게 저렴한 의류 가격을 제시하기 위해 공급망에서의 비용이 낮춰져야 하고, 이는 노동자의 임금으로 연결됩니다.
                 </div>
-                <div class="msgItem" data-aos="fade-up" data-aos-offset="0">
+                <div class="msgItem" data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="2000">
                     이곳의 노동자들은 의류당 급여를 받습니다. 기본 티셔츠 한 장당 1달러도 되지 않는 수당이 지급되어, 수익이 좋은 달이어야 총 만 위안, 한화 200만원 남짓을 받습니다. 
                 </div>
-                <div class="msgItem" data-aos="fade-up" data-aos-offset="0">
+                <div class="msgItem" data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="2000">
                     수익이 잘 나지 않는 날에는 그것의 삼분의 일을 받기도 한다고 해요.
                 </div>
-                <div class="msgItem" data-aos="fade-up" data-aos-offset="0">
+                <div class="msgItem" data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" data-aos-duration="2000">
                     쉬인의 제품 유통 구조는 소량의 제품을 생산하고 그 반응에 따라 추가 생산 혹은 새 제품 생산을 하는 방식이기에 노동자들은 계속 새로운 패턴, 디자인에 적응하며 제품을 만들어야 하지만 의류당 지급 구조때문에 추가 근무에 대한 수당은 없습니다.
                 </div>
             </div>
@@ -372,10 +419,6 @@
         </div>
     </div>
 
-
-
-
-
     <div class="footer" style="margin-top: 0;">
         <div class="inner">
             <div class="topCon">
@@ -398,58 +441,6 @@
     </div>
 
 
-    <script type="text/javascript">
-
-        const target = document.querySelector('.ultrafasion-03 .stickySection .stickySection-bg')
-        const targetImg = document.querySelector('.ultrafasion-03 .stickySection .stickySection-bg .after')
-        let stickySection02 = document.querySelector('.ultrafasion-02')
-        let stickyHeight = stickySection02.clientHeight
-        stickySection02.style.height = `${stickyHeight * 2}px`
-
-        document.addEventListener('DOMContentLoaded', () => {
-            stickySection02.style.height = `${stickyHeight * 2}px`
-            console.log(stickySection02)
-            console.log(stickyHeight)
-        });
-        window.addEventListener('resize', () => {
-            stickySection02.style.height = `${stickyHeight * 2}px`
-            console.log(stickySection02)
-            console.log(stickyHeight)
-        });
-
-        window.addEventListener('scroll', () => {
-
-
-
-            const rect = target.getBoundingClientRect(); //
-            // console.log(rect.top)
-            const windowHeight = window.innerHeight; // 뷰포트 height
-
-            const sectionHeight = target.offsetHeight; 
-
-            // const scrollStart = rect.top <= windowHeight && rect.bottom >= 0;
-            const scrollStart = rect.top <= windowHeight ;
-
-            
-            if (scrollStart) {
-                // 얼마나 스크롤 되었는지 계산
-                const visibleTop = Math.max(0, windowHeight - rect.top);
-                const totalScrollDistance = windowHeight + sectionHeight;
-
-                let ratio = visibleTop / totalScrollDistance;
-
-                // 0 ~ 1 사이 값으로 클램프
-                ratio = Math.min(1, Math.max(0, ratio));
-
-                // 배경 투명도 적용
-                targetImg.style.opacity = `${ratio}`;
-            }
-        });
-
-    </script>
-
-      
-
 
     <script src="./js/mobileToggle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -458,9 +449,44 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
+    <script type="text/javascript" defer>
+        // let stickySection02;
+    
+        // window.addEventListener('DOMContentLoaded', () => {
+        //     stickySection02 = document.querySelector('.ultrafasion-02');
+    
+        //     if (!stickySection02) return;
+    
+        //     // 최초 AOS 적용
+        //     AOS.init();
+    
+        //     // ResizeObserver 등록
+        //     const resizeObserver = new ResizeObserver(entries => {
+        //         for (let entry of entries) {
+        //             const observedHeight = entry.contentRect.height;
+        //             stickySection02.style.height = `${observedHeight * 2.2}px`;
+        //             AOS.refresh(); // AOS 위치 다시 계산
+        //         }
+        //     });
+    
+        //     // 요소 관찰 시작
+        //     resizeObserver.observe(stickySection02);
+        // });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            AOS.init();
+
+            const observedElements = document.querySelectorAll('[data-aos]');
+
+            const resizeObserver = new ResizeObserver(() => {
+                AOS.refresh();
+            });
+
+            observedElements.forEach(el => resizeObserver.observe(el));
+        });
     </script>
+
+
 
 </body>
 </html>
