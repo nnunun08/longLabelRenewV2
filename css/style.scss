@@ -9458,7 +9458,7 @@ body:has(.listGrid) .searchWrap {
 		font-size: 17px;
 		font-style: normal;
 		font-weight: 500;
-		line-height: 30px; /* 176.471% */
+		line-height: 176%;
 		position: sticky;
 	}
 	.msgItem + .msgItem {
@@ -9466,7 +9466,7 @@ body:has(.listGrid) .searchWrap {
 	}
 	@media screen and (max-width: 768px) {
 		.msgItem {
-			width: 95vw;
+			width: 85vw;
 		}
 	}
 }

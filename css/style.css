@@ -11852,7 +11852,7 @@ h4 {
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 176.471% */
+  line-height: 176%;
   position: sticky;
 }
 .stickyMsgWrap .msgItem + .msgItem {
@@ -11860,7 +11860,7 @@ h4 {
 }
 @media screen and (max-width: 768px) {
   .stickyMsgWrap .msgItem {
-    width: 95vw;
+    width: 85vw;
   }
 }
 
