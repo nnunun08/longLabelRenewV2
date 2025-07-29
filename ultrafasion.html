@@ -138,7 +138,7 @@
             </div>
         </div>
 
-        <script>
+        <!-- <script>
             const swiper = new Swiper('.shirt-swiper', {
                 loop: true,
                 slidesPerView: 'auto',
@@ -163,6 +163,39 @@
                 freeMode: true,
                 freeModeMomentum: false, // 더 부드럽게
                 grabCursor: false
+            });
+        </script> -->
+        <script>
+            const swiper = new Swiper('.shirt-swiper', {
+                loop: true,
+                slidesPerView: 'auto',
+                speed: 6000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false // (중요!) 마우스 호버시 멈추지 않도록
+                },
+                freeMode: true,
+                freeModeMomentum: false,
+                grabCursor: false,
+                touchStartPreventDefault: false, // (모바일 터치 방지 효과를 최소화)
+                allowTouchMove: false // (사용자가 슬라이드를 손가락으로 넘기지 못하게)
+            });
+
+                const swiper2 = new Swiper('.shirt-swiper2', {
+                loop: true,
+                slidesPerView: 'auto',
+                speed: 1500,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false
+                },
+                freeMode: true,
+                freeModeMomentum: false,
+                grabCursor: false,
+                touchStartPreventDefault: false,
+                allowTouchMove: false
             });
         </script>
 

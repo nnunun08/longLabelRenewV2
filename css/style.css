@@ -11685,6 +11685,7 @@ h4 {
   overflow: hidden;
   padding: 0;
   direction: rtl;
+  pointer-events: none;
 }
 .ultrafasion-01 .shirt-swiper2 .swiper-slide,
 .ultrafasion-01 .shirt-swiper .swiper-slide,

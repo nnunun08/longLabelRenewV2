@@ -9293,6 +9293,7 @@ body:has(.listGrid) .searchWrap {
 		overflow: hidden;
 		padding: 0;
 		direction: rtl;
+		pointer-events: none;
 	}
 	.shirt-swiper2 .swiper-slide,
 	.shirt-swiper .swiper-slide {
