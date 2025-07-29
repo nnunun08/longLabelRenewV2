@@ -450,11 +450,18 @@
     <script type="text/javascript" defer>
         window.addEventListener('DOMContentLoaded', () => {
             AOS.init();
-            const observedElements = document.querySelectorAll('[data-aos]');
-            const resizeObserver = new ResizeObserver(() => {
+            // const observedElements = document.querySelectorAll('[data-aos]');
+            // const resizeObserver = new ResizeObserver(() => {
+            //     AOS.refresh();
+            // });
+            // observedElements.forEach(el => resizeObserver.observe(el));
+        });
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
                 AOS.refresh();
-            });
-            observedElements.forEach(el => resizeObserver.observe(el));
+            }, 300);
         });
     </script>
 

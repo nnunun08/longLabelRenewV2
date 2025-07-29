@@ -9183,6 +9183,11 @@ body:has(.listGrid) .searchWrap {
 		font-weight: 700;
 		line-height: normal;
 	}
+	@media screen and (max-width:768px) {
+		background-attachment: scroll;
+		margin-top: 0;
+		height: calc(100vh - 55px);
+	}
 }
 
 .ultrafasion-01,
@@ -9287,6 +9292,7 @@ body:has(.listGrid) .searchWrap {
 		width: 100%;
 		overflow: hidden;
 		padding: 0;
+		direction: rtl;
 	}
 	.shirt-swiper2 .swiper-slide,
 	.shirt-swiper .swiper-slide {
@@ -9466,7 +9472,8 @@ body:has(.listGrid) .searchWrap {
 
 .ultrafasion-02 {
 	padding-top: 90px;
-	height: max(4000px, 220vh);
+	// height: max(4400px, 420vh);
+	height: 4400px;
 	.stickySection {
 		position: sticky;
 		top: 75px;
@@ -9541,7 +9548,7 @@ body:has(.listGrid) .searchWrap {
 			justify-content: center;
 		}
 		.msgItem {
-			background-color: rgba(255,255,255,0.9);
+			background-color: rgba(255,255,255,1);
 		}
 	}
 }

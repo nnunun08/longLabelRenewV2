@@ -11544,6 +11544,13 @@ h4 {
   font-weight: 700;
   line-height: normal;
 }
+@media screen and (max-width: 768px) {
+  .ultrafasion-hero {
+    background-attachment: scroll;
+    margin-top: 0;
+    height: calc(100vh - 55px);
+  }
+}
 
 .ultrafasion-01,
 .ultrafasion-02,
@@ -11677,6 +11684,7 @@ h4 {
   width: 100%;
   overflow: hidden;
   padding: 0;
+  direction: rtl;
 }
 .ultrafasion-01 .shirt-swiper2 .swiper-slide,
 .ultrafasion-01 .shirt-swiper .swiper-slide,
@@ -11857,7 +11865,7 @@ h4 {
 
 .ultrafasion-02 {
   padding-top: 90px;
-  height: max(4000px, 220vh);
+  height: 4400px;
 }
 .ultrafasion-02 .stickySection {
   position: sticky;
@@ -11924,7 +11932,7 @@ h4 {
     justify-content: center;
   }
   .ultrafasion-02 .msgItem {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255);
   }
 }
 
