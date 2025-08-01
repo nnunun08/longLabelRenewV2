@@ -11519,7 +11519,7 @@ h4 {
   background: url(../img/bg_ultrafasion_hero.jpg) center/cover no-repeat;
   background-attachment: fixed;
   height: calc(100vh + 75px);
-  background-color: red;
+  background-color: rgb(227, 227, 227);
   margin-top: -75px;
   display: flex;
   align-items: center;
@@ -11785,6 +11785,7 @@ h4 {
   line-height: 30px; /* 176.471% */
   padding: 10px 22.5px;
   text-align: left;
+  box-sizing: border-box;
 }
 .ultrafasion-03 .stickySection .stickyMsgWrap .msgItem + .msgItem {
   margin-top: 36px;
@@ -11837,6 +11838,9 @@ h4 {
   height: 470px;
 }
 
+.stickyMsgWrap {
+  box-sizing: border-box;
+}
 .stickyMsgWrap .msgItem {
   display: flex;
   max-width: 375px;
@@ -11931,6 +11935,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
   }
   .ultrafasion-02 .msgItem {
     background-color: rgb(255, 255, 255);
