@@ -84,22 +84,18 @@
         <div class="inner">
             <div class="pageHeader-top">
                 <div class="h2-pc">Brand Archive</div>
-                <div class="countSearch">
-                    <div class="inner">
-                        <div class="right">
-                            <div class="searchWrap">
-                                <input class="search" type="text" placeholder="Search">
-                                <button class="button anchor"></button>
-                            </div>
-                            <span class="recent">최신순</span>
-                        </div>
+                <div class="countSearch2">
+                    <div class="searchWrap">
+                        <input class="search" type="text" placeholder="Search">
+                        <button class="button anchor"></button>
                     </div>
+                    <span class="recent">최신순</span>
                 </div>
             </div>
             <div class="pageHeader-bottom">
-                <div class="detailLink mobileNone">
+                <a href="#" class="detailLink mobileNone">
                     아카이브 기준 자세히 보기
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -173,36 +169,49 @@
                         </ul>
                     </div>
                     <div class="group">
-                        <div class="tit">국가 </div>
-                        <ul class="checkLabel-ul">
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>대한민국</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아시아</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>유럽</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>북미</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남미</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오세아니아</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아프리카</label></li>
-                        </ul>
+                        <div class="accodionUI hide">
+                            <div class="tit">국가</div>
+                            <ul class="checkLabel-ul">
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>대한민국</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아시아</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>유럽</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>북미</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남미</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오세아니아</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아프리카</label></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="group" style="border: 0;">
-                        <div class="tit">아이템 </div>
-                        <ul class="checkLabel-ul">
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>여성의류</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남성의류</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아웃도어</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신발</label></li>
-                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>가방</label></li>
-                        </ul>
+                        <div class="accodionUI hide">
+                            <div class="tit">아이템 </div>
+                            <ul class="checkLabel-ul">
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>여성의류</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남성의류</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아웃도어</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신발</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>가방</label></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </aside>
             <div class="contents">
                 <div class="countWrap">
                     <div class="count">총 00개</div>
-                    <button class="filterBtn" onclick="filterToggle()">
-                        아카이브 필터
-                        <i></i>
-                    </button>
+                    <div class="d-mo">
+                        <button class="filterBtn" onclick="filterToggle()">
+                            아카이브 필터
+                            <i></i>
+                        </button>
+                        <div class="countSearch2">
+                            <div class="searchWrap">
+                                <input class="search" type="text" placeholder="Search">
+                                <button class="button anchor"></button>
+                            </div>
+                            <span class="recent">최신순</span>
+                        </div>
+                    </div>
                 </div>
                 <ul class="listWrap">
                     <li class="listItem">
@@ -348,9 +357,20 @@
     <!-- 아카이브필터 토글 -->
     <script>
         const mobilePanel = document.querySelector('.mobilePanel')
+        const body = document.querySelector('body')
         function filterToggle() {
             mobilePanel.classList.toggle('ac')
+            body.classList.toggle('stopScroll')
         }
+        function initAccordion(selector) {
+            const items = document.querySelectorAll(selector);
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('hide');
+                });
+            });
+        }
+        initAccordion('.accodionUI')
     </script>
 
     <script src="./js/mobileToggle.js"></script>
