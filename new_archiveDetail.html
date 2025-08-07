@@ -188,20 +188,22 @@
                     랄프로렌은 1967년 뉴욕에서 시작한 브랜드예요. 아메리칸 클래식을 대표하는 브랜드죠. 뉴욕의 직장인을 위한 넥타이로 시작해 남성 의류, 여성 의류로 확대 런칭하며 지금의 랄프로렌이 되었어요. 가장 대표적인 폴로 랄프 로렌부터 랄프로렌 퍼플 라벨, 로렌 랄프로렌 등과 같은 최고가 라인 등으로 다양한 라인업으로 구성되어 있어요.랄프로렌은 UNFCCC, Fashion Pact, RE100, Ellen MacArthur Foundation 등에 가입하며 환경적 노력도 이행하고 있어요.  랄프로렌은 2040 넷제로를 목표로 2030년엔 FY20에 대비 Scope 1,2,3에서 각각 탄소 배출량을 30% 감축하겠다고 밝혔어요. 또한 2025년엔 재생에너지로 100% 전환하겠다고 밝혔죠.
                     2025년까지 순환 경제 구조를 랄프로렌에 정착시키기 위해 대표 제품 중 다섯 가지는 C2C(Cradle to Cradle) 인증을 받고 주요 도시들부터 제품 대여, 수선 및 재순환이 가능하도록 제도를 구축할 것을 약속했어요.
                 </p>
-                <div class="your-class">
+
+                <div class="slideImg">
                     <div>
-                        <img src="./img/resource/img_ralphlauren_01.png" alt="img">
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_01.png" alt="img"></div>
                     </div>
                     <div>
-                        <img src="./img/resource/img_ralphlauren_02.png" alt="img">
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_02.png" alt="img"></div>
                     </div>
                     <div>
-                        <img src="./img/resource/img_ralphlauren_03.png" alt="img">
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_03.png" alt="img"></div>
                     </div>
                 </div>
             </article>
         </div>
     </div>
+
 
     
 
@@ -227,39 +229,31 @@
         </div>
     </div>
 
+    
+
     <script src="./js/mobileToggle.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.your-class').slick({
+            $('.slideImg').slick({
                 arrows: true,
-                dots: true,
+                dots: false,
                 infinite: true,
                 centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
+                centerPadding: '24%',
+                slidesToShow: 1,
+                // cssEase: 'linear',
                 responsive: [
                     {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: false,
+                            centerPadding: 0,
+                        }
                     }
-                    },
-                    {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                    }
-                ]
+                ] 
             });
         });
     </script>
