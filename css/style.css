@@ -9165,8 +9165,8 @@ h4 {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 16px;
-  right: 16px;
+  left: 0;
+  right: 0;
   height: 1px;
   background-color: var(--black);
 }
@@ -12078,8 +12078,10 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-bottom: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: 100vw;
   }
   .pageHeader .detailLink {
     text-align: center;
@@ -12132,10 +12134,20 @@ h4 {
   font-weight: 700;
   line-height: 140%; /* 16.8px */
 }
-@media screen and (max-width: 768px) {
-  .countSearch2 {
-    flex-direction: row-reverse;
-  }
+.toggle-btn {
+  cursor: pointer;
+}
+.toggle-btn input {
+  display: none;
+}
+.toggle-btn i {
+  display: block;
+  width: 52px;
+  height: 28px;
+  background: url(../img/ic_toggle28_off.svg) center no-repeat;
+}
+.toggle-btn :checked + i {
+  background-image: url(../img/ic_toggle28_on.svg);
 }
 
 .asideFilter {
@@ -12164,21 +12176,6 @@ h4 {
   line-height: 140%; /* 23.8px */
   padding: 9px 0;
   margin-bottom: 4px;
-}
-.asideFilter .toggle-btn {
-  cursor: pointer;
-}
-.asideFilter .toggle-btn input {
-  display: none;
-}
-.asideFilter .toggle-btn i {
-  display: block;
-  width: 52px;
-  height: 28px;
-  background: url(../img/ic_toggle28_off.svg) center no-repeat;
-}
-.asideFilter .toggle-btn :checked + i {
-  background-image: url(../img/ic_toggle28_on.svg);
 }
 .asideFilter .filterClose {
   display: none;
@@ -12861,6 +12858,7 @@ h4 {
   flex: 1 0 auto;
   width: 50%;
   padding: 16px;
+  padding-right: 0;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -12965,9 +12963,20 @@ h4 {
   }
   .mainTable .scrollWrap {
     flex-wrap: wrap;
+    gap: 4px 16px;
   }
   .mainTable .scrollWrap span {
     font-size: var(--Font-Size-S, 17px);
+  }
+  .mainTable .tag {
+    gap: 8px 12px;
+  }
+  .mainTable .tag span {
+    height: 36px;
+    padding-block: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -13186,6 +13195,11 @@ h4 {
   margin-top: 8px;
 }
 @media screen and (max-width: 768px) {
+  .new_archiveDetail_contents h2 {
+    font-size: var(--Font-Size-M, 20px);
+    line-height: 140%; /* 28px */
+    margin-bottom: 12px;
+  }
   .new_archiveDetail_contents .slideImg {
     padding: 0;
     aspect-ratio: 370/271;
@@ -13205,6 +13219,9 @@ h4 {
     margin: 24px 0;
     flex-wrap: wrap;
   }
+  .new_archiveDetail_contents .navTab .item {
+    height: 52px;
+  }
   .new_archiveDetail_contents .navTab .item span {
     display: none;
   }
@@ -13216,6 +13233,8 @@ h4 {
   }
   .new_archiveDetail_contents .navCon .titWrap .key {
     width: 100%;
+    height: 62px;
+    font-size: var(--Font-Size-M, 20px);
   }
   .new_archiveDetail_contents .navCon .titWrap .value {
     word-break: keep-all;
@@ -13223,9 +13242,7 @@ h4 {
     border-top-width: 1px;
     border-left: 0;
     font-size: var(--Font-Size-S, 17px);
-  }
-  .new_archiveDetail_contents .navCon .titWrap .circle {
-    gap: 8px;
+    height: 62px;
   }
   .new_archiveDetail_contents .navCon .titWrap .circle i {
     width: 24px;
@@ -13688,5 +13705,140 @@ h4 {
   }
   .new_about .accordion .history .tit {
     flex: 0 0 auto;
+  }
+}
+
+.articleList .asideFilter {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.articleList .group {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid #151515;
+  padding: 16px 0;
+}
+.articleList .keyword {
+  border-top: 1px solid #151515;
+}
+.articleList .tab {
+  display: flex;
+  gap: 20px;
+  color: var(--LL_black, #151515);
+  /* K_Title S */
+  font-family: var(--Font-Family-Font-Family-P, Pretendard);
+  font-size: var(--Font-Size-S, 17px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 23.8px */
+}
+.articleList .tab .ac {
+  color: var(--LL_orange, #F63);
+  /* K_Title S */
+  font-family: var(--Font-Family-Font-Family-P, Pretendard);
+  font-size: var(--Font-Size-S, 17px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 23.8px */
+}
+.articleList .toggleCommand {
+  margin: 0;
+  gap: 8px;
+}
+.articleList .tagList {
+  align-items: center;
+  flex-direction: row;
+  flex: 1 0 0;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+.articleList .tagList .tag {
+  white-space: nowrap;
+}
+.articleList .contents .listWrap .listItem .imgWrap {
+  aspect-ratio: 4/5;
+}
+.articleList .contents .listWrap .listItem .bottom {
+  padding: 16px;
+  text-align: left;
+}
+.articleList .contents .listWrap .listItem .bottom .tit {
+  overflow: hidden;
+  color: var(--LL_black, #151515);
+  /* K_Title M */
+  font-family: var(--Font-Family-Font-Family-P, Pretendard);
+  font-size: var(--Font-Size-M, 20px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  white-space: normal;
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+.articleList .contents .listWrap .listItem .bottom .tagList {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.articleList .contents .listWrap .listItem .bottom .tagList .more {
+  color: var(--LL_black, #151515);
+  text-align: center;
+  /* E_Title S */
+  font-family: var(--Font-Family-Font-Family-M, Montserrat);
+  font-size: var(--Font-Size-S, 17px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 23.8px */
+}
+.articleList .contents .listWrap .listItem .bottom .tagList .tag {
+  color: var(--LL_black, #151515);
+  /* K_Title S */
+  font-family: var(--Font-Family-Font-Family-P, Pretendard);
+  font-size: var(--Font-Size-SS, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+  padding: 0 8px;
+  border: 1px solid #151515;
+  border-radius: var(--corner-corner-5, 20px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+}
+.articleList .contents .listWrap .listItem .bottom .date {
+  color: var(--LL_grey, #707070);
+  /* K_Sub_XS */
+  font-family: var(--Font-Family-Font-Family-P, Pretendard);
+  font-size: var(--Font-Size-XS, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+.articleList .contents .pagination {
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .articleList .keyword {
+    border-top: 0;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .articleList .tagList {
+    height: 40px;
+  }
+  .articleList .toggleCommand {
+    flex: 1 0 100%;
+  }
+  .articleList .tit {
+    flex: 1 0 0;
   }
 }/*# sourceMappingURL=style.css.map */

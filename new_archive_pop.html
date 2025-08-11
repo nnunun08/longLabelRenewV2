@@ -89,22 +89,18 @@
         <div class="inner">
             <div class="pageHeader-top">
                 <div class="h2-pc">Brand Archive</div>
-                <div class="countSearch">
-                    <div class="inner">
-                        <div class="right">
-                            <div class="searchWrap">
-                                <input class="search" type="text" placeholder="Search">
-                                <button class="button anchor"></button>
-                            </div>
-                            <span class="recent">최신순</span>
-                        </div>
+                <div class="countSearch2">
+                    <div class="searchWrap">
+                        <input class="search" type="text" placeholder="Search">
+                        <button class="button anchor"></button>
                     </div>
+                    <span class="recent">최신순</span>
                 </div>
             </div>
             <div class="pageHeader-bottom">
-                <div class="detailLink mobileNone">
+                <a href="#" class="detailLink mobileNone">
                     아카이브 기준 자세히 보기
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -126,81 +122,101 @@
                         <div class="tag">신소재/신기술</div>
                     </div>
                 </div>
-                <div class="group d-pc">
-                    <div class="titWrap">
-                        <div class="tit">Archive Filter</div>
-                        <button class="reset">초기화</button>
+                <!-- 아카이브 필터 on/off .mobilePanel 요소에 .ac 토글 -->
+                <div class="mobilePanel">
+                    <div class="group">
+                        <div class="titWrap">
+                            <button class="filterClose" onclick="filterToggle()"></button>
+                            <div class="tit">Archive Filter</div>
+                            <button class="reset">초기화</button>
+                        </div>
                     </div>
-                </div>
-                <div class="group">
-                    <div class="tit">친환경영역</div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>소재</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>제조</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>운송</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>포장</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>폐기</label></li>
-                    </ul>
-                </div>
-                <div class="group">
-                    <div class="tit">정보공개정도</div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>1<div class="starWrap level1"><i></i><i></i><i></i><i></i><i></i></div></label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>2<div class="starWrap level2"><i></i><i></i><i></i><i></i><i></i></div></label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>3<div class="starWrap level3"><i></i><i></i><i></i><i></i><i></i></div></label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>4<div class="starWrap level4"><i></i><i></i><i></i><i></i><i></i></div></label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>5<div class="starWrap level5"><i></i><i></i><i></i><i></i><i></i></div></label></li>
-                    </ul>
-                </div>
-                <div class="group">
-                    <div class="tit">가치기준</div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>업사이클링</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>리사이클 소재</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>탄소 저감</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오염물질 저감</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>폐기물 저감</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>자원 사용 절감</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>친환경 패키지</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>수선/재판매</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신소재/신기술</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>비건</label></li>
-                    </ul>
-                </div>
-                <div class="group">
-                    <div class="tit">브랜드 규모 </div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>큰 브랜드</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>시작하는 브랜드 </label></li>
-                    </ul>
-                </div>
-                <div class="group">
-                    <div class="tit">국가 </div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>대한민국</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아시아</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>유럽</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>북미</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남미</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오세아니아</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아프리카</label></li>
-                    </ul>
-                </div>
-                <div class="group" style="border: 0;">
-                    <div class="tit">아이템 </div>
-                    <ul class="checkLabel-ul">
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>여성의류</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남성의류</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아웃도어</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신발</label></li>
-                        <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>가방</label></li>
-                    </ul>
+                    <div class="group">
+                        <div class="tit">친환경영역</div>
+                        <ul class="checkLabel-ul">
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>소재</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>제조</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>운송</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>포장</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>폐기</label></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <div class="tit">정보공개정도</div>
+                        <ul class="checkLabel-ul">
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>1<div class="starWrap level1"><i></i><i></i><i></i><i></i><i></i></div></label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>2<div class="starWrap level2"><i></i><i></i><i></i><i></i><i></i></div></label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>3<div class="starWrap level3"><i></i><i></i><i></i><i></i><i></i></div></label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>4<div class="starWrap level4"><i></i><i></i><i></i><i></i><i></i></div></label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>5<div class="starWrap level5"><i></i><i></i><i></i><i></i><i></i></div></label></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <div class="tit">가치기준</div>
+                        <ul class="checkLabel-ul">
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>업사이클링</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>리사이클 소재</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>탄소 저감</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오염물질 저감</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>폐기물 저감</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>자원 사용 절감</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>친환경 패키지</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>수선/재판매</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신소재/신기술</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>비건</label></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <div class="tit">브랜드 규모 </div>
+                        <ul class="checkLabel-ul">
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>큰 브랜드</label></li>
+                            <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>시작하는 브랜드 </label></li>
+                        </ul>
+                    </div>
+                    <div class="group">
+                        <div class="accodionUI hide">
+                            <div class="tit">국가</div>
+                            <ul class="checkLabel-ul">
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>대한민국</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아시아</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>유럽</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>북미</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남미</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>오세아니아</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아프리카</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group" style="border: 0;">
+                        <div class="accodionUI hide">
+                            <div class="tit">아이템 </div>
+                            <ul class="checkLabel-ul">
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>여성의류</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>남성의류</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>아웃도어</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>신발</label></li>
+                                <li><label class="checkLabel"><input type="checkbox"><i class="checkBox"></i>가방</label></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </aside>
             <div class="contents">
                 <div class="countWrap">
                     <div class="count">총 00개</div>
-                    <button class="filterBtn d-mo">아카이브 필터</button>
+                    <div class="d-mo">
+                        <button class="filterBtn" onclick="filterToggle()">
+                            아카이브 필터
+                            <i></i>
+                        </button>
+                        <div class="countSearch2">
+                            <div class="searchWrap">
+                                <input class="search" type="text" placeholder="Search">
+                                <button class="button anchor"></button>
+                            </div>
+                            <span class="recent">최신순</span>
+                        </div>
+                    </div>
                 </div>
                 <ul class="listWrap">
                     <li class="listItem">

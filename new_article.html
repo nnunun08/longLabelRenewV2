@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Archive</li>
+                    <li>Tip</li>
+                    <li class="ac">Article</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <div class="digitalLabel">
+                        Digital Label
+                    </div>
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9998 21.0008L15.8028 15.8038M15.8028 15.8038C17.2094 14.3972 17.9996 12.4895 17.9996 10.5003C17.9996 8.51108 17.2094 6.60336 15.8028 5.19678C14.3962 3.79021 12.4885 3 10.4993 3C8.51011 3 6.60238 3.79021 5.19581 5.19678C3.78923 6.60336 2.99902 8.51108 2.99902 10.5003C2.99902 12.4895 3.78923 14.3972 5.19581 15.8038C6.60238 17.2104 8.51011 18.0006 10.4993 18.0006C12.4885 18.0006 14.3962 17.2104 15.8028 15.8038Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                            <li>Digital Label</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    <div class="pageNav">
+      <a href="#" class="arr"></a>
+      <div class="tit">Article</div>
+    </div>
+
+    <div class="pageHeader">
+        <div class="inner">
+            <div class="pageHeader-top">
+                <div class="h2-pc">Article</div>
+                <div class="countSearch2">
+                    <div class="searchWrap">
+                        <input class="search" type="text" placeholder="Search">
+                        <button class="button anchor"></button>
+                    </div>
+                    <span class="recent">최신순</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <div class="inner">
+            <aside class="asideFilter">
+                <div class="group keyword">
+                    <div class="toggleCommand">
+                        <div class="tit">나의 관심 키워드 보기</div>
+                        <label class="toggle-btn">
+                            <input type="checkbox" checked>
+                            <i></i>
+                        </label>
+                    </div>
+                    <div class="tagList">
+                        <div class="tag">업사이클링</div>
+                        <div class="tag">리사이클 소재</div>
+                        <div class="tag">탄소 저감</div>
+                        <div class="tag">오염물질 저감</div>
+                        <div class="tag">폐기물 저감</div>
+                        <div class="tag">자원 사용 저감</div>
+                        <div class="tag">친환경 패키지</div>
+                        <div class="tag">수선/재판매</div>
+                        <div class="tag">신소재/신기술</div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tab">
+                        <div class="ac">전체보기</div>
+                        <div>빈티지 패션</div>
+                        <div>인터뷰</div>
+                    </div>
+                </div>
+            </aside>
+            <div class="archiveList">
+                <div class="contents">
+                    <div class="countWrap">
+                        <div class="count">총 00개</div>
+                        <div class="d-mo">
+                            <!-- <button class="filterBtn" onclick="filterToggle()">
+                                아카이브 필터
+                                <i></i>
+                            </button> -->
+                            <div class="countSearch2">
+                                <div class="searchWrap">
+                                    <input class="search" type="text" placeholder="Search">
+                                    <button class="button anchor"></button>
+                                </div>
+                                <span class="recent">최신순</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="listWrap">
+                        <li class="listItem">
+                            <div class="imgWrap">
+                                <img src="./img/img_tip_card_img03.png" alt="img">
+                            </div>
+                            <div class="bottom">
+                                <div class="tit">
+                                    기사명을 입력해주세요. 기사명을 입력해주세요.기사명 세 줄이 되면 이렇게 보일 예정입니다. 
+                                </div>
+                                <div class="tagList">
+                                    <div class="tag">업사이클링</div>
+                                    <div class="tag">리사이클 소재</div>
+                                    <div class="tag">탄소 저감</div>
+                                    <div class="more">+1</div>
+                                </div>
+                                <div class="date">2025.05.30</div>
+                            </div>
+                        </li>
+                        <li class="listItem">
+                            <div class="imgWrap">
+                                <img src="./img/img_tip_card_img03.png" alt="img">
+                            </div>
+                            <div class="bottom">
+                                <div class="tit">
+                                    기사명을 입력해주세요. 기사명을 입력해주세요.기사명 세 줄이 되면 이렇게 보일 예정입니다. 
+                                </div>
+                                <div class="tagList">
+                                    <div class="tag">업사이클링</div>
+                                    <div class="tag">리사이클 소재</div>
+                                    <div class="tag">탄소 저감</div>
+                                    <div class="more">+1</div>
+                                </div>
+                                <div class="date">2025.05.30</div>
+                            </div>
+                        </li>
+                        <li class="listItem">
+                            <div class="imgWrap">
+                                <img src="./img/img_tip_card_img03.png" alt="img">
+                            </div>
+                            <div class="bottom">
+                                <div class="tit">
+                                    기사명을 입력해주세요. 기사명을 입력해주세요.기사명 세 줄이 되면 이렇게 보일 예정입니다. 
+                                </div>
+                                <div class="tagList">
+                                    <div class="tag">업사이클링</div>
+                                    <div class="tag">리사이클 소재</div>
+                                    <div class="tag">탄소 저감</div>
+                                    <div class="more">+1</div>
+                                </div>
+                                <div class="date">2025.05.30</div>
+                            </div>
+                        </li>
+                        <li class="listItem">
+                            <div class="imgWrap">
+                                <img src="./img/img_tip_card_img03.png" alt="img">
+                            </div>
+                            <div class="bottom">
+                                <div class="tit">
+                                    기사명을 입력해주세요. 기사명을 입력해주세요.기사명 세 줄이 되면 이렇게 보일 예정입니다. 
+                                </div>
+                                <div class="tagList">
+                                    <div class="tag">업사이클링</div>
+                                    <div class="tag">리사이클 소재</div>
+                                    <div class="tag">탄소 저감</div>
+                                    <div class="more">+1</div>
+                                </div>
+                                <div class="date">2025.05.30</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <ul>
+                            <li class="ac">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+
+    <!-- 아카이브필터 토글 -->
+    <script>
+        const mobilePanel = document.querySelector('.mobilePanel')
+        const body = document.querySelector('body')
+        function filterToggle() {
+            mobilePanel.classList.toggle('ac')
+            body.classList.toggle('stopScroll')
+        }
+        function initAccordion(selector) {
+            const items = document.querySelectorAll(selector);
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('hide');
+                });
+            });
+        }
+        initAccordion('.accodionUI')
+    </script>
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $('.imgSlide').slick(
+            {
+                dots: true,
+                infinite: true,
+            }
+        );
+    </script>
+</body>
+</html>
