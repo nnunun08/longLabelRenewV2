@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Archive</li>
+                    <li>Tip</li>
+                    <li class="ac">Article</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <div class="digitalLabel">
+                        Digital Label
+                    </div>
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9998 21.0008L15.8028 15.8038M15.8028 15.8038C17.2094 14.3972 17.9996 12.4895 17.9996 10.5003C17.9996 8.51108 17.2094 6.60336 15.8028 5.19678C14.3962 3.79021 12.4885 3 10.4993 3C8.51011 3 6.60238 3.79021 5.19581 5.19678C3.78923 6.60336 2.99902 8.51108 2.99902 10.5003C2.99902 12.4895 3.78923 14.3972 5.19581 15.8038C6.60238 17.2104 8.51011 18.0006 10.4993 18.0006C12.4885 18.0006 14.3962 17.2104 15.8028 15.8038Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                            <li>Digital Label</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    
+    <!-- PC용 -->
+    <div class="pageBack">
+        <div class="inner">
+            <a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 19.5L8 12L15.5 4.5" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            Article
+        </div>
+    </div>
+
+    <!-- MO용 -->
+    <div class="pageNav">
+      <a href="#" class="arr"></a>
+      <div class="tit">Article</div>
+    </div>
+    
+    <div class="hero">
+        <div class="inner">
+            <div class="whiteBar">
+                <div class="date">2025.06.25</div>
+                <div class="left">
+                    <!-- <div class="profile imgWrap">
+                        <img src="./img/resource/brand04.png" alt="">
+                    </div> -->
+                    <div>
+                        <div class="name">제목을 적어주세요</div>
+                        <!-- <div class="subname">Brand name</div> -->
+                    </div>
+                </div>
+                <label class="bookmark">
+                    <input type="checkbox">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.3895 4.98333C28.0395 5.17533 29.25 6.59883 29.25 8.26083V31.5003L18 25.8753L6.75 31.5003V8.26083C6.75 6.59883 7.959 5.17533 9.6105 4.98333C15.1848 4.33629 20.8152 4.33629 26.3895 4.98333Z" fill="#FF6633" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </label>
+            </div>
+        </div>          
+    </div>
+
+    <div class="inner">
+        <div class="text-right">
+            <a href="#" class="detailLink-right">Long Label 아카이브 기준 자세히 보기</a>
+        </div>
+        <div class="mainTable">
+            <div class="cell full" style="gap: 24px;">
+                <div class="key" style="width: auto;">키워드</div>
+                <div class="value">
+                    <div class="tag">
+                        <span>업사이클링</span>
+                        <span>리사이클 소재</span>
+                        <span>신소재/신기술</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="new_articleDetail_contents">
+            <article>
+                <h2>1. 폴로 랄프로렌은 어떤 브랜드 인가요?</h2>
+                <p>
+                    랄프로렌은 1967년 뉴욕에서 시작한 브랜드예요. 아메리칸 클래식을 대표하는 브랜드죠. 뉴욕의 직장인을 위한 넥타이로 시작해 남성 의류, 여성 의류로 확대 런칭하며 지금의 랄프로렌이 되었어요. 가장 대표적인 폴로 랄프 로렌부터 랄프로렌 퍼플 라벨, 로렌 랄프로렌 등과 같은 최고가 라인 등으로 다양한 라인업으로 구성되어 있어요.랄프로렌은 UNFCCC, Fashion Pact, RE100, Ellen MacArthur Foundation 등에 가입하며 환경적 노력도 이행하고 있어요.  랄프로렌은 2040 넷제로를 목표로 2030년엔 FY20에 대비 Scope 1,2,3에서 각각 탄소 배출량을 30% 감축하겠다고 밝혔어요. 또한 2025년엔 재생에너지로 100% 전환하겠다고 밝혔죠.
+                    2025년까지 순환 경제 구조를 랄프로렌에 정착시키기 위해 대표 제품 중 다섯 가지는 C2C(Cradle to Cradle) 인증을 받고 주요 도시들부터 제품 대여, 수선 및 재순환이 가능하도록 제도를 구축할 것을 약속했어요.
+                </p>
+
+                <div class="slideImg">
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_01.png" alt="img"></div>
+                    </div>
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_02.png" alt="img"></div>
+                    </div>
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_03.png" alt="img"></div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2>1. 폴로 랄프로렌은 어떤 브랜드 인가요?</h2>
+                <p>
+                    랄프로렌은 1967년 뉴욕에서 시작한 브랜드예요. 아메리칸 클래식을 대표하는 브랜드죠. 뉴욕의 직장인을 위한 넥타이로 시작해 남성 의류, 여성 의류로 확대 런칭하며 지금의 랄프로렌이 되었어요. 가장 대표적인 폴로 랄프 로렌부터 랄프로렌 퍼플 라벨, 로렌 랄프로렌 등과 같은 최고가 라인 등으로 다양한 라인업으로 구성되어 있어요.랄프로렌은 UNFCCC, Fashion Pact, RE100, Ellen MacArthur Foundation 등에 가입하며 환경적 노력도 이행하고 있어요.  랄프로렌은 2040 넷제로를 목표로 2030년엔 FY20에 대비 Scope 1,2,3에서 각각 탄소 배출량을 30% 감축하겠다고 밝혔어요. 또한 2025년엔 재생에너지로 100% 전환하겠다고 밝혔죠.
+                    2025년까지 순환 경제 구조를 랄프로렌에 정착시키기 위해 대표 제품 중 다섯 가지는 C2C(Cradle to Cradle) 인증을 받고 주요 도시들부터 제품 대여, 수선 및 재순환이 가능하도록 제도를 구축할 것을 약속했어요.
+                </p>
+
+                <div class="slideImg">
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_01.png" alt="img"></div>
+                    </div>
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_02.png" alt="img"></div>
+                    </div>
+                    <div>
+                        <div class="imgBox"><img src="./img/resource/img_ralphlauren_03.png" alt="img"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+    </div>
+
+
+    
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slideImg').slick({
+                arrows: true,
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '24%',
+                slidesToShow: 1,
+                // cssEase: 'linear',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: false,
+                            centerPadding: 0,
+                        }
+                    }
+                ] 
+            });
+        });
+    </script>
+</body>
+</html>
