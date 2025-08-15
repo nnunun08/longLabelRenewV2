@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -91,11 +95,14 @@
                 <img src="./img/resource/img_home_hero_05.png" alt="hero-05">
             </div>
         </div>
-        <div class="intro">
+        <div class="intro" 
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out">
             <div class="inner">
                 <h2>
-                    Long Label은 패션 브랜드의 친환경 임팩트 데이터를 분석합니다.<br/>
-                    환경을 생각하는 소비자와 메이커 모두가 함께 성장하기를 바랍니다.
+                    Long Label은 패션 브랜드의 친환경 임팩트 데이터를&nbsp;분석합니다.<br/>
+                    환경을 생각하는 소비자와&nbsp;메이커 모두가&nbsp;함께&nbsp;성장하기를&nbsp;바랍니다.
                 </h2>
                 <div class="count">
                     <div class="item">
@@ -119,7 +126,10 @@
 
         <div class="articleList archiveList">
             <div class="inner">
-                <div class="asideFilter">
+                <div class="asideFilter"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out">
                     <div class="group keyword">
                         <div class="toggleCommand">
                             <div class="tit">나의 관심 키워드 보기</div>
@@ -141,7 +151,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="contents">
+                <div class="contents"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out">
                     <div class="sectionName">BRAND ARCHIVE</div>
                     <ul class="listWrap slideImg">
                         <li class="listItem">
@@ -250,7 +263,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contents">
+                <div class="contents"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out">
                     <div class="sectionName">ARTICLE</div>
                     <ul class="listWrap slideImg">
                         <li class="listItem">
@@ -264,7 +280,6 @@
                                 <div class="tagList">
                                     <div class="tag">업사이클링</div>
                                     <div class="tag">리사이클 소재</div>
-                                    <div class="tag">탄소 저감</div>
                                     <div class="more">+1</div>
                                 </div>
                                 <div class="date">2025.05.30</div>
@@ -281,7 +296,6 @@
                                 <div class="tagList">
                                     <div class="tag">업사이클링</div>
                                     <div class="tag">리사이클 소재</div>
-                                    <div class="tag">탄소 저감</div>
                                     <div class="more">+1</div>
                                 </div>
                                 <div class="date">2025.05.30</div>
@@ -323,7 +337,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contents tip">
+                <div class="contents tip"
+                    data-aos="fade-up"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out">
                     <div class="sectionName">TIP</div>
                     <div class="cardWrap">
                         <div class="card-white">
@@ -337,7 +354,7 @@
                                 </svg>
                                 <div>
                                     <h3>
-                                        지속가능 패션<br/>
+                                        지속가능&nbsp;패션
                                         인증마크 모아보기
                                     </h3>
                                     <a href="#">바로가기</a>
@@ -352,7 +369,7 @@
                                 </svg>
                                 <div>
                                     <h3>
-                                        국내/외 지속가능 패션<br/>
+                                        국내/외&nbsp;지속가능 패션
                                         이니셔티브
                                     </h3>
                                     <a href="#">바로가기</a>
@@ -389,14 +406,17 @@
             <h3>
                 Long Label MAKER
             </h3>
-            <p>지속 가능한 제품을 만드는 브랜드라면 정보과 콘텐츠를<br/>
+            <p>지속 가능한 제품을 만드는 브랜드라면 정보과 콘텐츠를
                 함께 제시할 수 있는 디지털 라벨 서비스를 만나보세요
             </p>
             <a class="direct" href="#">바로가기</a>
         </div>
     </div>
 
-    <div class="subscribe">
+    <div class="subscribe"
+        data-aos="fade-up"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out">
         <div class="inner">
             <div class="left">
                 <div class="orange">매월 첫째 주,</div>
@@ -468,13 +488,18 @@
                     {
                         breakpoint: 768,
                         settings: {
-                            centerMode: false,
-                            centerPadding: 0,
+                            slidesToShow: 1,
+                            // centerPadding: '40px',
                         }
                     }
                 ] 
             });
         });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

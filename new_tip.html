@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Archive</li>
+                    <li class="ac">Tip</li>
+                    <li>Article</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <div class="digitalLabel">
+                        Digital Label
+                    </div>
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9998 21.0008L15.8028 15.8038M15.8028 15.8038C17.2094 14.3972 17.9996 12.4895 17.9996 10.5003C17.9996 8.51108 17.2094 6.60336 15.8028 5.19678C14.3962 3.79021 12.4885 3 10.4993 3C8.51011 3 6.60238 3.79021 5.19581 5.19678C3.78923 6.60336 2.99902 8.51108 2.99902 10.5003C2.99902 12.4895 3.78923 14.3972 5.19581 15.8038C6.60238 17.2104 8.51011 18.0006 10.4993 18.0006C12.4885 18.0006 14.3962 17.2104 15.8028 15.8038Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                            <li>Digital Label</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+
+    <div class="pageNav">
+      <a href="#" class="arr"></a>
+      <div class="tit">Tip</div>
+    </div>
+
+    <div class="pageHeader">
+        <div class="inner">
+            <div class="pageHeader-top">
+                <div class="h2-pc">Tip</div>
+                <!-- <div class="countSearch2">
+                    <div class="searchWrap">
+                        <input class="search" type="text" placeholder="Search">
+                        <button class="button anchor"></button>
+                    </div>
+                    <span class="recent">최신순</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="articleList" id="nav-tab" role="tablist">
+        <div class="inner">
+            <aside class="asideFilter">
+                <div class="group keyword">
+                    <div class="tab" style="overflow: auto;">
+                        <div class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">지속가능 패션 인증마크</div>
+                        <div class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false">국내/외 패션 이니셔티브</div>
+                    </div>
+                </div>
+                <div class="group tipkeyword">
+                    <div class="tagList">
+                        <div class="tag">소재</div>
+                        <div class="tag">제조</div>
+                        <div class="tag">운송</div>
+                        <div class="tag">포장</div>
+                        <div class="tag">전과정</div>
+                    </div>
+                </div>
+            </aside>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab" tabindex="0">
+                    <div class="tip_count">총 00개</div>
+                    <div class="tip_mark">
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                        <div class="item"><img src="./img/resource/label/ZQ.jpg" alt="img"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab" tabindex="0">
+                    <div class="tip_count">총 00개</div>
+                    <div class="InitiativeDirectory" style="gap: 0;">
+                        <div class="tableWrap">
+                            <table class="listGrid listGrid2">
+                                <tbody><tr>
+                                    <th style="width: 356px;" class="sort"><div>이니셔티브</div></th>
+                                    <th style="width: 107px;"><div>국가</div></th>
+                                    <th style="width: 176px;"><div>멤버수</div></th>
+                                    <th style="width: 389px;"><div>Keyword</div></th>
+                                    <th style="width: 67px;"><div>더보기</div></th>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/UNglobalcompact.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">un global compact</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        미국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 18000  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>탄소저감</span>
+                                            <span>리사이클 소재</span>
+                                            <span>순환모델</span>
+                                            <span>리사이클 소재</span>
+                                            <span>리사이클 소재</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://www.unglobalcompact.org/" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            2000년 유엔(United Nations)에서 출범한 세계 최대의 지속 가능성과 기업 책임에 관한 이니셔티브입니다. 기업, 비영리 단체, 정부, 시민 사회 등 다양한 이해관계자들이 협력하여 지속 가능한 개발 목표(SDGs)를 달성하고 책임감 있는 비즈니스 관행을 장려하는 것을 목적으로 합니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/UCFCCC.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">UN Fashion Industry Charter for Climate Action</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        독일
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 130  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>탄소저감 </span>
+                                            <span>순환모델</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://unfccc.int/climate-action/sectoral-engagement-for-climate-action/fashion-charter" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            유엔 기후 변화 협약(UNFCCC)이 주도하여 2018년 12월, 폴란드 카토비체에서 열린 COP24(제24차 유엔기후변화협약 당사국총회)에서 출범한 이니셔티브입니다. 이 헌장은 패션 산업의 온실가스 배출을 줄이고, 패션 산업 전반의 지속 가능한 변화를 가속화하기 위한 글로벌 협약입니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/TextileExchange.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Textile Exchange</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        미국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 800  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://textileexchange.org/" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능한 섬유 및 패션 산업을 촉진을 목표로 2002년 설립된 조직입니다. 섬유 산업의 환경적 영향을 줄이고, 윤리적이고 책임감 있는 생산과 소비를 촉진하기 위한 GOTS, RCS, GRS, RWS 등의 국제 인증 기준을 개발하고 협력하고 있습니다. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/20241122201552.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">new cotton project</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        EU
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 12 Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                            <span>순환모델</span>
+                                            <span>폐기물 저감</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://newcottonproject.eu" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능한 패션을 촉진하기 위해 유럽에서 운영되는 혁신적인 협업 프로젝트로 의류 폐기물을 새로운 텍스타일로 재활용하여 섬유 생산의 환경 영향을 줄이고, 지속 가능한 섬유 제조 프로세스를 구현하는 것을 목표로 합니다. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/leatjerworkinggroup.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Leather Working Group</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        영국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 2000 + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://www.leatherworkinggroup.com/" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            가죽 산업의 지속 가능성을 촉진하기 위해 설립된 비영리 다중 이해관계자 단체입니다. 가죽 제조 공정의 환경 영향을 줄이기 위한 표준을 개발하고, 데이터의 투명성 및 추적성을 확보하고 회원을 대상으로 관련 교육을 진행합니다. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/SustainablePackagingCoalition.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Sustainable Packaging Coalition </div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        미국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 550  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>친환경 패키지</span>
+                                            <span>폐기물 저감</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://sustainablepackaging.org" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능한 포장 솔루션을 촉진하기 위해 설립된 비영리 협력 단체로, 미국에 본사를 둔 GreenBlue 조직의 프로젝트입니다. 포장 폐기물을 줄이고 지속가능한 포장을 설계하며 혁신하는 활동을 하고 있습니다. 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/Pack4Good(canopy).jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Pack4Good</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        캐나다
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 449  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>친환경 패키지</span>
+                                            <span>제조과정 관리</span>
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://canopyplanet.org/change-together/pack4good" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            산림에 대한 환경적 영향을 다루는 캐노피 플래닛의 글로벌 이니셔티브입니다. 종이 포장의 출처를 바꾸는 데 중점을 두어 기업들이 멸종 위기에 처한 산림에 해를 끼치지 않도록 장려합니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/Pack4Good(canopy).jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">CanopyStyle</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        캐나다
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 515  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>순환모델</span>
+                                            <span>에코디자인</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://canopyplanet.org/change-together/canopystyle" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            패션 산업이 글로벌한 산림 벌채에 미치는 영향을 해결하기 위해 2013년에 설립된 환경 단체인 캐노피 플래닛의 이니셔티브입니다. 캐노피스타일의 목표는 비스코스, 레이온 및 기타 인공 셀룰로오스 섬유(MMCF)와 같은 소재를 공급하는 방식을 변화시켜 멸종 위기에 처한 숲을 보호하는 것입니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/SustainableApparelCoalition.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Sustainable Apparel Coalition </div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        미국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 300 + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://cascale.org/" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능한 의류, 신발 및 섬유 산업을 촉진하기 위해 설립된 조직으로, 업계 내 환경적 사회적 영향을 줄이고 윤리적이고 책임감 있는 비즈니스 관행을 장려하는 활동을 합니다. Higg Index를 개발하였고 회원사들이 이를 효과적으로 활용하도록 지원합니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/EllenMacArthurFoundation.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Ellen MacArthur Foundation Jeans Redesign Project</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        영국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 100  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>순환모델</span>
+                                            <span>에코디자인</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://www.ellenmacarthurfoundation.org/news/industry-leaders-continue-the-jeans-redesign-journey" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            엘렌 맥아더 재단의 메이크 패션 서클 프로그램에서 시작한 청바지 재설계 프로젝트는 청바지의 순환 디자인을 촉진하여 데님 산업의 혁신을 목표로 합니다. 기업들이 내구성이 뛰어나고 재활용이 가능한 청바지를 디자인할 수 있도록 가이드라인을 제공하며, 제품이 버려지지 않고 재사용 혹은 재활용되는 순환 경제를 조성하는 것을 목표로 합니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/PartnershipforSustainableTextiles.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Partnership for Sustainable Textiles </div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        독일
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 130  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://partnerschaften2030.de/en/map-profile/partnership-for-sustainable-textiles/" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            독일 연방 경제협력개발부(BMZ)가 2014년에 설립하였으며, 글로벌 섬유 및 의류 산업의 사회적, 환경적 지속 가능성을 증진하는 것을 목표로 합니다. 이 파트너십에는 기업, 시민사회, 정부기구, 노동조합 등이 참여하고 있습니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/Textiles2030.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Textiles 2030</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        영국
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 110  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>제조과정 관리</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://wrap.org.uk/taking-action/textiles/initiatives/textiles-2030" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능성 단체인 WRAP가 주도하는 이니셔티브로, 2030년까지 영국 패션 및 섬유 산업의 환경 발자국을 크게 줄이는 것을 목표로 합니다. 이 자발적인 계약은 브랜드, 소매업체, 재활용 단체를 한데 모아 탄소 배출, 물 사용량, 재료 폐기물과 같은 시급한 문제를 해결합니다.
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td>
+                                        <div class="initiative">
+                                            <div class="imgWrap">
+                                                <img src="./img/resource/initiative/FashionforGood.jpg" alt="img">
+                                            </div>
+                                            <div>
+                                                <div class="text">Fashion for Good</div>
+                                                <!-- <div class="sub">소재</div> -->
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="국가">
+                                        네덜란드
+                                    </td>
+                                    <td data-title="멤버수">
+                                        <div class="person">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21698" data-name="패스 21698" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#f63" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19.195" height="24.211" viewBox="0 0 19.195 24.211"><path id="패스_21699" data-name="패스 21699" d="M8.113,6.688a5.236,5.236,0,1,1,5.235,5.188A5.212,5.212,0,0,1,8.113,6.688ZM3.751,22.95a9.6,9.6,0,0,1,19.195,0,.864.864,0,0,1-.51.8,22.052,22.052,0,0,1-18.177,0,.864.864,0,0,1-.508-.8Z" transform="translate(-3.751 -1.5)" fill="#c1c1c1" fill-rule="evenodd"></path></svg>
+                                        </div>
+                                        <div>With 43  + Brand</div>
+                                    </td>
+                                    <td data-title="Keyword">
+                                        <div class="tag">
+                                            <span>순환모델</span>
+                                            <span>에코디자인</span>
+                                        </div>
+                                    </td>
+                                    <td data-title="">
+                                        <button class="more">
+                                            <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M46.5 8L39 15.5L31.5 8" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="underRow">
+                                    <td colspan="6">
+                                        <a class="home" href="https://fashionforgood.com" target="_blank">
+                                            홈페이지 바로가기
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="그룹_4591" data-name="그룹 4591" transform="translate(-1465 -403)">
+                                                  <rect id="사각형_1021" data-name="사각형 1021" width="20" height="20" transform="translate(1465 403)" fill="none"></rect>
+                                                  <path id="패스_21630" data-name="패스 21630" d="M2.25,11.013l8-8a1.006,1.006,0,0,1,1.422,0l8,8M4.261,9v9.049a1.006,1.006,0,0,0,1.005,1.005H8.953V14.7a1.006,1.006,0,0,1,1.005-1.005h2.011A1.006,1.006,0,0,1,12.974,14.7v4.357h3.687a1.006,1.006,0,0,0,1.005-1.005V9M7.612,19.057h7.373" transform="translate(1464.036 402.115)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                        <div class="contents">
+                                            지속 가능한 패션 산업의 전환을 촉진하기 위해 설립된 글로벌 이니셔티브입니다. 이 단체는 혁신가, 브랜드, 제조업체, 투자자를 연결하여 지속 가능성과 순환 경제를 실현하는 데 중점을 둡니다
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="topCon">
+                <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                </ul>
+            </div>
+            <div class="bodyCon">
+                <p>
+                    <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;서울특별시&nbsp;종로구&nbsp;종로&nbsp;34&nbsp;2층&nbsp;101호</span><br>
+                    <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                    롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                </p>
+                <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+            </div>
+            <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+        </div>
+    </div>
+
+    <!-- 아카이브필터 토글 -->
+    <script>
+        const mobilePanel = document.querySelector('.mobilePanel')
+        const body = document.querySelector('body')
+        function filterToggle() {
+            mobilePanel.classList.toggle('ac')
+            body.classList.toggle('stopScroll')
+        }
+        function initAccordion(selector) {
+            const items = document.querySelectorAll(selector);
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('hide');
+                });
+            });
+        }
+        initAccordion('.accodionUI')
+    </script>
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- 부트스트랩 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+    <script>
+        const item = document.querySelectorAll('.listGrid .item .more');
+        console.log(item)
+        item.forEach((e) => {
+            e.addEventListener('click', () => {
+                console.log(e)
+                e.classList.toggle('ac')
+            })
+        })
+    </script>
+</body>
+</html>
