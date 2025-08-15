@@ -497,6 +497,23 @@
         </div>
     </div>
 
+
+    <!-- scrollSpy -->
+    <script>
+        const navTab = document.getElementsByClassName('navTab')
+        const navItem = document.querySelectorAll('.navTab .item')
+        const navCon = document.querySelectorAll('.navCon')
+
+        navItem.forEach(item => {
+            item.addEventListener('click', (e) => {
+                const nodes = [...e.target.parentElement.children];
+                let index = nodes.indexOf(e.target)
+                let scrollPosition = navCon[index].offsetTop - 152;
+                window.scrollTo({ left: 0, top: scrollPosition, behavior: "smooth" });
+            })
+        });
+    </script>
+
     
 
     <script src="./js/mobileToggle.js"></script>
