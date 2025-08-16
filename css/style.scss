@@ -11513,9 +11513,18 @@ body:has(.listGrid) .searchWrap {
 			.paddingBx {
 				flex: 1 0 100% !important;
 				padding: 10px 0;
+				&.ac,
 				&:hover {
 					.item {
 						height: 418px;
+					}
+				}
+				&.ac {
+					.item {
+						width: 243px;
+						ul {
+							opacity: 1;
+						}
 					}
 				}
 			}

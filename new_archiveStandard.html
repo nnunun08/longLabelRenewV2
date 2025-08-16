@@ -395,6 +395,23 @@
     </div>
 
 
+    <!-- cardSpin -->
+    <script>
+        const spinCardItem = document.querySelectorAll('.spinCard .paddingBx')
+        function reset(target, className) {
+            target.forEach(e => {
+                e.classList.toggle(className)
+            });
+        }
+        spinCardItem.forEach(item => {
+            item.addEventListener('click', (e) => {
+                reset(spinCardItem, 'ac')
+                item.classList.add('ac')
+            })
+        });
+    </script>
+
+
 
     
 
