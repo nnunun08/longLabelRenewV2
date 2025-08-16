@@ -407,10 +407,10 @@
             spinCardItem.forEach(item => {
                 item.addEventListener('click', (e) => {
                     if (item.classList.contains('ac')) {
-                        reset(spinCardItem, 'ac')
+                        reset(spinCardItem, 'ac');
                     } else {
-                        reset(spinCardItem, 'ac')
-                        item.classList.add('ac')
+                        reset(spinCardItem, 'ac');
+                        item.classList.add('ac');
                     }
                 })
             });
