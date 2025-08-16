@@ -404,13 +404,15 @@
             });
         }
         spinCardItem.forEach(item => {
-            item.addEventListener('click', (e) => {
+            item.addEventListener('touchstart', (e) => {
                 if(item.classList.value === 'paddingBx ac') {
                     reset(spinCardItem, 'ac')
                 } else {
                     reset(spinCardItem, 'ac')
                     item.classList.add('ac')
                 }
+                
+                e.preventDefault();
             })
         });
     </script>
