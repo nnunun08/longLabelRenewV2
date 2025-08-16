@@ -400,13 +400,17 @@
         const spinCardItem = document.querySelectorAll('.spinCard .paddingBx')
         function reset(target, className) {
             target.forEach(e => {
-                e.classList.toggle(className)
+                e.classList.remove(className)
             });
         }
         spinCardItem.forEach(item => {
             item.addEventListener('click', (e) => {
-                reset(spinCardItem, 'ac')
-                item.classList.add('ac')
+                if(item.classList.value === 'paddingBx ac') {
+                    reset(spinCardItem, 'ac')
+                } else {
+                    reset(spinCardItem, 'ac')
+                    item.classList.add('ac')
+                }
             })
         });
     </script>
