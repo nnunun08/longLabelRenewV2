@@ -13870,13 +13870,11 @@ h4 {
     flex: 1 0 100% !important;
     padding: 10px 0;
   }
-  .archiveStandard .spinCard .paddingBx.ac .item, .archiveStandard .spinCard .paddingBx:hover .item {
+  .archiveStandard .spinCard .paddingBx .item {
+    width: 243px;
     height: 418px;
   }
-  .archiveStandard .spinCard .paddingBx.ac .item {
-    width: 243px;
-  }
-  .archiveStandard .spinCard .paddingBx.ac .item ul {
+  .archiveStandard .spinCard .paddingBx .item ul {
     opacity: 1;
   }
   .archiveStandard .spinCard .item {
