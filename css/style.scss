@@ -2107,9 +2107,10 @@ $headerHeight:80px;
 		font-weight: bold;
 		display: flex;
 		align-items: center;
-		max-width: 282px;
+		justify-content: flex-end;
+		max-width: 329px;
 		flex: 1 0 0;
-		gap: 24px;
+		gap: 4px;
 
 		span {
 			@include hoverColor;
@@ -2118,7 +2119,14 @@ $headerHeight:80px;
 		.digitalLabel {
 			// width: 180px;
 			text-align: center;
-			flex: 1 0 180px;
+			// flex: 1 0 237px;
+			flex: 0 0 auto;
+			width: 91px;
+			height: 24px;
+			// background-color: red;
+			text-indent: -9999px;
+			// height: 48px;
+			background: url(../img/ic_labelmaker.svg) center/cover no-repeat;
 
 			&.ac {
 				color: #f63;
@@ -2128,7 +2136,7 @@ $headerHeight:80px;
 
 		.user {
 			// width: 78px;
-			flex: 1 0 78px;
+			flex: 0 0 78px;
 			font-size: 17px;
 			display: inline-block;
 			box-sizing: border-box;
@@ -11510,6 +11518,9 @@ body:has(.listGrid) .searchWrap {
 		}
 	}
 	@media screen and (max-width:440px) {
+		.titWrap span {
+			font-size: 17px;
+		}
 		.spinCardWrap {
 			margin: 0;
 			width: 100%;
@@ -11532,7 +11543,8 @@ body:has(.listGrid) .searchWrap {
 				}
 				.item {
 					width: 243px;
-					height: 418px;
+					// height: 418px;
+					height: 326px;
 					ul {
 						opacity: 1;
 					}
@@ -11542,16 +11554,37 @@ body:has(.listGrid) .searchWrap {
 				width: 100% !important;
 				height: 306px;
 				justify-content: flex-start;
+				padding-block: 8px;
 				ul {
-					margin-top: 12px;
+					// margin-top: 12px;
+					margin-top: 8px;
+				}
+
+				li + li {
+					margin-top: 8px;
 				}
 				
 
-				&.matter {background: #80B399 url(../img/bg_archive_matter.svg) center bottom/100% no-repeat;}
-				&.manufacturing {background: #E07A61 url(../img/bg_archive_manufacturing.svg) center bottom/100% no-repeat;}
-				&.transit {background: #64659C url(../img/bg_archive_transit.svg) center bottom/100% no-repeat;}
-				&.package {background: #EDBF74 url(../img/bg_archive_package.svg) center bottom/100% no-repeat;}
-				&.dispose {background: #B2998A url(../img/bg_archive_dispose.svg) center bottom/100% no-repeat;}
+				&.matter {
+					height: 334px;
+					background: #80B399 url(../img/bg_archive_matter_mo.svg) center bottom/100% no-repeat;
+				}
+				&.manufacturing {
+					height: 326px;
+					background: #E07A61 url(../img/bg_archive_manufacturing.svg) center bottom -30px/100% no-repeat;
+				}
+				&.transit {
+					height: 350px;
+					background: #64659C url(../img/bg_archive_transit.svg) center bottom/100% no-repeat;
+				}
+				&.package {
+					height: 326px;
+					background: #EDBF74 url(../img/bg_archive_package.svg) center bottom -35px/100% no-repeat;
+				}
+				&.dispose {
+					height: 350px;
+					background: #B2998A url(../img/bg_archive_dispose_mo.svg) center bottom/100% no-repeat;
+				}
 			}
 		}
 	}
@@ -11594,9 +11627,10 @@ body:has(.listGrid) .searchWrap {
 			/* K_Sub M */
 			font-family: var(--Font-Family-Font-Family-P, Pretendard);
 			font-size: var(--Font-Size-M, 20px);
+			font-size: 17px;
 			font-style: normal;
 			font-weight: 400;
-			line-height: 140%; /* 28px */
+			line-height: 160%;
 		}
 		.value {
 			display: flex;
@@ -11663,7 +11697,7 @@ body:has(.listGrid) .searchWrap {
 			font-size: var(--Font-Size-S, 17px);
 			font-style: normal;
 			font-weight: 400;
-			line-height: 30px; /* 176.471% */
+			line-height: 160%;
 		}
 
 		.flexBx-center {
@@ -11789,7 +11823,7 @@ body:has(.listGrid) .searchWrap {
 				font-size: 17px;
 				font-style: normal;
 				font-weight: 400;
-				line-height: 30px; /* 176.471% */
+				line-height: 160%;
 				&::before {
 					content: '';
 					position: absolute;
@@ -12440,10 +12474,12 @@ body:has(.listGrid) .searchWrap {
 		background: url(../img/ic_detailLink_arr_w.svg) center right no-repeat;
 	}
 	@media screen and (max-width:768px) {
-		min-height: 271px;
+		height: 271px;
 		margin-top: 64px;
 		padding: 13px 0;
+		padding-top: 24px;
 		background: var(--LL_orange, #F63) url(../img/bg_labelMaker.svg) bottom right/70% no-repeat;
+		overflow: hidden;
 		h3 {
 			color: var(--LL_white, #F4F4F4);
 
