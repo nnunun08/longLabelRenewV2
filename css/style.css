@@ -13360,15 +13360,45 @@ h4 {
   background-color: #80B399;
   color: #F4F4F4;
 }
+.new_articleDetail_contents .navTab .matter svg path,
+.new_archiveDetail_contents .navTab .matter svg path {
+  fill: #fff;
+}
 .new_articleDetail_contents .navTab .manufacturing,
 .new_archiveDetail_contents .navTab .manufacturing {
   background-color: #E07A61;
   color: #F4F4F4;
 }
+.new_articleDetail_contents .navTab .manufacturing svg path,
+.new_archiveDetail_contents .navTab .manufacturing svg path {
+  fill: #fff;
+}
 .new_articleDetail_contents .navTab .transit,
 .new_archiveDetail_contents .navTab .transit {
   background-color: #64659C;
   color: #F4F4F4;
+}
+.new_articleDetail_contents .navTab .transit svg path,
+.new_archiveDetail_contents .navTab .transit svg path {
+  fill: #fff;
+}
+.new_articleDetail_contents .navTab .package,
+.new_archiveDetail_contents .navTab .package {
+  background-color: #EDBF74;
+  color: #F4F4F4;
+}
+.new_articleDetail_contents .navTab .package svg path,
+.new_archiveDetail_contents .navTab .package svg path {
+  fill: #fff;
+}
+.new_articleDetail_contents .navTab .dispose,
+.new_archiveDetail_contents .navTab .dispose {
+  background-color: #B2998A;
+  color: #F4F4F4;
+}
+.new_articleDetail_contents .navTab .dispose svg path,
+.new_archiveDetail_contents .navTab .dispose svg path {
+  fill: #fff;
 }
 .new_articleDetail_contents .navCon,
 .new_archiveDetail_contents .navCon {

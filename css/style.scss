@@ -11018,14 +11018,27 @@ body:has(.listGrid) .searchWrap {
 		.matter {
 			background-color: #80B399;
 			color: #F4F4F4;
+			svg path {fill: #fff;}
 		}
 		.manufacturing {
 			background-color: #E07A61;
 			color: #F4F4F4;
+			svg path {fill: #fff;}
 		}
 		.transit {
 			background-color: #64659C;
 			color: #F4F4F4;
+			svg path {fill: #fff;}
+		}
+		.package {
+			background-color: #EDBF74;
+			color: #F4F4F4;
+			svg path {fill: #fff;}
+		}
+		.dispose {
+			background-color: #B2998A;
+			color: #F4F4F4;
+			svg path {fill: #fff;}
 		}
 	}
 
