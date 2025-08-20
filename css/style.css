@@ -388,7 +388,7 @@ body {
 }
 
 .headerWrap .headerBack {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .header {
@@ -399,7 +399,7 @@ body {
   width: 100%;
   z-index: 10;
   background: #151515;
-  height: 80px;
+  height: 60px;
   color: var(--white);
 }
 .header.pc {
@@ -5090,6 +5090,21 @@ h4 {
 .modalOn .modal {
   display: block;
 }
+.modalOn .header.mo .menuBtn {
+  z-index: 1;
+  border: 0;
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  left: unset;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: #151515 url(../img/ic_hamburger_close.svg) center/24px no-repeat;
+  text-indent: -9999px;
+  transform: none;
+  cursor: pointer;
+}
 
 .purchase {
   margin-top: -46px;
@@ -7146,14 +7161,14 @@ h4 {
 
 @media screen and (max-width: 920px) {
   .headerBack {
-    padding-top: 55px !important;
+    padding-top: 60px !important;
   }
   .header.pc {
     display: none;
   }
   .header.mo {
     display: block;
-    height: 55px;
+    height: 60px;
     z-index: 12;
   }
   .header.mo .inner {
@@ -7163,22 +7178,19 @@ h4 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5px;
+    left: 9px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url(../img/ic_mobile_hamburger.svg) center no-repeat;
   }
   .header.mo .menuBtn span {
-    width: 20px;
-    height: 3px;
-    background-color: var(--white);
-    border-radius: 3px;
-  }
-  .header.mo .menuBtn span + span {
-    margin-top: 5px;
+    display: none;
   }
   .header.mo .searchBtn {
     width: 24px;
@@ -7189,12 +7201,12 @@ h4 {
     right: 20px;
   }
   .header.mo .logo img {
-    width: 180px;
+    width: 211px;
   }
   .header.mo .mobileMenu {
     display: none;
     position: fixed;
-    top: 55px;
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -7211,24 +7223,28 @@ h4 {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .header.mo .mobileMenu .panel .top {
     background-color: #f63;
     color: #151515;
     width: 100%;
-    height: auto;
-    padding: 15px;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
     color: #f4f4f4;
     line-height: 1.13;
-    min-height: 133px;
+    min-height: 100px;
+    height: auto;
   }
   .header.mo .mobileMenu .panel .top .backArr {
+    display: none;
     position: absolute;
     top: 11px;
     left: 11px;
@@ -7312,16 +7328,24 @@ h4 {
     font-weight: 500;
     cursor: pointer;
   }
+  .header.mo .mobileMenu .panel .menuList {
+    flex: 1 0 0;
+  }
   .header.mo .mobileMenu .panel .menuList ul {
+    padding-inline: 0;
     display: block;
+    max-width: 100%;
   }
   .header.mo .mobileMenu .panel .menuList ul li {
-    padding: 20px 18px;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 19px 16px;
     margin: 0;
     font-size: 21px;
     font-weight: bold;
     color: #151515;
     border-bottom: 1px solid var(--black);
+    justify-content: flex-start;
   }
   .header.mo .mobileMenu .panel .menuList ul li a {
     color: inherit;
@@ -7337,6 +7361,34 @@ h4 {
   }
   .header.mo .mobileMenu .panel .menuList ul li:hover, .header.mo .mobileMenu .panel .menuList ul li.ac {
     color: #f63;
+  }
+  .header.mo .mobileMenu .panel .bottom {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: var(--margin-margin-5, 20px) var(--margin-margin-4, 16px);
+    gap: var(--margin-margin-4, 16px);
+  }
+  .header.mo .mobileMenu .panel .bottom .desc {
+    color: #000;
+    /* E_Sub XS */
+    font-family: var(--Font-Family-Font-Family-M, Montserrat);
+    font-size: var(--Font-Size-XS, 12px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+  }
+  .header.mo .mobileMenu .panel .bottom .copyright {
+    color: #000;
+    /* E_Sub XS */
+    font-family: var(--Font-Family-Font-Family-M, Montserrat);
+    font-size: var(--Font-Size-XS, 12px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
   }
   .header.mo .mobileMenu .panel .copy {
     padding: 23px 18px;
@@ -11721,9 +11773,9 @@ h4 {
 .ultrafasion-hero {
   background: url(../img/bg_ultrafasion_hero.jpg) center/cover no-repeat;
   background-attachment: fixed;
-  height: calc(100vh + 80px);
+  height: calc(100vh + 60px);
   background-color: rgb(227, 227, 227);
-  margin-top: -80px;
+  margin-top: -60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14383,7 +14435,7 @@ h4 {
   border-radius: 20px;
 }
 .new-home .intro {
-  margin: 80px 0;
+  margin: 48px 0;
 }
 .new-home .intro h2 {
   color: #000;
@@ -14400,7 +14452,7 @@ h4 {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 36px;
+  margin-top: 24px;
 }
 .new-home .intro .count .item {
   text-align: center;
