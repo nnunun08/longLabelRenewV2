@@ -10245,7 +10245,7 @@ h4 {
 .detailPage p {
   font-size: 17px;
   font-weight: 500;
-  line-height: 2.12;
+  line-height: 160%;
   margin-bottom: 36px;
 }
 .detailPage .slickSlide {
@@ -10571,7 +10571,7 @@ h4 {
 .detailPage .article .item p {
   font-size: 15px;
   font-weight: 500;
-  line-height: 2;
+  line-height: 160%;
   margin-bottom: 0;
 }
 .detailPage .article .item + .item {
@@ -13309,7 +13309,7 @@ h4 {
   font-size: var(--Font-Size-S, 17px);
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 176.471% */
+  line-height: 160%;
 }
 .new_articleDetail_contents .slideImg,
 .new_archiveDetail_contents .slideImg {
