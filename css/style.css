@@ -10607,10 +10607,10 @@ h4 {
 .detailPage .writing ul {
   overflow: auto;
   flex-wrap: nowrap;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .detailPage .writing .item {
   padding-bottom: 25px;
