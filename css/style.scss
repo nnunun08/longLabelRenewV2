@@ -2873,6 +2873,7 @@ h4 {
 		}
 	}
 
+
 	@include tag;
 	.tag {
 		span {
@@ -4783,17 +4784,20 @@ h4 {
 	.modal {
 		display: block;
 	}
+	.header.mo .searchBtn {
+		display: none;
+	}
 	.header.mo .menuBtn {
-		z-index: 1;
+		z-index: 11;
 		border: 0;
 		position: fixed;
-		top: 14px;
-		right: 16px;
+		top: 72px;
+    	right: 8px;
 		left: unset;
-		width: 32px;
-		height: 32px;
+		width: 28px;
+		height: 28px;
 		padding: 0;
-		background: #151515 url(../img/ic_hamburger_close.svg) center/24px no-repeat;
+		background: url(../img/ic_hamburger_close.svg) center/28px no-repeat;
 		text-indent: -9999px;
 		transform: none;
 		cursor: pointer;
@@ -5660,8 +5664,8 @@ h4 {
 					color: #f4f4f4;
 					line-height: 1.13;
 					// min-height: 133px;
-					min-height: 100px;
-					height: auto;
+					height: 100px;
+					// height: auto;
 					.backArr {
 						display: none;
 						position: absolute;
@@ -5687,14 +5691,14 @@ h4 {
 						justify-content: flex-start;
 					}
 					.profile {
-						flex: 0 0 106px;
-						width: 106px;
-						height: 106px;
+						flex: 0 0 62px;
+						width: 62px;
+						height: 62px;
 						border-radius: 50%;
 						overflow: hidden;
 						border: 1px solid #707070;
 						background-color: var(--white);
-						margin-right: 15px;
+						margin-right: 8px;
 						// background: #F4F4F4 url(../img/ic_profile_df.svg) center no-repeat;
 						box-sizing: border-box;
 						img {
@@ -5705,13 +5709,18 @@ h4 {
 					}
 
 					.nickname {
-						font-size: 24px;
+						font-size: 20px;
   						font-weight: bold;
+						line-height: 140%; /* 28px */
 					}
 					.name {
-						font-size: 24px;
+						font-size: 20px;
   						font-weight: bold;
 						display: flex;
+						line-height: 140%; /* 28px */
+						a {
+							color: inherit;
+						}
 						.arr {
 							display: inline-block;
 							margin-left: 8px;
@@ -5736,9 +5745,12 @@ h4 {
 						margin-top: 10px;
 					}
 					.user {
-						font-size: 18px;
+						font-size: 20px;
 						font-weight: bold;
 						cursor: pointer;
+						a {
+							color: inherit;
+						}
 						&.login {
 							padding-right: 27px;
 							background: url(../img/ic_mobile_user_arr.svg) right center no-repeat;
@@ -5837,11 +5849,11 @@ h4 {
 					letter-spacing: normal;
 					text-align: left;
 					color: #000;
-					margin-left: 18px;
+					margin-left: 16px;
+					margin-top: 81px;
 					display: inline-flex;
 					gap: 6px;
 					align-items: center;
-					text-decoration: none;
 				}
 			}
 		}
