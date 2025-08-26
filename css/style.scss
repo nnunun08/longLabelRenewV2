@@ -10981,6 +10981,24 @@ body:has(.listGrid) .searchWrap {
 		font-weight: 400;
 		line-height: 160%;
 	}
+	.singleImg {
+		margin-top: 20px;
+		.imgBx {
+			height: 440px;
+		}
+		img {
+			display: block;
+			width: 100%;
+			max-height: 100%;
+			object-fit: cover;
+			margin: 0 auto;
+		}
+		&.centerAlign {
+			img {
+				max-width: 600px;
+			}	
+		}
+	}
 	.slideImg {
 		// padding: 0 19%;
 		overflow: hidden;

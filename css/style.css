@@ -13311,6 +13311,26 @@ h4 {
   font-weight: 400;
   line-height: 160%;
 }
+.new_articleDetail_contents .singleImg,
+.new_archiveDetail_contents .singleImg {
+  margin-top: 20px;
+}
+.new_articleDetail_contents .singleImg .imgBx,
+.new_archiveDetail_contents .singleImg .imgBx {
+  height: 440px;
+}
+.new_articleDetail_contents .singleImg img,
+.new_archiveDetail_contents .singleImg img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.new_articleDetail_contents .singleImg.centerAlign img,
+.new_archiveDetail_contents .singleImg.centerAlign img {
+  max-width: 600px;
+}
 .new_articleDetail_contents .slideImg,
 .new_archiveDetail_contents .slideImg {
   overflow: hidden;
