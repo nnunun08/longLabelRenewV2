@@ -12854,3 +12854,35 @@ body:has(.listGrid) .searchWrap {
 		}
 	}
 }
+
+// UPDATE 0920
+.header ul {flex:0 0 auto;}
+.header .rightBtn {flex:0 0 auto;}
+.new-home .slick-slide {padding-inline: 12px; box-sizing:border-box;}
+
+
+// UPDATE 0924
+.header ul {
+	flex: 1 0 auto;
+}
+.header .rightBtn {
+	flex: 0 0 auto;
+}
+.articleList .contents .listWrap .listItem .bottom .tagList {
+	margin: 0;
+}
+.articleList .contents .listWrap .listItem .bottom .date {
+	margin-top: 24px;
+}
+.articleList .contents .listWrap .listItem .bottom .tit {
+	height: 56px;
+}
+.header.mo .mobileMenu .panel .top .close {
+	display: none;
+}
+.new-home .home-hero .track img {
+	aspect-ratio: 4 / 5;
+}
+.new-home .archiveList .contents .listWrap .listItem {
+	margin: 0;
+}
