@@ -15130,4 +15130,8 @@ h4 {
 
 .new-home .archiveList .contents .listWrap .listItem {
   margin: 0;
+}
+
+.header ul {
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
