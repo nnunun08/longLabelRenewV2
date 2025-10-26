@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+<body class="">
+    <div class="headerWrap">
+        <div class="header pc">
+            <div class="inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li>Pick</li>
+                    <li>Archive</li>
+                    <li>Talks</li>
+                    <li>Stories</li>
+                    <li>About</li>
+                </ul>
+                <div class="rightBtn">
+                    <!-- <div class="ac">
+                        Digital Label
+                    </div> -->
+                    <div class="user">
+                        <span>로그인</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header mo">
+            <div class="inner">
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="searchBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.9998 21.0008L15.8028 15.8038M15.8028 15.8038C17.2094 14.3972 17.9996 12.4895 17.9996 10.5003C17.9996 8.51108 17.2094 6.60336 15.8028 5.19678C14.3962 3.79021 12.4885 3 10.4993 3C8.51011 3 6.60238 3.79021 5.19581 5.19678C3.78923 6.60336 2.99902 8.51108 2.99902 10.5003C2.99902 12.4895 3.78923 14.3972 5.19581 15.8038C6.60238 17.2104 8.51011 18.0006 10.4993 18.0006C12.4885 18.0006 14.3962 17.2104 15.8028 15.8038Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- .menuBtn 클릭이벤트 시 mobileMenu요소에 .ac 토글(숨김/노출) -->
+            <div class="mobileMenu">
+                <div class="panel">
+                    <div class="top">
+                        <div class="backArr"></div>
+                        <div class="flexBx">
+                            <div>
+                                <div class="user">
+                                    <span>로그인해 주세요</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuList">
+                        <ul>
+                            <li>Pick</li>
+                            <li>Archive</li>
+                            <li>Talks</li>
+                            <li>Stories</li>
+                            <li>About</li>
+                            <li>Digital Label</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+        </div>
+        <div class="headerBack"></div>
+    </div>
+    
+    <div class="interactive-article">
+        <div class="interactive-hero">
+            <div class="inner">
+                <h2>매초 한 대의 트럭이<br/>
+                    옷을 버린다</h2>
+                <img class="obj1" src="./img/251023_interactive/obj_hero_1.png" alt="obj1">
+                <img class="obj2" src="./img/251023_interactive/obj_hero_2.png" alt="obj2">
+            </div>
+        </div>
+    
+        <div class="editorNote">
+            <div class="inner">
+                <div class="sub">Editor’s note</div>
+                <h3>
+                    여러분은 어떤 옷을 새로 사고,<br/>
+                    또 어떤 옷들을 버리고 있었나요? 
+                </h3>
+                <p>
+                    UNEP의 자료에 따르면, 전 세계에서 매년 9,200만 톤의 의류가 버려집니다. <br/>
+                    매초마다 쓰레기 트럭 한 대가 옷으로 가득 차 불길 속으로 사라지거나, 매립지 속에 묻히고 있습니다.<br/>
+                    오늘날의 패션 산업은 ‘만들고, 팔고, 버리는’ 선형(Linear) 구조 라고 합니다. 그리고 그 구조는 환경과 경제의 임계점에 다다랐다는 분석이 나오고 있어요.<br/>
+                    이번 리포트에서는 패션 산업의 마지막 과정, 버리는 옷에 대해 살펴보겠습니다.
+                </p>
+            </div>
+        </div>
+        <div class="article-item">
+            <div class="inner">
+                <h3>
+                    01<br/>
+                    한 대의 트럭 분량
+                </h3>
+                <img src="./img/251023_interactive/img_article_01.png" alt="article_img">
+                <figcaption>수백만 톤의 의류 폐기물이 버려지는 모습 (출처: Alamy)</figcaption>
+                <p>전 세계적으로 매년 약 9,200만 톤의 의류 폐기물이 발생하고 있으며 (출처:UNEP, 2024), 이는 매초 쓰레기 트럭 한 대 분량의 옷이 소각되거나 매립되는 것과 같다고 합니다.(출처: Ellen MacArthur Foundation, 2024)</p>
+                <p>그런데 현재의 섬유 재활용 시스템은 이 거대한 폐기물 규모를 감당하지 못합니다. UNEP의 자료에 따르면, 2023년 기준으로 섬유 중 재활용 원료로 사용된 비율은 단 8%에 불과하다고 해요. 특히 새로운 의류로 재활용되는 비율은 겨우 1% 수준에 머물러 있죠. 이는 대부분의 섬유 폐기물이 여전히 매립, 소각, 또는 통제되지 않은 수출을 통해 처리되고 있다는 것을 의미하기도 합니다. 보스턴컨설팅그룹(BCG)은 이러한 의류 폐기가 환경 오염 문제를 넘어 자원의 심각한 손실을 초래한다고도 분석합니다. 2024년 기준, 원자재 가치로 환산할 때 섬유 폐기물로 인한 자원 손실액은 연간 약 1,500억 달러에 달한다고 해요.</p>
+            </div>
+        </div>
+
+        <div class="article-item bgGray">
+            <div class="inner">
+                <h3>
+                    02<br/>
+                    패션 쓰레기 산
+                </h3>
+                <p>
+                    칠레 북부의 아타카마 사막은 이제 인류의 과소비가 남긴 새로운 지질학적 표식으로 기록되고 있습니다. 유럽과 북미 등지에서 팔리지 않거나 버려진 옷들이 칠레 이키케(Iquique)의 면세 구역을 통해 수입된 후, 재판매되지 못한 물품들이 인근 알토 오스피시오(Alto Hospicio) 주변 사막에 불법 투기되면서 거대한 의류 더미를 형성했습니다. 이 폐의류 산은 약 60,000톤 규모로 추정되며, 그 크기가 너무 커서 고해상도 위성 이미지로도 명확하게 관측 가능한 수준에 이르렀습니다.
+                </p>
+                <img src="./img/251023_interactive/img_article_02.png" alt="article_img">
+                <figcaption>위성에서 본 칠레 아타카마 사막 의류 산 (출처: SKYFI)</figcaption>
+                <p>유엔은 이 현장을 "환경 및 사회적 비상사태"로 규정하며, 글로벌 패스트 패션 산업의 무책임한 폐기 관행이 지구상에서 가장 건조하고 취약한 생태계 중 하나를 파괴하고 있음을 경고했습니다. 이 거대한 쓰레기 더미는 선진국 소비 패턴의 결과가 지구의 처리 능력을 근본적으로 초과했음을 시각적으로 보여주는 증거이기도 하죠.</p>
+                <h4>아타카마 사막의 모습들</h4>
+                <div class="guide">좌우의 화살표를 클릭해 슬라이드를 넘겨보세요.</div>
+            </div>
+            <div class="slideImgBx">
+                <div class="slideImg">
+                    <div>
+                        <div class="imgPadding"><img src="./img/251023_interactive/img_article_03.png" alt="slideImg"></div>
+                    </div>
+                    <div>
+                        <div class="imgPadding"><img src="./img/251023_interactive/img_article_04.png" alt="slideImg"></div>
+                    </div>
+                    <div>
+                        <div class="imgPadding"><img src="./img/251023_interactive/img_article_05.png" alt="slideImg"></div>
+                    </div>
+                </div>
+            </div>
+            <figcaption>출처: 연합뉴스</figcaption>
+        </div>
+
+        <div class="article-item" style="padding-bottom: 0;">
+            <div class="inner">
+                <h3>
+                    03<br/>
+                    생산과 소비의 증가로 증가하고 있는 폐기물
+                </h3>
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    글로벌 현황
+                </h4>
+                <div class="interGraph">
+                    <img src="./img/251023_interactive/inter_graph_01.svg" alt="inter01">
+                </div>
+                <p>
+                    유럽연합(EU) 시민 한 사람의 연평균 섬유 소비량은 2019년 17kg에서 2022년 19kg으로 증가했으며, 연간 약 12kg의 의류가 폐기되고 있습니다. (출처: Eurostat/유럽의회 자료, 2022) 이러한 증가세의 중심에는 패스트 패션(Fast Fashion)이 지목되고 있습니다. 저렴한 가격으로 빠르게 생산되는 패스트패션으로 인한 짧은 유행 주기, 과잉 생산, 과잉 소비가 맞물리며 섬유 폐기물 규모 역시 폭발적으로 커지고 있습니다.
+                </p>
+                <p>
+                    더 큰 문제는, 이렇게 폐기된 의류의 70% 이상이 합성섬유라 자연 분해되지 않으며 사용 단계에서도 미세 플라스틱 발생의 문제를 야기시킨다는 점입니다. 합성 섬유는 원재료를 분리할 방법이 없어 대부분 매립되거나 소각 처리되며, 이는 전 세계 온실가스 배출량의 10%를 차지하는 패션 산업의 탄소 발자국을 더욱 악화시키고 있는 것으로 분석되었어요. (출처: NewsTree/CIRC, 2021)
+                </p>
+
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    대한민국의 현실
+                </h4>
+
+
+                <div class="trash-cound">
+                    <div class="titWrap">
+                        <div class="title">한국의 폐의류·폐섬유 배출량 규모</div>
+                        <div class="sub">2022년 기준</div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="key">생활계 폐의류</div>
+                            <div class="counter value" data-target="106536">0</div>
+                            <em>톤</em>
+                        </li>
+                        <li>
+                            <div class="key">사업장 배출 포함<br/>폐의류</div>
+                            <div class="counter value" data-target="368397">0</div>
+                            <em>톤</em>
+                        </li>
+                    </ul>
+                    <figcaption>출처: 통계청</figcaption>
+
+
+                    <script>
+                        const counters = document.querySelectorAll('.counter');
+
+                        const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const target = +el.dataset.target;
+                            let count = 0;
+                            const duration = 3500;
+                            const increment = target / (duration / 16);
+
+                            const update = () => {
+                                count += increment;
+                                if (count < target) {
+                                el.textContent = Math.floor(count).toLocaleString();
+                                requestAnimationFrame(update);
+                                } else {
+                                el.textContent = target.toLocaleString();
+                                }
+                            };
+                            update();
+                            observer.unobserve(el);
+                            }
+                        });
+                        });
+
+                        counters.forEach(c => observer.observe(c));
+                    </script>
+                </div>
+
+                <p>
+                    그렇다면 한국은 어떨까요? 통계청 자료에 따르면 2022년 기준, 생활계 폐의류는 약 10만 6,536톤이었으며, 사업장 배출을 포함한 폐섬유는 36만 8,397톤이라고 합니다. 이는 2021년 19만 6,048톤 대비 두 배 가까운 증가세를 보인 수치입니다.
+                </p>
+                <p>
+                    이처럼 폐섬유 배출량이 급격히 늘어난 이유는 단순히 소비자가 옷을 더 많이 버려서가 아닙니다. 생산과 유통 과정에서 발생하는 재고 의류나 섬유 폐기물(사업장 폐기물), 즉, 새 옷을 버리는 구조가 본격적으로 드러난 결과라고 할 수 있습니다. 다시 말해 우리나라의 섬유 산업 전반에 재고 관리 및 폐기물 처리의 구조적 사각지대가 존재함을 보여주는 결과이며, 소비자만의 문제가 아닌 시스템의 문제로까지 확장되고 있다다는 것이죠.
+                </p>
+            </div>
+        </div>
+
+        <div class="article-item article-4">
+            <div class="inner">
+                <h3>
+                    04<br/>
+                    의류 폐기물 처리를 위해 발생되는 환경 문제
+                </h3>
+                <img src="./img/251023_interactive/img_article_06.svg" alt="img">
+                <p>
+                    이렇게 버려지는 의류 폐기물은 어디로 갈까요? 주로 매립, 소각 그리고 수출의 방식으로 처리되며, 그중 약 73%는 매립과 소각으로 사라지고 있습니다. 문제는, 이 세 가지 방식이 각각 다른 형태의 환경 오염을 일으킨다는 점입니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="scrollscreen scrollscreen1">
+            <div class="inner">
+                <div class="textWrap">
+                    <div class="storyGroup">
+                        <h3>매립(Landfill)</h3>
+                        <h4>보이지 않는 곳에서 일어나는 오염</h4>
+                        <p>의류 매립은 기후 변화와 수질 오염이라는 두 가지 심각한 문제를 동시에 일으킵니다. 섬유의 분해 속도는 소재에 따라 큰 차이가 있습니다.</p>
+                        <ul>
+                            <li>면 티셔츠: 약 6개월</li>
+                            <li>나일론 의류: 약 30~40년</li>
+                            <li>가죽 신발: 약 25~40년</li>
+                        </ul>
+                        <p>오늘날 대부분의 옷은 폴리에스테르와 면이 섞인 혼방 섬유로 만들어져 있습니다.이런 섬유는 원재료를 분리하기 어렵기 때문에 재활용이 거의 불가능하고, 결국 매립지에 수십 년 이상 잔류하게 됩니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>이렇게 분해되지 않는 옷들은 단순히 공간을 차지하는 데서 끝나지 않습니다. 매립지 내부에서는 산소가 부족한 상태에서 혐기성 분해(Anaerobic Decomposition)가 일어나는데, 이 과정에서 발생하는 메탄가스(Methane)는 이산화탄소보다 약 25배 이상 강력한 온실가스로 작용합니다. 즉, 버려진 옷이 보이지 않는 곳에서 기후 위기를 가속화시키고 있는 셈입니다.</p>
+                        <p>또한 매립지에서는 침출수(Leachate)라는 또 다른 문제가 생깁니다. 염료, 발수 코팅제, 난연제 등 의류 생산 과정에서 사용된 유해 화학물질이 침출수를 통해 지하수와 토양으로 스며들어 오염을 유발합니다. 이 오염은 한번 발생하면 복구가 어렵고, 수십 년 동안 생태계에 영향을 미칠 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollscreen scrollscreen2">
+            <div class="inner">
+                <div class="textWrap">
+                    <div class="storyGroup">
+                        <h3>소각 (Incineration)</h3>
+                        <h4>눈앞에서 사라지지만, 대기 중에 남는다</h4>
+                        <p>소각은 의류 폐기물의 부피를 급격히 줄이는 방식입니다. 하지만 동시에 탄소 집약적인 처리 방식이기도 합니다.</p>
+                        <p>ZERO WASTE EUROPE의 자료에 따르면, 폐기물 1톤을 소각할 때 약 1.1톤의 이산화탄소(CO₂)가 대기로 방출된다고 합니다. 게다가 오늘날 대부분의 옷이 폴리에스테르 등 플라스틱 기반 합성섬유로 만들어져 있기 때문에, 의류를 태울 경우 대량의 온실가스와 독성 화합물이 함께 배출됩니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>일부에서는 소각 과정에서 발생하는 열을 에너지로 재활용하는 폐기물 에너지 회수(WtE, Waste-to-Energy) 기술을 근거로 “소각이 매립보다 낫다”고 주장하기도 합니다.</p>
+                        <p>하지만 실제 전 과정 평가(LCA) 연구 결과는 다릅니다. 소각은 매립량을 줄일 수는 있지만, 재사용(reuse)이나 재활용(recycling)에 비해 지구 온난화 잠재력(GWP)과 인체 독성 가능성(HTP) 등 종합적인 환경 발자국이 훨씬 크다는 것이 여러 연구의 공통된 결론입니다. 결국, 소각은 ‘처리’가 아니라 또 다른 형태의 ‘배출’에 가깝습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollscreen scrollscreen3">
+            <div class="inner">
+                <div class="textWrap">
+                    <div class="storyGroup">
+                        <h3>수출 (Export)</h3>
+                        <h4>국경을 넘는 쓰레기, 환경 정의의 문제</h4>
+                        <p>의류 폐기물의 세 번째 길은 ‘수출’입니다. 한 나라의 소비가 다른 나라의 부담이 되는 방식이죠.</p>
+                        <p>미국은 세계 최대의 중고 섬유 수출국입니다. 그런데 인구 규모에 비해 대한민국의 폐의류 수출량은 세계 5위권에 속할 정도로 높습니다. 우리나라는 매년 약 30만 톤 이상의 중고 의류를 수출하고 있으며, 2022년 기준으로 인도·말레이시아 등지에 약 7만 톤씩 수출한 것으로 집계됩니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>이렇게 이동하는 대부분의 중고 의류는 ‘재사용’ 명목으로 수출되지만, 그중 상당수는 품질이 낮아 현지에서 다시 버려집니다. 가디언(The Guardian) 보도에 따르면, 세계 최대 중고 의류 시장 중 하나인 가나의 칸타만토(Kantamanto) 시장에서 거래되는 옷의 약 40%가 쓰레기로 버려지고 있습니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>이 버려진 의류는 결국 가나 아크라(Accra)의 올드 파다마(Old Fadama)와 같은 비공식 매립지로 흘러 들어가 거대한 ‘쓰레기 산’을 형성합니다. 그곳에서는 침출수가 토양과 하천을 오염시키고, 불법 소각으로 인해 대기와 식수에 독성 물질이 유입됩니다. 결국, 이 지역 주민들은 환경오염의 직접적인 피해자가 됩니다.</p>
+                        <p>이 현상은 단순한 폐기물 문제가 아닙니다. 소비 중심 국가가 발생시킨 부담을 환경 인프라가 취약한 개발도상국으로 전가하는 ‘환경 정의(Environmental Justice)’의 문제를 드러내는 대표적인 사례이기도 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scrollscreen scrollscreen4">
+            <div class="inner">
+                <div class="textWrap">
+                    <div class="storyGroup">
+                        <h3>미세플라스틱</h3>
+                        <h4>우리가 입는 옷이 남기는 가장 작은 잔해</h4>
+                        <p>우리가 입는 옷은 생산부터 사용, 그리고 폐기까지 모든 단계에서 환경에 영향을 미칩니다. 생산 과정에서는 염료, 표백제, 발수 코팅제 등 수천 종의 화학 물질이 사용되는데 이 물질들이 포함된 폐수가 배출되면서, 섬유 산업은 전 세계 물 오염의 세 번째 주요 원인으로 지목되고 있습니다.</p>
+                        <p>하지만 진짜 문제는 옷이 만들어진 후에도 계속된다는 점입니다. 그 중심에 있는 것이 바로 미세플라스틱(Microplastics)입니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>합성섬유로 만든 옷을 세탁할 때마다, 약 70만 개의 미세플라스틱 입자가 방출된다고 합니다. 이 미세 입자들은 대부분 하수처리 시설을 통과해 결국 강과 바다로 흘러들어 갑니다. 우리가 일상적으로 하는 세탁 과정의 결과가 바다 생태계 전체에 누적되고 있습니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>옷이 버려지고 분해되는 과정에서도 막대한 양의 미세플라스틱이 새롭게 만들어집니다. 한 벌의 옷이 썩는 동안 발생할 수 있는 미세플라스틱의 수는 최대 12억 개에 달한다고 합니다. 이렇게 발생한 미세플라스틱은 전 세계 바다 속 플라스틱 오염의 약 35%를 차지하며, 매립지나 불법 투기 지역에서는 오랜 시간 동안 토양과 지하수를 오염시키는 주된 원인으로 작용합니다.</p>
+                    </div>
+                    <div class="storyGroup">
+                        <p>미세플라스틱은 단지 바다에 머물지 않습니다. 플랑크톤 → 물고기 → 인간으로 이어지는 먹이 사슬을 따라 다시 우리의 몸속으로 들어옵니다. 결국, 우리가 매일 입는 옷이 보이지 않는 형태로 생태계와 인간 건강을 위협하는 순환 고리를 만들고 있는 셈입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-item article-5">
+            <div class="inner">
+                <h3>
+                    05<br/>
+                    그래서 시작된 규제
+                </h3>
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    <div class="subt">글로벌 규제 압박</div>
+                    <span>EU 섬유 EPR 제도 도입<b>(2025년 시행)</b></span>
+                </h4>
+                <img src="./img/251023_interactive/img_article_07.png" alt="img">
+                <figcaption>출처 : Green Growth Sector Committee</figcaption>
+                <p>2025년은 글로벌 섬유 산업의 규제 전환점이 되는 해입니다.</p>
+                <p>유럽연합(EU)은 순환경제법에 따라 섬유 부문에 대한 생산자책임재활용제(EPR, Extended Producer Responsibility)를 의무화했습니다. 이 제도는 단순히 “버린 뒤의 처리”를 바꾸는 것이 아닙니다. 생산자(패션 브랜드)가 제품의 수거, 재활용, 폐기 비용 전반에 재정적으로 책임을 지도록 하는 제도입니다.</p>
+                <p>즉, “팔 때까지”의 책임이 아니라 “버려질 때까지”의 책임으로 확장되는 것이죠. 이로 인해 브랜드들은 재활용이 쉬운 설계(Design for Recycling)를 도입해야 하며, 재고를 폐기하기보다 리세일·수선·리메이크 등 순환형 비즈니스 모델로 전환하도록 압박받게 됩니다. EU의 섬유 EPR 제도는 단순한 환경정책을 넘어, 패션 산업의 구조 자체를 바꾸는 ‘시장 규제형 혁신 정책’으로 평가받고 있습니다.</p>
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    <div class="subt">국내 정책 방향</div>
+                    생산자 책임 강화 및 재고 소각 금지 논의
+                </h4>
+                <img src="./img/251023_interactive/img_article_08.png" alt="img">
+                <figcaption>출처 : unsplash</figcaption>
+                <p>한국에서도 재고 의류 폐기 문제를 해결하기 위한 움직임이 본격화되고 있습니다. ‘새 옷 소각 금지 3법’이라 불리는 법률 개정안은 재고 의류의 소각을 금지하고,패션 사업자에게 순환 이용 촉진 및 재활용 의무를 부과하는 내용을 담고 있습니다. 이 논의는 2022년 급증한 국내 폐섬유 배출량이 단순한 소비 문제를 넘어, 생산 단계의 구조적 폐기 문제라는 점을 보여준 이후 본격화되었습니다.</p>
+                <p>다만 EU의 EPR이 “폐기물의 전 과정”에 대한 생산자의 재정적 책임을 요구하는 데 비해, 현재 국내 논의는 “버리는 행위”의 제한에 초점을 두고 있어 정책의 범위와 실효성 면에서 아직은 한계가 있다는 지적도 있습니다.</p>
+                
+            </div>
+        </div>
+
+        <div class="article-item article-6">
+            <div class="inner">
+                <h3>
+                    06<br/>
+                    의류 폐기물이 만든 위기, 그리고 기회
+                </h3>
+                <p>의류 폐기물 증가 이슈로 환경에 악영향을 미치고 있고, 이를 규제하고자 하는 정부 조직의 변화가 눈에 띕니다. 그렇다면 우리의 미래는 어떻게 될까요? 현재 어려운 환경은 또 다른 시선으로 보면 새로운 기회가 될 수 있는 양면성의 영역일 수 있습니다. 의류 폐기물 역시 그렇습니다.</p>
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    <div class="subt">생산자의 변화</div>
+                    <span>‘버려질 때까지’ 생각하는 설계</span>
+                </h4>
+                <p>유럽연합(EU)의 EPR(생산자책임재활용) 제도 시행으로 글로벌 패션 브랜드들은 제품이 ‘만들어진 이후의 여정’을 설계 단계에서부터 고려해야 하는 상황에 놓였습니다. 이제 기업들은 단순히 옷을 잘 만드는 것이 아니라, “끝까지 책임질 수 있는 옷”을 만들어야 합니다.</p>
+
+                <div class="cardBx">
+                    <div class="item">
+                        <img src="./img/251023_interactive/img_article_09.svg" alt="img">
+                        <div class="bold">단일 소재 중심 설계 강화</div>
+                        <p>재활용 공정이 복잡한 혼방 섬유 사용을 최소화하고, 기계적·화학적 분리가 가능한 소재로 대체하는 방향으로 설계 기준이 강화될 것이에요.</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/251023_interactive/img_article_10.svg" alt="img">
+                        <div class="bold">재활용 기술 투자 확대</div>
+                        <p>혼방 섬유 분리 기술 등 섬유-대-섬유(Fibre-to-Fibre) 재활용 기술에 대한 R&D 투자가 집중적으로 늘고 있습니다. 이를 통해 현재 1% 수준에 머물고 있는 섬유 재활용률을 개선하려는 시도가 활발히 이어질 것이에요.</p>
+                    </div>
+                </div>
+
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    <div class="subt">제도적 전환</div>
+                    한국형 EPR과 폐기물 인프라 강화
+                </h4>
+                <p>국내에서도 폐섬유 배출량이 급격히 증가하면서 생산자의 직접적인 책임을 강화해야 한다는 목소리가 커지고 있습니다. 단순한 ‘재고 소각 금지’ 수준을 넘어, EU형 EPR 모델을 참고한 한국형 제도 도입이 논의되고 있습니다.</p>
+
+                <div class="cardBx">
+                    <div class="item f-r">
+                        <img src="./img/251023_interactive/img_article_11.svg" alt="img">
+                        <div>
+                            <div class="bold">한국형 EPR 도입</div>
+                            <p>패션 제조·유통사가 제품의 수거, 분류, 재활용 과정에 필요한 재정적 책임을 직접 부담하도록 하는 제도 설계가 추진 중입니다. 이를 통해 생산자뿐 아니라 시장 전체가 순환 구조 전환을 강제받게 될 것으로 보입니다. 이 제도는 패션 산업이 배출자 중심 구조에서 책임자 중심 구조로 이동하는 신호탄이 될 것이에요.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="tit">
+                    <img class="icon" src="./img/251023_interactive/ic_tit_circle.svg" alt="icon">
+                    순환 비즈니스 모델의 성장
+                </h4>
+                <p>의류 폐기물 문제는 동시에 순환 경제의 기회를 여는 열쇠이기도 합니다. 엘렌 맥아더 재단(Ellen MacArthur Foundation)에 따르면, 수선·재판매·렌탈·리메이킹 등 순환형 비즈니스 모델은 2030년까지 7,000억 달러 규모의 가치를 창출할 것으로 예상됩니다. 또한, 2024년 기준 4,000억 달러의 자본이 순환 경제 관련 이니셔티브에 투자되고 있으며, 이는 2021년보다 1,700억 달러 증가한 수치입니다.</p>
+                <img src="./img/251023_interactive/img_article_12.png" alt="img">
+                <p>한국에서는 아름다운 가게나 옷캔과 같은 공익 단체에서 기부를 통해 수거한 의류를 재판매하고 그 수익금을 사회 환원하거나 취약 계층을 지원하는 재사용 모델을 반영하고 있습니다. 그런데 최근 새로운 순환 생태계가 태동하고 있습니다. ‘리클(Recl)’, ‘런드리고(Laundrygo)’, ‘차란(Charan)’ 등 소비자들이 헌 옷을 직접 업체에 전달하고 무게나 재판매 가능성에 따라 보상받을 수 있도록 하는 의류 회수 및 재사용 플랫폼이 등장하고 있는 것인데요. 특히 리클은 2024년 10월까지 15억 벌 이상의 옷을 수거했다고 합니다.</p>
+
+                <div class="slideImgBx slideImgBx2">
+                    <div class="slideImg2">
+                        <div>
+                            <div class="imgPadding"><img src="./img/251023_interactive/img_article_13.png" alt="slideImg"></div>
+                        </div>
+                        <div>
+                            <div class="imgPadding"><img src="./img/251023_interactive/img_article_14.png" alt="slideImg"></div>
+                        </div>
+                        <div>
+                            <div class="imgPadding"><img src="./img/251023_interactive/img_article_15.png" alt="slideImg"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>이러한 플랫폼들은 소비자에게 인센티브를 제공해 폐기물을 자원으로 인식하게 만들며, 소비자와 생산자를 잇는 순환 구조를 만들고 있습니다. 더불어 그동안의 방식을 개선해 의류가 공식적이고 투명한 경로로 회수될 수 있도록 돕고 있기도 합니다 . 결국 이러한 플랫폼과 조직들이 한국 순환 패션 산업의 기초 인프라 역할을 수행하게 될 것으로 전망됩니다.</p>
+            </div>
+        </div>
+
+        <div class="detailPage">
+            <div class="inner">
+                <div class="article">
+                    <div class="longlabel">
+                        <img src="/img/logo_longlabel_black.svg" alt="">의 해석
+                    </div>
+                    <div class="item">
+                        <p>의류 폐기물 이슈는 현재 많은 나라가 직면한 위기입니다. 그리고 새로운 기회이기도 합니다. 위기 상황은 패션 산업의 지속 가능성이 더 이상 “선택”이 아니라, 패션 산업의 생존을 위한 전략적 방향이 되도록 할 것이라고 생각해요.</p>
+                    </div>
+                    <div class="item">
+                        <p>재활용 기술, 책임 제도, 그리고 순환 플랫폼이 맞물리며 “버려지는 옷의 끝”은 이제 “새로운 산업의 시작점”으로 바뀌어야 할 때입니다. 그럼 서두에 남긴 질문을 바꿔야 할 것이에요. 여러분은 어떤 옷을 다시 되돌렸나요?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ref">
+            <div class="inner">
+                <div class="tit">관련자료</div>
+                <ul>
+                    <li>[1] 의류폐기물 재활용 길 열렸다...합성섬유 분리기술 개발 - 뉴스;트리, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.newstree.kr/newsView/ntr202108240002">https://www.newstree.kr/newsView/ntr202108240002</a></li>
+                    <li>[2] Circular Economy for the Fashion Industry | Ellen MacArthur Foundation, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.ellenmacarthurfoundation.org/topics/fashion/overview">https://www.ellenmacarthurfoundation.org/topics/fashion/overview</a></li>
+                    <li>[3] Spinning Textile Waste into Value - Boston Consulting Group, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.bcg.com/publications/2025/spinning-textile-waste-into-value">https://www.bcg.com/publications/2025/spinning-textile-waste-into-value</a></li>
+                    <li>[4] Unsustainable fashion and textiles in focus for International Day of Zero Waste 2025 - UNEP, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.unep.org/news-and-stories/press-release/unsustainable-fashion-and-textiles-focus-international-day-zero">https://www.unep.org/news-and-stories/press-release/unsustainable-fashion-and-textiles-focus-international-day-zero</a></li>
+                    <li>[5] 버리는옷,버려지지 않는 옷.docx</li>
+                    <li>[6] Textiles strategy - Environment - European Commission - Europa.eu, 10월 14, 2025에 액세스, <a target="_blank" href="https://environment.ec.europa.eu/strategy/textiles-strategy_en">https://environment.ec.europa.eu/strategy/textiles-strategy_en</a></li>
+                    <li>[7] EU, 음식물쓰레기 감축·섬유 EPR 의무화 확정…기업 비용·설계 압박 커진다 | 임팩트온, 10월 14, 2025에 액세스, <a target="_blank" href="http://www.impacton.net/news/articleView.html?idxno=16490">http://www.impacton.net/news/articleView.html?idxno=16490</a></li>
+                    <li>[8]Fast fashion: EU laws for sustainable textile consumption | Topics - European Parliament, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.europarl.europa.eu/topics/en/article/20201208STO93327/fast-fashion-eu-laws-for-sustainable-textile-consumption">https://www.europarl.europa.eu/topics/en/article/20201208STO93327/fast-fashion-eu-laws-for-sustainable-textile-consumption</a></li>
+                    <li>[9] 새옷을 태워서 버린다고? - 입법평론, 10월 14, 2025에 액세스, <a target="_blank" href="https://lawscool.co.kr/entry/%EC%83%88%EC%98%B7%EC%9D%84-%ED%83%9C%EC%9B%8C%EC%84%9C-%EB%B2%84%EB%A6%B0%EB%8B%A4%EA%B3%A0">https://lawscool.co.kr/entry/%EC%83%88%EC%98%B7%EC%9D%84-%ED%83%9C%EC%9B%8C%EC%84%9C-%EB%B2%84%EB%A6%B0%EB%8B%A4%EA%B3%A0</a></li>
+                    <li>[10] 전국 폐기물 발생 및 처리현황(2023년) - 자원순환정보시스템, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.recycling-info.or.kr/rrs/stat/envStatDetail.do;JSESSIONID=EA3F059719850B879F331EAA42A0B2ADCA41A87334B61528D4B60EDC849E84E2.RCIS-WAS_servlet_engine1?bbsId=BBSMSTR_000000000002&nttId=1513&s_nttSj=KEC006">https://www.recycling-info.or.kr/rrs/stat/envStatDetail.do;JSESSIONID=EA3F059719850B879F331EAA42A0B2ADCA41A87334B61528D4B60EDC849E84E2.RCIS-WAS_servlet_engine1?bbsId=BBSMSTR_000000000002&nttId=1513&s_nttSj=KEC006</a></li>
+                    <li>[11] 전국폐기물 발생 및 처리현황 - 자원순환정보시스템, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.recycling-info.or.kr/rrs/stat/envStatList.do?menuNo=M13020201">https://www.recycling-info.or.kr/rrs/stat/envStatList.do?menuNo=M13020201</a></li>
+                    <li>[12] 헌 옷 수거함에 넣으면 친환경? 다 어디로 갈까? - 뉴닉, 10월 14, 2025에 액세스, <a target="_blank" href="https://newneek.co/@before_spring/article/17159">https://newneek.co/@before_spring/article/17159</a></li>
+                    <li>[13] 연구보고서 - NKIS 국가정책연구포털, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.nkis.re.kr/subject_view1.do?otpId=OTP_0000000000008957&otpSeq=0&eoSeq=0">https://www.nkis.re.kr/subject_view1.do?otpId=OTP_0000000000008957&otpSeq=0&eoSeq=0</a></li>
+                    <li>[14] Economic, Environmental, and Sociopolitical Aspects of Waste Incineration: A Scoping Review - MDPI, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.mdpi.com/2071-1050/17/12/5528">https://www.mdpi.com/2071-1050/17/12/5528</a></li>
+                    <li>[15] Examining Cut-and-Sew Textile Waste within the Apparel Supply Chain - UCSB Bren School, 10월 14, 2025에 액세스, <a target="_blank" href="https://bren.ucsb.edu/sites/default/files/2024-04/Examining%20Cut-and-Sew%20Textile%20Waste%20within%20the%20Apparel%20Supply%20Chain%204.10.24.pdf">https://bren.ucsb.edu/sites/default/files/2024-04/Examining%20Cut-and-Sew%20Textile%20Waste%20within%20the%20Apparel%20Supply%20Chain%204.10.24.pdf</a></li>
+                    <li>[16] Why Is Textile Waste Incineration Environmentally Harmful? → Question - Pollution → Sustainability Directory, 10월 14, 2025에 액세스, <a target="_blank" href="https://pollution.sustainability-directory.com/question/why-is-textile-waste-incineration-environmentally-harmful/">https://pollution.sustainability-directory.com/question/why-is-textile-waste-incineration-environmentally-harmful/</a></li>
+                    <li>[17] Circularity of the EU textiles value chain in numbers - European Environment Agency, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.eea.europa.eu/en/analysis/publications/circularity-of-the-eu-textiles-value-chain-in-numbers">https://www.eea.europa.eu/en/analysis/publications/circularity-of-the-eu-textiles-value-chain-in-numbers</a></li>
+                    <li>[18] Exporting Used Textiles Helps Global and Local Economies - USDA, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.usda.gov/about-usda/news/blog/exporting-used-textiles-helps-global-and-local-economies">https://www.usda.gov/about-usda/news/blog/exporting-used-textiles-helps-global-and-local-economies</a></li>
+                    <li>[19] [세계선교] 가나 :지난 10년 동안 의류 폐기물이 쓰레기산 만들어 - 뉴스파워, 10월 14, 2025에 액세스, <a target="_blank" href="http://www.newspower.co.kr/56284">http://www.newspower.co.kr/56284</a></li>
+                    <li>[20] “선의로 기부한 옷들, 아프리카 '쓰레기 산' 되고 있다” - 조선일보, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.chosun.com/international/international_general/2022/01/30/ZNDA4QFCAJDMNO6UG47IP7JJBI/">https://www.chosun.com/international/international_general/2022/01/30/ZNDA4QFCAJDMNO6UG47IP7JJBI/</a></li>
+                    <li>[21] [환경부] 설명-폐의류 재활용은 환경오염방지시설 설치가 필요하지 않습니다 > 자원순환소식, 10월 14, 2025에 액세스, <a target="_blank" href="http://kwaste.or.kr/bbs/board.php?bo_table=board16&wr_id=1019">http://kwaste.or.kr/bbs/board.php?bo_table=board16&wr_id=1019</a></li>
+                    <li>[22] The Ellen MacArthur Foundation's Impact Report Summary 2024, 10월 14, 2025에 액세스, <a target="_blank" href="https://www.ellenmacarthurfoundation.org/annual-impact-report-2024">https://www.ellenmacarthurfoundation.org/annual-impact-report-2024</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer" style="margin-top: 0;">
+            <div class="inner">
+                <div class="topCon">
+                    <img class="footerLogo" src="./img/footerLogo.svg" alt="footerLogo">
+                    <ul>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                    </ul>
+                </div>
+                <div class="bodyCon">
+                    <p>
+                        <span>상호명&nbsp;:&nbsp;리마인드얼스</span>  |  <span>대표자&nbsp;:&nbsp;김혜림</span>  |   <span>사업자번호&nbsp;:&nbsp;645-06-01901</span>  |  <span>주소&nbsp;:&nbsp;경기도 고양시 일산동구 무궁화로 20-38, 5층 527호(장항동, 로데오탑)</span><br>
+                        <span>통신판매업신고번호&nbsp;:&nbsp;2022-지역명-1234</span>  |  <span>입금계좌&nbsp;:&nbsp;국민은행&nbsp;123456678</span>  |  <span>문의&nbsp;:&nbsp;02-123-1234</span>  |  <span>메일&nbsp;:&nbsp;hello@emindearth.com</span><br>
+                        롱레이블은 리마인드얼스가 운영하는 친환경 제품 임팩트 분석 플랫폼입니다.
+                    </p>
+                    <img class="insta" src="./img/ic_instagram.svg" alt="ic_instagram">
+                </div>
+                <span class="copyright">COPYRIGHT ⓒ LONG LABEL. All Rights Reserved.</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/mobileToggle.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" defer>
+        window.addEventListener('DOMContentLoaded', () => {
+            AOS.init();
+            // const observedElements = document.querySelectorAll('[data-aos]');
+            // const resizeObserver = new ResizeObserver(() => {
+            //     AOS.refresh();
+            // });
+            // observedElements.forEach(el => resizeObserver.observe(el));
+        });
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                AOS.refresh();
+            }, 300);
+        });
+    </script>
+
+    <script src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slideImg').slick({
+                arrows: true,
+                dots: false,
+                infinite: true,
+                // centerMode: true,
+                // slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: false,
+                            centerPadding: 0,
+                        }
+                    }
+                ] 
+            });
+            $('.slideImg2').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                // centerMode: true,
+                // slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            centerMode: false,
+                            centerPadding: 0,
+                        }
+                    }
+                ] 
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
