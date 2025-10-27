@@ -9551,6 +9551,7 @@ body:has(.listGrid) .searchWrap {
 			margin: 0;
 		}
 	}
+
 	.d-center {
 		display: flex;
 		justify-content: center;
@@ -13049,12 +13050,12 @@ body:has(.listGrid) .searchWrap {
 		img {
 			max-width: 720px;
 			margin: 0 auto;
-			margin-bottom: 10px;
+			// margin-bottom: 10px;
 		}
 		figcaption {
 			font-size: 14px;
 			line-height: 214%;
-			margin-bottom: 30px;
+			margin-block: 10px 30px;
 			&:last-child {
 				margin: 0;
 			}
@@ -13071,8 +13072,8 @@ body:has(.listGrid) .searchWrap {
 		}
 		&.bgGray {
 			background-color: #D9D9D9;
-
 		}
+
 		h4 {
 			color: #000;
 			text-align: center;
@@ -13170,6 +13171,17 @@ body:has(.listGrid) .searchWrap {
 			position: relative;
 			max-width: 720px;
 			margin: 0 auto;
+			.bar1,
+			.bar2 {
+				height: 0;
+				transition: 1s;
+			}
+			&.active {
+				.bar1,
+				.bar2 {
+					height: unset;
+				}
+			}
 		}
 
 		.trash-cound {

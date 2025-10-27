@@ -40,7 +40,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -50,24 +50,21 @@ table {
 }
 
 Select {
-  font-family: inherit; /* 폰트 상속 */
+  font-family: inherit;
+  /* 폰트 상속 */
   background: url(../img/btn-drop-arrow.svg) no-repeat 98% 50%;
   /* 네이티브 화살표를 커스텀 화살표로 대체 */
-  -webkit-appearance: none;
   /* 네이티브 외형 감추기 */
-  -moz-appearance: none;
   appearance: none;
 }
 
 Select::-ms-expand {
-  display: none; /* 화살표 없애기 for IE10, 11*/
+  display: none;
+  /* 화살표 없애기 for IE10, 11*/
 }
 
 input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -webkit-border-radius: 0;
   border-radius: 0;
 }
 
@@ -77,9 +74,8 @@ input::-ms-clear {
 }
 
 /* input type number 에서 화살표 제거 */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   appearance: none;
-}/*# sourceMappingURL=reset.css.map */
+}
+/*# sourceMappingURL=reset.css.map */
