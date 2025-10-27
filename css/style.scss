@@ -12948,6 +12948,7 @@ body:has(.listGrid) .searchWrap {
 		left: 0;
 		width: 242px;
 		aspect-ratio: 1 / 1;
+		animation: float1 3s ease-in-out 0.3s infinite;
 	}
 	.obj2 {
 		position: absolute;
@@ -12955,7 +12956,25 @@ body:has(.listGrid) .searchWrap {
 		right: -120px;
 		width: 325px;
 		aspect-ratio: 1 / 1;
+		animation: float2 3.5s ease-in-out infinite;
 	}
+	@keyframes float1 {
+		0%, 100% {
+		transform: translateY(0);
+		}
+		50% {
+		transform: translate(-2px, -30px); /* 위로 살짝 이동 */
+		}
+	}
+	@keyframes float2 {
+		0%, 100% {
+		transform: translateY(0);
+		}
+		50% {
+		transform: translate(4px, -50px); /* 위로 살짝 이동 */
+		}
+	}
+
 	@media screen and (max-width:768px) {
 		background-attachment: scroll;
 		margin-top: 0;
@@ -13051,6 +13070,9 @@ body:has(.listGrid) .searchWrap {
 			max-width: 720px;
 			margin: 0 auto;
 			// margin-bottom: 10px;
+		}
+		img:not(.icon) {
+			width: 100%;
 		}
 		figcaption {
 			font-size: 14px;
@@ -13172,19 +13194,60 @@ body:has(.listGrid) .searchWrap {
 			max-width: 720px;
 			margin: 0 auto;
 			position: relative;
-			.bar1,
-			.bar2 {
-				transition: transform 1s;
-				transform-origin: bottom;
-				transform: scaleY(0);
+			img {
+				display: block;
+			}
+			.bar {
 				position: absolute;
-				bottom: 0;
-				left: 0;
+				bottom: 21%;
+				width: 10.8%;
+				background-color: #FF6633;
+				transform: translateX(-50%);
+				span {
+					position: absolute;
+					top: -8.8%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					color: #F63;
+					text-align: center;
+					font-family: Montserrat;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px; /* 150% */
+					opacity: 0;
+				}
+			}
+			.bar1 {
+				height: 0;
+				left: 43.7%;
+			}
+			.bar2 {
+				height: 0;
+				left: 63.6%;
 			}
 			&.active {
-				.bar1,
+				.bar1 {
+					height: 45.94%;
+					transition: 1s 0.5s ease-in-out;
+				}
+				.bar1 span {
+					opacity: 1;
+					transition: 0.3s 1.5s ease-in-out;
+				}
 				.bar2 {
-					transform: scaleY(1);
+					height: 59.7%;
+					transition: 1s 0.5s ease-in-out;
+				}
+				.bar2 span {
+					opacity: 1;
+					transition: 0.3s 1.6s ease-in-out;
+				}
+			}
+
+			@media screen and (max-width:768px) {
+				.bar span {
+					font-size: 3vw;
 				}
 			}
 		}

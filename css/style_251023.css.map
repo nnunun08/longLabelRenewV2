@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "style_251023.scss"
-    ],
-    "names": [],
-    "file": "style_251023.css"
-}
+{"version":3,"sourceRoot":"","sources":["style_251023.scss"],"names":[],"mappings":"AAGA;EACI;EACA;EACA;EACA","file":"style_251023.css"}

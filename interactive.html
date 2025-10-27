@@ -95,19 +95,33 @@
             <div class="inner">
                 <h2>매초 한 대의 트럭이<br/>
                     옷을 버린다</h2>
-                <img class="obj1" src="./img/251023_interactive/obj_hero_1.png" alt="obj1">
-                <img class="obj2" src="./img/251023_interactive/obj_hero_2.png" alt="obj2">
+                <img class="obj1 float" src="./img/251023_interactive/obj_hero_1.png" alt="obj1">
+                <img class="obj2 float" src="./img/251023_interactive/obj_hero_2.png" alt="obj2">
             </div>
         </div>
     
         <div class="editorNote">
             <div class="inner">
-                <div class="sub">Editor’s note</div>
-                <h3>
+                <div class="sub"
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                >Editor’s note</div>
+                <h3
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="700"
+                    data-aos-easing="ease-in-out"
+                >
                     여러분은 어떤 옷을 새로 사고,<br/>
                     또 어떤 옷들을 버리고 있었나요? 
                 </h3>
-                <p>
+                <p
+                    data-aos="fade-down"
+                    data-aos-duration="700"
+                    data-aos-delay="1400"
+                    data-aos-easing="ease-in-out"
+                >
                     UNEP의 자료에 따르면, 전 세계에서 매년 9,200만 톤의 의류가 버려집니다. <br/>
                     매초마다 쓰레기 트럭 한 대가 옷으로 가득 차 불길 속으로 사라지거나, 매립지 속에 묻히고 있습니다.<br/>
                     오늘날의 패션 산업은 ‘만들고, 팔고, 버리는’ 선형(Linear) 구조 라고 합니다. 그리고 그 구조는 환경과 경제의 임계점에 다다랐다는 분석이 나오고 있어요.<br/>
@@ -171,7 +185,29 @@
                 </h4>
                 <div class="interGraph">
                     <img src="./img/251023_interactive/inter_graph_01.svg" alt="inter01">
+                    <div class="bar bar1"><span>17kg</span></div>
+                    <div class="bar bar2"><span>19kg</span></div>
                 </div>
+
+                <!-- 그래프 바 인터렉션 -->
+                <script>
+                    const elements = document.querySelectorAll('.interGraph');
+                    
+                    const interGraph = new IntersectionObserver((entries) => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          entry.target.classList.add('active');
+                        } else {
+                            entry.target.classList.remove('active'); // 화면에서 사라지면 제거
+                        }
+                      });
+                    }, {
+                      threshold: 0.2 // 요소의 20%가 보여질 때 트리거
+                    });
+                    
+                    elements.forEach(el => interGraph.observe(el));
+                </script>
+
                 <p>
                     유럽연합(EU) 시민 한 사람의 연평균 섬유 소비량은 2019년 17kg에서 2022년 19kg으로 증가했으며, 연간 약 12kg의 의류가 폐기되고 있습니다. (출처: Eurostat/유럽의회 자료, 2022) 이러한 증가세의 중심에는 패스트 패션(Fast Fashion)이 지목되고 있습니다. 저렴한 가격으로 빠르게 생산되는 패스트패션으로 인한 짧은 유행 주기, 과잉 생산, 과잉 소비가 맞물리며 섬유 폐기물 규모 역시 폭발적으로 커지고 있습니다.
                 </p>
@@ -206,33 +242,44 @@
                     <figcaption>출처: 통계청</figcaption>
 
 
+                    <!-- 숫자 카운트 인터렉션 -->
                     <script>
                         const counters = document.querySelectorAll('.counter');
-
+                        
                         const observer = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
+                          entries.forEach(entry => {
                             const el = entry.target;
-                            const target = +el.dataset.target;
-                            let count = 0;
-                            const duration = 3500;
-                            const increment = target / (duration / 16);
-
-                            const update = () => {
+                        
+                            if (entry.isIntersecting) {
+                              const target = +el.dataset.target;
+                              let count = 0;
+                              const duration = 3000;
+                              const increment = target / (duration / 16);
+                        
+                              // 이미 실행 중이라면 중복 실행 방지
+                              if (el.classList.contains('counting')) return;
+                              el.classList.add('counting');
+                        
+                              const update = () => {
                                 count += increment;
-                                if (count < target) {
-                                el.textContent = Math.floor(count).toLocaleString();
-                                requestAnimationFrame(update);
+                                if (count < target && entry.isIntersecting) {
+                                  el.textContent = Math.floor(count).toLocaleString();
+                                  requestAnimationFrame(update);
                                 } else {
-                                el.textContent = target.toLocaleString();
+                                  el.textContent = target.toLocaleString();
+                                  el.classList.remove('counting'); // 완료 후 다시 진입 가능
                                 }
-                            };
-                            update();
-                            observer.unobserve(el);
+                              };
+                              update();
+                            } else {
+                              // 화면에서 완전히 벗어나면 초기화
+                              el.textContent = '0';
                             }
+                          });
+                        }, {
+                          threshold: 1
                         });
-                        });
-
+                        
                         counters.forEach(c => observer.observe(c));
                     </script>
                 </div>
