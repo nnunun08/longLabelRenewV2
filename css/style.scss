@@ -13171,15 +13171,20 @@ body:has(.listGrid) .searchWrap {
 			position: relative;
 			max-width: 720px;
 			margin: 0 auto;
+			position: relative;
 			.bar1,
 			.bar2 {
-				height: 0;
-				transition: 1s;
+				transition: transform 1s;
+				transform-origin: bottom;
+				transform: scaleY(0);
+				position: absolute;
+				bottom: 0;
+				left: 0;
 			}
 			&.active {
 				.bar1,
 				.bar2 {
-					height: unset;
+					transform: scaleY(1);
 				}
 			}
 		}

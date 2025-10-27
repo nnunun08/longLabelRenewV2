@@ -15442,15 +15442,20 @@ h4 {
   position: relative;
   max-width: 720px;
   margin: 0 auto;
+  position: relative;
 }
 .interactive-article .article-item .interGraph .bar1,
 .interactive-article .article-item .interGraph .bar2 {
-  height: 0;
-  transition: 1s;
+  transition: transform 1s;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .interactive-article .article-item .interGraph.active .bar1,
 .interactive-article .article-item .interGraph.active .bar2 {
-  height: unset;
+  transform: scaleY(1);
 }
 .interactive-article .article-item .trash-cound {
   padding: 15px;
