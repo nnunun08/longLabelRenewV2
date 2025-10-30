@@ -115,6 +115,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.76;
+  word-break: keep-all;
 }
 
 .interactive-article .inner {
@@ -569,8 +570,8 @@
   justify-content: center;
   gap: 30px;
 }
-.scrollscreen .storyGroup + .storyGroup {
-  margin-top: 33vh;
+.scrollscreen .storyGroup:last-child {
+  margin-bottom: 0;
 }
 .scrollscreen .screenSection {
   display: flex;

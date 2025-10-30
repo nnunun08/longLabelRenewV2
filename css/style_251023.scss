@@ -119,6 +119,7 @@
 		font-style: normal;
 		font-weight: 500;
 		line-height: 1.76;
+        word-break: keep-all;
 	}
 }
 .interactive-article {
@@ -599,10 +600,14 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 30px;
+        // margin-bottom: 100px;
+        &:last-child {
+            margin-bottom: 0;
+        }
 	}
-	.storyGroup + .storyGroup {
-		margin-top: 33vh;
-	}
+	// .storyGroup + .storyGroup {
+	// 	margin-top: 33vh;
+	// }
 
 	.screenSection {
 		display: flex;
