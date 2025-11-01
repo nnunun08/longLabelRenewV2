@@ -7,6 +7,123 @@
     font-weight: normal;
     font-display: swap;
 }
+@mixin step1 {
+	.step1 {
+		opacity: 0;
+		transition: 0.5s ease-in-out;
+		.bar {
+			position: absolute;
+			bottom: 15.1%;
+			width: 78px;
+			height: 0;
+			background-color: #FF6633;
+			transition: 0.5s 0.5s ease-in-out;
+		}
+
+		.barBg {
+			opacity: 0;
+			transition: 0.5s 0.75s ease-in-out;
+		}
+		.value1,
+		.value2,
+		.value3 {
+			opacity: 0;
+			transition: 0.5s 1s ease-in-out;
+		}
+		.bar1 {
+			left: 19.5%;
+		}
+		.bar2 {
+			left: 47%;
+		}
+		.bar3 {
+			left: 75%;
+		}
+		&.active {
+			.barBg,
+			.value1,
+			.value2,
+			.value3 {
+				opacity: 1;
+			}
+			.bar1 {
+				height: 7%;
+			}
+			.bar2 {
+				height: 51%;
+			}
+			.bar3 {
+				height: 45%;
+			}
+		}
+	}
+	@content;
+}
+@mixin step7 {
+	.step7 {
+		.value {
+			opacity: 0;
+			transition: 0.3s 1s;
+		}
+		&.active {
+			.value {
+				opacity: 1;
+			}
+		}
+		.bar {
+			position: absolute;
+			bottom: 20%;
+			left: 0;
+			width: 60px;
+			background-color: #5B5B5B;
+			height: 0;
+			opacity: 0;
+			transition: 0.3s 0.5s;
+		}
+		.bar1 {
+			left: 19%;
+		}
+		.bar2 {
+			left: 33%;
+		}
+		.bar3 {
+			left: 48%;
+		}
+		.bar4 {
+			left: 62.2%;
+		}
+		.bar5 {
+			left: 76.7%;
+			background-color: #FF6633;
+		}
+		&.active  {
+			.bar {
+				opacity: 1;
+			}
+			.bar1 {
+				left: 19%;
+				height: 54%;
+			}
+			.bar2 {
+				left: 33%;
+				height: 38%;
+			}
+			.bar3 {
+				left: 48%;
+				height: 31%;
+			}
+			.bar4 {
+				left: 62.2%;
+				height: 30%;
+			}
+			.bar5 {
+				left: 76.7%;
+				height: 27%;
+			}
+		}
+	}
+	@content;
+}
 
 
 // UPDATE 1023
@@ -651,117 +768,8 @@
 				opacity: 1;
 			}
 		}
-		.step1 {
-			opacity: 0;
-			transition: 0.5s ease-in-out;
-			.bar {
-				position: absolute;
-				bottom: 15.1%;
-				width: 78px;
-				height: 0;
-				background-color: #FF6633;
-				transition: 0.5s 0.5s ease-in-out;
-			}
-
-			.barBg {
-				opacity: 0;
-				transition: 0.5s 0.75s ease-in-out;
-			}
-			.value1,
-			.value2,
-			.value3 {
-				opacity: 0;
-				transition: 0.5s 1s ease-in-out;
-			}
-			.bar1 {
-				left: 19.5%;
-			}
-			.bar2 {
-				left: 47%;
-			}
-			.bar3 {
-				left: 75%;
-			}
-			&.active {
-				.barBg,
-				.value1,
-				.value2,
-				.value3 {
-					opacity: 1;
-				}
-				.bar1 {
-					height: 7%;
-				}
-				.bar2 {
-					height: 51%;
-				}
-				.bar3 {
-					height: 45%;
-				}
-			}
-		}
-		.step7 {
-			.value {
-				opacity: 0;
-				transition: 0.3s 1s;
-			}
-			&.active {
-				.value {
-					opacity: 1;
-				}
-			}
-			.bar {
-				position: absolute;
-				bottom: 20%;
-				left: 0;
-				width: 60px;
-				background-color: #5B5B5B;
-				height: 0;
-				opacity: 0;
-				transition: 0.3s 0.5s;
-			}
-			.bar1 {
-				left: 19%;
-			}
-			.bar2 {
-				left: 33%;
-			}
-			.bar3 {
-				left: 48%;
-			}
-			.bar4 {
-				left: 62.2%;
-			}
-			.bar5 {
-				left: 76.7%;
-				background-color: #FF6633;
-			}
-			&.active  {
-				.bar {
-					opacity: 1;
-				}
-				.bar1 {
-					left: 19%;
-					height: 54%;
-				}
-				.bar2 {
-					left: 33%;
-					height: 38%;
-				}
-				.bar3 {
-					left: 48%;
-					height: 31%;
-				}
-				.bar4 {
-					left: 62.2%;
-					height: 30%;
-				}
-				.bar5 {
-					left: 76.7%;
-					height: 27%;
-				}
-			}
-		}
+		@include step1;
+		@include step7;
 		.step12 {
 			.circle {
 				position: absolute;
@@ -901,12 +909,66 @@
 }
 .scrollscreen1 {
 	background: url(../img/251023_interactive/bg_scrollscreen_01.png) center/cover fixed no-repeat;
+	.stepWrap {
+		position: relative;
+		aspect-ratio: 590 / 400;
+		margin: 20px 0;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		.step {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			// transform: translateY(-50%);
+			opacity: 0;
+			transition: 0.3s;
+			&.active {
+				opacity: 1;
+			}
+		}
+		@include step1 {
+			.bar {
+				width: 13.2% !important;
+			}
+		};
+	}
 }
 .scrollscreen2 {
 	background: url(../img/251023_interactive/bg_scrollscreen_02.png) center/cover fixed no-repeat;
 }
 .scrollscreen3 {
 	background: url(../img/251023_interactive/bg_scrollscreen_03.png) center/cover fixed no-repeat;
+	.stepWrap {
+		position: relative;
+		aspect-ratio: 590 / 400;
+		margin: 20px 0;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+		.step {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			// transform: translateY(-50%);
+			opacity: 0;
+			transition: 0.3s;
+			&.active {
+				opacity: 1;
+			}
+		}
+		@include step7 {
+			.step7 {
+				.bar {
+					width: 10%;
+				}
+			}
+		}
+	}
 }
 .scrollscreen4 {
 	background: url(../img/251023_interactive/bg_scrollscreen_04.png) center/cover fixed no-repeat;

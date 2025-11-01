@@ -851,6 +851,75 @@
 .scrollscreen1 {
   background: url(../img/251023_interactive/bg_scrollscreen_01.png) center/cover fixed no-repeat;
 }
+.scrollscreen1 .stepWrap {
+  position: relative;
+  aspect-ratio: 590/400;
+  margin: 20px 0;
+}
+.scrollscreen1 .stepWrap svg {
+  width: 100%;
+  height: 100%;
+}
+.scrollscreen1 .stepWrap .step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.scrollscreen1 .stepWrap .step.active {
+  opacity: 1;
+}
+.scrollscreen1 .stepWrap .step1 {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.scrollscreen1 .stepWrap .step1 .bar {
+  position: absolute;
+  bottom: 15.1%;
+  width: 78px;
+  height: 0;
+  background-color: #FF6633;
+  transition: 0.5s 0.5s ease-in-out;
+}
+.scrollscreen1 .stepWrap .step1 .barBg {
+  opacity: 0;
+  transition: 0.5s 0.75s ease-in-out;
+}
+.scrollscreen1 .stepWrap .step1 .value1,
+.scrollscreen1 .stepWrap .step1 .value2,
+.scrollscreen1 .stepWrap .step1 .value3 {
+  opacity: 0;
+  transition: 0.5s 1s ease-in-out;
+}
+.scrollscreen1 .stepWrap .step1 .bar1 {
+  left: 19.5%;
+}
+.scrollscreen1 .stepWrap .step1 .bar2 {
+  left: 47%;
+}
+.scrollscreen1 .stepWrap .step1 .bar3 {
+  left: 75%;
+}
+.scrollscreen1 .stepWrap .step1.active .barBg,
+.scrollscreen1 .stepWrap .step1.active .value1,
+.scrollscreen1 .stepWrap .step1.active .value2,
+.scrollscreen1 .stepWrap .step1.active .value3 {
+  opacity: 1;
+}
+.scrollscreen1 .stepWrap .step1.active .bar1 {
+  height: 7%;
+}
+.scrollscreen1 .stepWrap .step1.active .bar2 {
+  height: 51%;
+}
+.scrollscreen1 .stepWrap .step1.active .bar3 {
+  height: 45%;
+}
+.scrollscreen1 .stepWrap .bar {
+  width: 13.2% !important;
+}
 
 .scrollscreen2 {
   background: url(../img/251023_interactive/bg_scrollscreen_02.png) center/cover fixed no-repeat;
@@ -858,6 +927,85 @@
 
 .scrollscreen3 {
   background: url(../img/251023_interactive/bg_scrollscreen_03.png) center/cover fixed no-repeat;
+}
+.scrollscreen3 .stepWrap {
+  position: relative;
+  aspect-ratio: 590/400;
+  margin: 20px 0;
+}
+.scrollscreen3 .stepWrap svg {
+  width: 100%;
+  height: 100%;
+}
+.scrollscreen3 .stepWrap .step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.scrollscreen3 .stepWrap .step.active {
+  opacity: 1;
+}
+.scrollscreen3 .stepWrap .step7 .value {
+  opacity: 0;
+  transition: 0.3s 1s;
+}
+.scrollscreen3 .stepWrap .step7.active .value {
+  opacity: 1;
+}
+.scrollscreen3 .stepWrap .step7 .bar {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 60px;
+  background-color: #5B5B5B;
+  height: 0;
+  opacity: 0;
+  transition: 0.3s 0.5s;
+}
+.scrollscreen3 .stepWrap .step7 .bar1 {
+  left: 19%;
+}
+.scrollscreen3 .stepWrap .step7 .bar2 {
+  left: 33%;
+}
+.scrollscreen3 .stepWrap .step7 .bar3 {
+  left: 48%;
+}
+.scrollscreen3 .stepWrap .step7 .bar4 {
+  left: 62.2%;
+}
+.scrollscreen3 .stepWrap .step7 .bar5 {
+  left: 76.7%;
+  background-color: #FF6633;
+}
+.scrollscreen3 .stepWrap .step7.active .bar {
+  opacity: 1;
+}
+.scrollscreen3 .stepWrap .step7.active .bar1 {
+  left: 19%;
+  height: 54%;
+}
+.scrollscreen3 .stepWrap .step7.active .bar2 {
+  left: 33%;
+  height: 38%;
+}
+.scrollscreen3 .stepWrap .step7.active .bar3 {
+  left: 48%;
+  height: 31%;
+}
+.scrollscreen3 .stepWrap .step7.active .bar4 {
+  left: 62.2%;
+  height: 30%;
+}
+.scrollscreen3 .stepWrap .step7.active .bar5 {
+  left: 76.7%;
+  height: 27%;
+}
+.scrollscreen3 .stepWrap .step7 .bar {
+  width: 10%;
 }
 
 .scrollscreen4 {
